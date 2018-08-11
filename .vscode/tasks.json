@@ -10,7 +10,7 @@
         "mkdocs",
         "mkdocs-material"
       ],
-      "problemMatcher": "$tsc"
+      "problemMatcher": []
     },
     {
       "label": "Remove mkdocs",
@@ -20,7 +20,7 @@
         "mkdocs",
         "mkdocs-material"
       ],
-      "problemMatcher": "$tsc"
+      "problemMatcher": []
     },
     {
       "label": "mkdocs serve",
@@ -31,7 +31,7 @@
         "serve"
       ],
       "type": "shell",
-      "problemMatcher": "$tsc"
+      "problemMatcher": []
     },
     {
       "label": "mkdocs build",
@@ -41,7 +41,7 @@
         "mkdocs",
         "build"
       ],
-      "problemMatcher": "$tsc"
+      "problemMatcher": []
     }
   ]
 }
