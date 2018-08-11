@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install mkdocs",
+      "command": "pip",
+      "args": [
+        "install",
+        "--user",
+        "mkdocs",
+        "mkdocs-material"
+      ],
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Remove mkdocs",
+      "command": "pip",
+      "args": [
+        "uninstall",
+        "mkdocs",
+        "mkdocs-material"
+      ],
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "mkdocs serve",
+      "command": "python",
+      "args": [
+        "-m",
+        "mkdocs",
+        "serve"
+      ],
+      "type": "shell",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "mkdocs build",
+      "command": "python",
+      "args": [
+        "-m",
+        "mkdocs",
+        "build"
+      ],
+      "problemMatcher": "$tsc"
+    }
+  ]
+}
