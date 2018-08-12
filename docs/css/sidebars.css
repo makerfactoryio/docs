@@ -1,0 +1,14 @@
+.md-sidebar {
+  padding-top: 5rem;
+}
+
+.md-sidebar[data-md-state="lock"] {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  .md-sidebar,
+  .md-sidebar[data-md-state="lock"] {
+    padding-top: 4.8rem;
+  }
+}
