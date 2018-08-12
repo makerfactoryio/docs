@@ -3,11 +3,19 @@ site_name: Makerfactory Documentation
 theme:
   name: material
   custom_dir: theme
+  logo: images/logo.png
   font: false
   include_search_page: false
   search_index_only: true
-  feature:
-    tabs: true
+
+extra_css:
+  - css/links.css
+  - css/header.css
+  - css/search.css
+  - css/sidebars.css
+
+extra_javascript:
+  - js/header.js
 
 nav:
   - Makerfactory: index.md

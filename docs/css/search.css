@@ -1,0 +1,30 @@
+.md-search {
+  padding-top: 1.5rem;
+}
+
+.md-search__input {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.md-search__input:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.md-search__input::-webkit-input-placeholder {
+  color: #555;
+}
+.md-search__input:-ms-input-placeholder {
+  color: #555;
+}
+.md-search__input::-ms-input-placeholder {
+  color: #555;
+}
+.md-search__input::placeholder {
+  color: #555;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  .md-search {
+    padding-top: 0.4rem;
+  }
+}
