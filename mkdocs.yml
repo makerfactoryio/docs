@@ -13,6 +13,7 @@ extra_css:
   - css/header.css
   - css/search.css
   - css/sidebars.css
+  - css/footer.css
 
 extra_javascript:
   - js/header.js
