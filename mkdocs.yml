@@ -2,6 +2,7 @@ site_name: Makerfactory Documentation
 
 theme:
   name: material
+  custom_dir: theme
   font: false
   include_search_page: false
   search_index_only: true
