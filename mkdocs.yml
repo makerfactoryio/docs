@@ -9,14 +9,14 @@ theme:
   search_index_only: true
 
 extra_css:
-  - css/links.css
-  - css/header.css
-  - css/search.css
-  - css/sidebars.css
-  - css/footer.css
+  - assets/css/links.css
+  - assets/css/header.css
+  - assets/css/search.css
+  - assets/css/sidebars.css
+  - assets/css/footer.css
 
 extra_javascript:
-  - js/header.js
+  - assets/js/header.js
 
 nav:
   - Makerfactory: index.md
