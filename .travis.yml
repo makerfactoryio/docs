@@ -7,6 +7,7 @@ install:
 
 script:
   - mkdocs build
+  - cp CNAME site/
 
 deploy:
   provider: pages
