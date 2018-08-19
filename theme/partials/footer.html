@@ -1,14 +1,12 @@
 {% import "partials/language.html" as lang with context %}
 
-{% macro get_section_title(ns) %}
+{% macro find_section_title(ns) %}
   {# dirty; go up max 10 times to find the actual section #}
   {% for i in range(10) %}
     {% if ns.page.parent %}
       {% set ns.page = ns.page.parent %}
     {% endif %}
   {% endfor %}
-
-  {{ ns.page.title }}
 {% endmacro %}
 
 <!-- Application footer -->
@@ -33,8 +31,14 @@
                   md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                    {% set prev_ns = namespace(page=page.previous_page) %}
-                    {{ lang.t("footer.previous") }} in {{ get_section_title(prev_ns) }}
+                  {{ lang.t("footer.previous") }}
+
+                  {% set previous_ns = namespace(page=page.previous_page) %}
+                  {% set previous_section = find_section_title(previous_ns) %}
+
+                  {% if previous_ns.page != page.previous_page %}
+                    in {{ previous_ns.page.title }}
+                  {% endif %}
                 </span>
                 {{ page.previous_page.title }}
               </span>
@@ -52,8 +56,14 @@
                   md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
+                  {{ lang.t("footer.next") }}
+
                   {% set next_ns = namespace(page=page.next_page) %}
-                  {{ lang.t("footer.next") }} in {{ get_section_title(next_ns) }}
+                  {% set next_section = find_section_title(next_ns) %}
+
+                  {% if next_ns.page != page.next_page %}
+                    in {{ next_ns.page.title }}
+                  {% endif %}
                 </span>
                 {{ page.next_page.title }}
               </span>
