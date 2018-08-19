@@ -7,9 +7,8 @@
       "args": [
         "install",
         "--user",
-        "mkdocs",
-        "mkdocs-material",
-        "markdown-include"
+        "-r",
+        "requirements.txt"
       ],
       "problemMatcher": []
     },
@@ -18,9 +17,9 @@
       "command": "pip",
       "args": [
         "uninstall",
-        "mkdocs",
-        "mkdocs-material",
-        "markdown-include"
+        "-y",
+        "-r",
+        "requirements.txt"
       ],
       "problemMatcher": []
     },
