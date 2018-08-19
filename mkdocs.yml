@@ -1,4 +1,5 @@
 site_name: Makerfactory Documentation
+copyright: "&copy; Makerfactory 2018"
 
 theme:
   name: material
