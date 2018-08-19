@@ -7,7 +7,12 @@
         <img src="{{ config.theme.logo | url }}">
       {% endif %}
     </a>
-    {{ config.site_name }}
+
+    {% for nav_item in nav %}
+      {% if nav_item.children and nav_item.active %}
+        Chapters
+      {% endif %}
+    {% endfor %}
   </label>
   {% if config.repo_url %}
     <div class="md-nav__source">
@@ -15,10 +20,16 @@
     </div>
   {% endif %}
   <ul class="md-nav__list" data-md-scrollfix>
-    {% for nav_item in nav %}
-      {% set path = "nav-" + loop.index | string %}
-      {% set level = 1 %}
-      {% include "partials/nav-item.html" %}
+    {% for top_level_nav_item in nav %}
+      {% set base = "nav-" + loop.index | string %}
+
+      {% if top_level_nav_item.children and top_level_nav_item.active %}
+        {% for nav_item in top_level_nav_item.children %}
+          {% set path = base + "-" + loop.index | string %}
+          {% set level = 1 %}
+          {% include "partials/nav-item.html" %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>
