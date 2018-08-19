@@ -1,0 +1,7 @@
+.md-nav__link--active {
+  font-weight: bold;
+}
+
+.md-nav__title.md-nav__title--site {
+  padding-bottom: 1rem;
+}

@@ -16,6 +16,7 @@ extra_css:
   - assets/css/sidebars.css
   - assets/css/footer.css
   - assets/css/dropdown.css
+  - assets/css/nav.css
 
 extra_javascript:
   - assets/js/header.js
