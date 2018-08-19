@@ -2,7 +2,8 @@ h1,
 h2,
 h3,
 h4,
-.md-header-nav__topic {
+.md-header-nav__topic,
+.dropdown {
   font-family: Rajdhani, sans-serif;
   text-transform: uppercase;
 }

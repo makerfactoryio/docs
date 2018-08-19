@@ -3,6 +3,11 @@
   <!-- Top-level navigation -->
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="__drawer"></label>
+      </div>
 
       <!-- Link to home -->
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -13,10 +18,31 @@
         </a>
       </div>
 
-      <!-- Button to toggle drawer -->
       <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button"
-            for="__drawer"></label>
+        <div class="dropdown">
+          <div class="selected-item">
+            {% for nav_item in nav %}
+              {% if nav_item.active %}
+                <u>{{ nav_item.title }}</u>
+              {% endif %}
+            {% endfor %}
+
+            <i class="md-icon">keyboard_arrow_down</i>
+          </div>
+          <ul>
+            {% for nav_item in nav %}
+              <li>
+                {% if nav_item.children %}
+                  <a href="{{ nav_item.children[0].url | url }}">
+                {% else %}
+                  <a href="{{ nav_item.url | url }}">
+                {% endif %}
+                  {{ nav_item.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
 
       <!-- Header title -->

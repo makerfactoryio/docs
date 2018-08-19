@@ -1,0 +1,61 @@
+.dropdown {
+  width: 13rem;
+  font-size: 2rem;
+
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.2s;
+
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropdown:hover,
+.dropdown:focus {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.dropdown .selected-item {
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.dropdown .selected-item u {
+  text-decoration: none;
+  border-bottom: 2px solid #005064;
+}
+
+.dropdown .selected-item .md-icon {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+}
+
+.dropdown ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  overflow: hidden;
+  height: 0px;
+  transition-property: height;
+  transition-duration: 0.2s;
+}
+
+.dropdown:hover ul {
+  overflow-y: auto;
+  height: 17rem;
+}
+
+.dropdown ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 1.5rem 2rem;
+}
