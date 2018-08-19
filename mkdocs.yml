@@ -1,6 +1,13 @@
 site_name: Makerfactory Documentation
 copyright: "&copy; Makerfactory 2018"
 
+extra:
+  social:
+    - type: globe
+      link: https://makerfactory.io
+    - type: github
+      link: https://github.com/makerfactoryio/docs
+
 theme:
   name: material
   custom_dir: theme
