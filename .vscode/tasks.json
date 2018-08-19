@@ -8,7 +8,8 @@
         "install",
         "--user",
         "mkdocs",
-        "mkdocs-material"
+        "mkdocs-material",
+        "markdown-include"
       ],
       "problemMatcher": []
     },
@@ -18,7 +19,8 @@
       "args": [
         "uninstall",
         "mkdocs",
-        "mkdocs-material"
+        "mkdocs-material",
+        "markdown-include"
       ],
       "problemMatcher": []
     },
