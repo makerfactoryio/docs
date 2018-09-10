@@ -30,7 +30,34 @@ extra_javascript:
   - assets/js/header.js
 
 nav:
-  - index.md
+- 'Quick start': index.md
+- Getting Started:
+  - 'Installing the IDE': 'install.md'
+  - 'Programming the board': 'program.md'
+- ESP32:
+  - 'Core': 'esp32.md'
+  - Components:
+    - 'USB Programming': 'foo.md'
+    - 'Power Supply': 'foo.md'
+    - 'mikro BUS': 'foo.md'
+    - 'ESP32 module' : 'foo.md'
+    - 'Grove' : 'foo.md'
+    - 'Temperature' : 'foo.md'
+    - 'RGB LED' : 'rgb-led.md'
+    - 'OLED-LCD' : 'foo.md'
+    - 'UNIT-Bus' : 'foo.md'
+    - 'Potentiometer' : 'foo.md'
+    - 'I2C Pull-up' : 'foo.md'
+    - 'IMU' : 'foo.md'
+    - 'Microphone' : 'foo.md'
+    - 'LCD' : 'foo.md'
+    - 'Menu' : 'foo.md'
+    - 'IO' : 'foo.md'
+    - 'RFID' : 'foo.md'
+    - 'Motor' : 'foo.md'
+    - 'SD Card' : 'foo.md'
+    - 'Audio Amplifier' : 'foo.md'
+    - 'Camera' : 'foo.md'
 
 markdown_extensions:
   - markdown.extensions.admonition
