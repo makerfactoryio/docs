@@ -30,35 +30,39 @@ extra_javascript:
   - assets/js/header.js
 
 nav:
-- Welcome: index.md
-- ESP32:
-  - 'Quick start': esp32/index.md
-  - Getting Started:
-    - 'Installing the IDE': 'esp32/install.md'
-    - 'Programming the board': 'esp32/program.md'
-  - 'Core': 'esp32/esp32.md'
-  - Components:
-    - 'USB Programming': 'esp32/foo.md'
-    - 'Power Supply': 'esp32/foo.md'
-    - 'mikro BUS': 'esp32/foo.md'
-    - 'ESP32 module': 'esp32/foo.md'
-    - 'Grove': 'esp32/foo.md'
-    - 'Temperature': 'esp32/foo.md'
-    - 'RGB LED': 'esp32/rgb-led.md'
-    - 'OLED-LCD': 'esp32/foo.md'
-    - 'UNIT-Bus': 'esp32/foo.md'
-    - 'Potentiometer': 'esp32/foo.md'
-    - 'I2C Pull-up': 'esp32/foo.md'
-    - 'IMU': 'esp32/foo.md'
-    - 'Microphone': 'esp32/foo.md'
-    - 'LCD': 'esp32/foo.md'
-    - 'Menu': 'esp32/foo.md'
-    - 'IO': 'esp32/foo.md'
-    - 'RFID': 'esp32/foo.md'
-    - 'Motor': 'esp32/foo.md'
-    - 'SD Card': 'esp32/foo.md'
-    - 'Audio Amplifier': 'esp32/foo.md'
-    - 'Camera': 'esp32/foo.md'
+- Overview: index.md
+- Development Boards:
+  - ESP32:
+    - Quick start: development-boards/esp32/index.md
+    - Getting Started:
+      - Installing the IDE: development-boards/esp32/install.md
+      - Programming the board: development-boards/esp32/program.md
+    - Core: development-boards/esp32/esp32.md
+    - Components:
+      - USB Programming: development-boards/esp32/foo.md
+      - Power Supply: development-boards/esp32/foo.md
+      - mikro BUS: development-boards/esp32/foo.md
+      - ESP32 module: development-boards/esp32/foo.md
+      - Grove: development-boards/esp32/foo.md
+      - Temperature: development-boards/esp32/foo.md
+      - RGB LED: development-boards/esp32/rgb-led.md
+      - OLED-LCD: development-boards/esp32/foo.md
+      - UNIT-Bus: development-boards/esp32/foo.md
+      - Potentiometer: development-boards/esp32/foo.md
+      - I2C Pull-up: development-boards/esp32/foo.md
+      - IMU: development-boards/esp32/foo.md
+      - Microphone: development-boards/esp32/foo.md
+      - LCD: development-boards/esp32/foo.md
+      - Menu: development-boards/esp32/foo.md
+      - IO: development-boards/esp32/foo.md
+      - RFID: development-boards/esp32/foo.md
+      - Motor: development-boards/esp32/foo.md
+      - SD Card: development-boards/esp32/foo.md
+      - Audio Amplifier: development-boards/esp32/foo.md
+      - Camera: development-boards/esp32/foo.md
+  - SensorIO: development-boards/sensorio/index.md
+- Educational Robotics:
+  - RoboBug Hexapod Platform: educational-robotics/robobug-hexapod/index.md
 
 markdown_extensions:
   - markdown.extensions.admonition

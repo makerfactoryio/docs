@@ -2,7 +2,7 @@
 
 The board has **four** WS2813 RGB LEDs. The LEDs are connected to each other and therefore they could be handled like an LED strip.
 
-![RGB LED Component](../images/esp32/board_rgb-led_component.png)
+![RGB LED Component](../../images/esp32/board_rgb-led_component.png)
 
 The four LEDs are labeled on the board. The first LED in the strip is the LED **D300** near by the switches.
 
@@ -34,6 +34,6 @@ The LED strip could be programmed by using the [Adafruit Neopixel Library](https
 Now restart your Arduino IDE.
 After a successful installation the examples of the library should occur in *File > Examples > Adafruit Neopixel*
 
-![Examples from the Neopixel libray](../images/esp32/neopixel_1.png)
+![Examples from the Neopixel libray](../../images/esp32/neopixel_1.png)
 
 ## Programming the LED strip
