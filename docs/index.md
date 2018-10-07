@@ -7,6 +7,6 @@
 
 ## Makerfactory Development Boards
 
-[ESP32 Evaluation Board](/esp32)
+[ESP32 Evaluation Board](/development-boards/esp32)
 
-[SensorIO Development Kit](/sensorio)
+[SensorIO Development Kit](development-boards/sensorio)
