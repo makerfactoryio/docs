@@ -1,5 +1,6 @@
 #Overview
 
+
 *SensorIO* is a powerful and versatile *ARM Cortex&reg;-M4*, [*mbed&trade;*](https://www.mbed.com)-Enabled Internet-of-Things hardware development kit.
 
 Its broad set of features makes it a versatile prototyping and development board for *Wi-Fi&trade;* connected products:
@@ -46,6 +47,7 @@ This is an overview of the main components and features:
 
 !!! info "foo"
 	bar
+
 
 
 
