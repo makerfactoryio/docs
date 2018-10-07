@@ -60,7 +60,24 @@ nav:
       - SD Card: development-boards/esp32/foo.md
       - Audio Amplifier: development-boards/esp32/foo.md
       - Camera: development-boards/esp32/foo.md
-  - SensorIO: development-boards/sensorio/index.md
+  - SensorIO:
+    - Introduction: 'development-boards/sensorio/index.md'
+    - Hardware:
+      - Overview: 'development-boards/sensorio/hardware-overview.md'
+      - Circuit Schematics: 'development-boards/sensorio/schematics.md'
+      # - Features: 'development-boards/sensorio/hardware-overview#features'
+      # - Block Diagram: 'development-boards/sensorio/hardware-overview#block_diagram'
+      - Pinout diagrams: 'development-boards/sensorio/pinouts.md'
+      - Onboard sensors: 'development-boards/sensorio/sensors.md'
+      - Expansion Interfaces: 'development-boards/sensorio/interfaces.md'
+      - Technical specifications: 'development-boards/sensorio/datasheet.md'
+    - Getting Started:      
+      - Tooling setup: 'development-boards/sensorio/tools-instalation.md'
+      - Obtaining code: 'development-boards/sensorio/cloning-code.md'
+      - Demo App: 'development-boards/sensorio/hello-world.md'
+    - Tools:  
+      - Tools: 'development-boards/sensorio/tools.md' 
+
 - Educational Robotics:
   - RoboBug Hexapod Platform: educational-robotics/robobug-hexapod/index.md
 
