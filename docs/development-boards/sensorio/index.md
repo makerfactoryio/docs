@@ -2,7 +2,7 @@
 
 ##Introduction
 
-*SensorIO* is powerful and versatile *ARM Cortex-M4&reg;*, [*mbed&trade;*](https://www.mbed.com)-Enabled Internet-of-Things development board targeted to the prototyping and development of connected applications.
+*SensorIO* is powerful and versatile *ARM Cortex&reg;-M4*, [*mbed&trade;*](https://www.mbed.com)-Enabled Internet-of-Things development board targeted to the prototyping and development of connected applications.
 
 
 
