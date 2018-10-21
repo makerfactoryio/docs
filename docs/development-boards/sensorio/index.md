@@ -18,12 +18,12 @@ This guide will show you the capabilities of the board and walk you through the 
 
 The guide is broken-down in 3 parts for ease of use:
 
-* [Hardware documentation](/development-boards/sensorio/hardware-overview) details the different functional blocks and helps the users to understand the functionalities of the expansion interfaces, how to configure the software-controlled multiplexers, list all the peripherals exposed and pinouts and provides some technical specifications.
-* [Getting Started](/development-boards/sensorio/getting-started): if you are anxious and can't wait to start developing, here you will find a quick overview of the out-of-the-box application and will get you up-to-speed with the *SensorIO* development workflow.
-* [Tools](/development-boards/sensorio/tools): This section covers the software tooling setup, covering the *mbed-cli*, *GCC* installation, obtaing the code and a short introduction to professional debugging with *GDB*.
+* [**Hardware documentation**](/development-boards/sensorio/hardware-overview) details the different functional blocks and helps the users to understand the functionalities of the expansion interfaces, how to configure the software-controlled multiplexers, list all the peripherals exposed and pinouts and provides some technical specifications.
+* [**Getting Started**](/development-boards/sensorio/getting-started): if you are anxious and can't wait to start developing, here you will find a quick overview of the out-of-the-box application and will get you up-to-speed with the *SensorIO* development workflow.
+* [**Tools**](/development-boards/sensorio/tools): This section covers the software tooling setup, covering the *mbed-cli*, *GCC* installation, obtaing the code and a short introduction to professional debugging with *GDB*.
 
 
 !!! tip "Firmware flexibility"
-	Note that, even though the board is [*mbed&trade;*](https://www.mbed.com)-Enabled, thus providing a quick and powerful firmware development platform and ecosystem, the onboard *ST-Link&trade;-V2.1* interface can be also used to flash and debug firmware based on different RTOS' or bare-metal applications (i.e. [*FreeRTOS&reg;*](https://www.freertos.org/FreeRTOS-Plus/index.shtml) + [ST-micro SDK](https://www.st.com/en/development-tools/stm32-software-development-tools.html)).
+	Note that, even though the board is [*mbed&trade;*](https://www.mbed.com)-Enabled, thus providing a quick and powerful firmware development platform and ecosystem, the onboard *ST-Link&trade;-V2.1* interface can be also used to flash and debug firmware based on different RTOS' or bare-metal applications (i.e. [*FreeRTOS&reg;*](https://www.freertos.org/FreeRTOS-Plus/index.shtml) + [STMicro SDK](https://www.st.com/en/development-tools/stm32-software-development-tools.html)).
 
 
