@@ -9,4 +9,4 @@ Download the latest version of Arduino IDE from the [download section](https://w
 
 ![Arduino IDE after installation](../../images/esp32/arduino_ide/arduino_ide_01.png)
 
-In order to program the ESP it's necessary to install the apropraite addon. This is described in [Programming the board](../program)
+In order to program the ESP it's necessary to install the appropriate addon. This is described in [Programming the board](../program)
