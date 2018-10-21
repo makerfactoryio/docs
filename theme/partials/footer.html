@@ -93,7 +93,18 @@
       {% endif %}
 
       {% block social %}
+        {# fix jinja getting the base_url wrong and not loading font-awesome correctly #}
+        {% set reset_base_url = False %}
+        {% if base_url == "/" %}
+          {% set reset_base_url = False %}
+          {% set base_url = "" %}
+        {% endif %}
+
         {% include "partials/social.html" %}
+
+        {% if reset_base_url %}
+          {% set base_url = "/" %}
+        {% endif %}
       {% endblock %}
     </div>
   </div>

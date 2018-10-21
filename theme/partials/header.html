@@ -18,65 +18,67 @@
         </a>
       </div>
 
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="dropdown">
-          <div class="selected-item">
-            {% for nav_item in nav %}
-              {% if nav_item.active %}
-                <u>{{ nav_item.title }}</u>
-              {% endif %}
-            {% endfor %}
+      {% if not hide_device_dropdown %}
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="dropdown">
+            <div class="selected-item">
+              {% for nav_item in nav %}
+                {% if nav_item.active %}
+                  <u>{{ nav_item.title }}</u>
+                {% endif %}
+              {% endfor %}
 
-            <i class="md-icon">keyboard_arrow_down</i>
-          </div>
-          <ul>
-            {% for nav_item in nav %}
-              <li>
-                {% set item_url = nav_item.url %}
-                {% if nav_item.children %}
-                  {% if not nav_item.children[0].url %}
-                    {% set item_url = nav_item.children[0].children[0].url %}
-                  {% else %}
-                    {% set item_url = nav_item.children[0].url %}
-                  {% endif %}
-
-                  <div href="{{ item_url | url }}" class="mute">
-                    {{ nav_item.title }}
-                  </div>
-
-                  {% for sub_item in nav_item.children %}
-                    {% set sub_url = sub_item.url %}
-
-                    {% if sub_item.children %}
-                      {% set sub_url = sub_item.children[0].url %}
+              <i class="md-icon">keyboard_arrow_down</i>
+            </div>
+            <ul>
+              {% for nav_item in nav %}
+                <li>
+                  {% set item_url = nav_item.url %}
+                  {% if nav_item.children %}
+                    {% if not nav_item.children[0].url %}
+                      {% set item_url = nav_item.children[0].children[0].url %}
+                    {% else %}
+                      {% set item_url = nav_item.children[0].url %}
                     {% endif %}
 
-                    <a href="{{ sub_url | url }}">
-                      {% if sub_item.active %}
+                    <div href="{{ item_url | url }}" class="mute">
+                      {{ nav_item.title }}
+                    </div>
+
+                    {% for sub_item in nav_item.children %}
+                      {% set sub_url = sub_item.url %}
+
+                      {% if sub_item.children %}
+                        {% set sub_url = sub_item.children[0].url %}
+                      {% endif %}
+
+                      <a href="{{ sub_url | url }}">
+                        {% if sub_item.active %}
+                          <span class="selected">
+                              {{ sub_item.title }}
+                          </span>
+                        {% else %}
+                          {{ sub_item.title }}
+                        {% endif %}
+                      </a>
+                    {% endfor %}
+                  {% else %}
+                    <a href="{{ item_url | url }}">
+                      {% if nav_item.active %}
                         <span class="selected">
-                            {{ sub_item.title }}
+                          {{ nav_item.title }}
                         </span>
                       {% else %}
-                        {{ sub_item.title }}
+                        {{ nav_item.title }}
                       {% endif %}
                     </a>
-                  {% endfor %}
-                {% else %}
-                  <a href="{{ item_url | url }}">
-                    {% if nav_item.active %}
-                      <span class="selected">
-                        {{ nav_item.title }}
-                      </span>
-                    {% else %}
-                      {{ nav_item.title }}
-                    {% endif %}
-                  </a>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
-      </div>
+      {% endif %}
 
       <!-- Header title -->
       <div class="md-flex__cell md-flex__cell--stretch">
