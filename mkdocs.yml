@@ -72,7 +72,7 @@ nav:
     - Getting Started:      
       - Tooling setup: 'development-boards/sensorio/getting-started.md'
       - Obtaining code: 'development-boards/sensorio/getting-started.md'
-      - Demo App: 'development-boards/sensorio/getting-started.md'
+      - Demo App: 'development-boards/sensorio/demo-app.md'
     - Tools:  
       - Tools: 'development-boards/sensorio/tools.md' 
 
