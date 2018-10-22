@@ -38,13 +38,13 @@ The NPN transistor Q1 is used to pull-high the USB_DP line to force a USB re-enu
 
 The bi-color LED (LD1) indicates the state of the ST-Link interface:
 
-!!! note "LD1 status:"
-	* Blinking RED: the first USB enumeration with the PC is taking place
-	* RED: communication between the PC and ST-LINK/V2 is established (end of
+!!! note "LD1 status indication:"
+	* **Blinking RED**: the first USB enumeration with the PC is taking place
+	* **RED**: communication between the PC and ST-LINK/V2 is established (end of
 	enumeration)
-	* Blinking GREEN / RED: data being exchanged between the target and the PC
-	* GREEN: the last communication has been successful
-	* ORANGE: ST-LINK/V2 communication with the target has failed.
+	* **Blinking GREEN / RED**: data being exchanged between the target and the PC
+	* **GREEN**: the last communication has been successful
+	* **ORANGE**: ST-LINK/V2 communication with the target has failed.
 
 Please check the [*tools*](../tools) section for more information on how to flash a binary and connect to a GDB client.
 
@@ -67,12 +67,12 @@ The example below shows how to use PWM to controll the brightness of the blue LE
 
 The board has 2 push-buttons:
 
-* The MCU Reset (located next to the OLED display):
+* The MCU **Reset** (located next to the OLED display):
 
 <img src="/images/sensorio/reset-button.png" class="img-center" width="55%" >
 
 
-* A user-programmable button (S1), wired to PC_13:
+* A user-programmable button **(S1)**, wired to PC_13:
 <img src="/images/sensorio/user-button.png" class="img-center" width="35%" >
 
 The example below shows how configure the button to trigger an interrupt:
@@ -87,7 +87,7 @@ The example below shows how configure the button to trigger an interrupt:
 	}
 	int main(){
 	    button.fall(&pinInt);  // attach the pinInt() function to the falling edge
-	    while(1){           // wait around, interrupts will interrupt this!
+	    while(1){          	   // wait around, interrupts will interrupt this!
 	        printf(".");
 	        wait(1);
 	    }
@@ -98,17 +98,35 @@ The example below shows how configure the button to trigger an interrupt:
 
 ## Solid State Relays
 
-<img src="/images/sensorio/opto-relays.png" class="img-center" width="60%" >
+The outputs OUT1 and OUT2, are driven by the opto-isolated "solid-state relay" [TLP241A](https://toshiba.semicon-storage.com/info/docget.jsp?did=14237&prodName=TLP241A) from Toshiba Semiconductor. These devices consist of a photo MOSFET optically coupled to an infrared light emitting diode. They are housed in a 4-pin DIP package. They provide an isolation voltage of 5000 Vrms, making them suitable for applications that require reinforced insulation.
+
+!!! info "TLP241A output characteristics:"
+	* ON-state current: 2 A max. continuous, 6 A pulsed (t=100 mseg, duty=10%)
+	* IN0state resistance" 150 mOhm (continuous)
+	* Isolation voltage: 5 kVrms
+	* Maximum DC voltage: 26 V (limited by the varistor)
+	* Maximum AC voltage: 20 Vrms (limited by the varistor)
+
+The outputs are mapped to PG_2 (OUT1) and PG_3 (OUT2). The varistors R63 and R69 protect the relays from over-voltages, limiting the maximum operation voltage to 26 Vdc or 20 Vrms for AC signals. The outputs schematic is shown below:
+
+<img src="/images/sensorio/opto-relays.png" class="img-center" width="60%">
+
+These outputs can be used to control small DC motors, AC/DC solenoids, or resistive loads (i.e. a termoelectric peltier element). If these outputs want to be used to control high power loads (i.e. a pump or a HVAC system) the ouputs can be used to drive contactors with 12V coils (as the *Schneider Electric* [LC1D12JL](https://www.schneider-electric.com/en/product/LC1D12JL/tesys-d-contactor---3p%283-no%29---ac-3---%3C%3D-440-v-12-a---12-v-dc-coil) for example).
+
+!!! danger "Warning!!!"
+	The outputs' maximum voltage is 26 Vdc, DO NOT DIRECTLY CONNECT TO MAINS under any circumstance.	
+
+Here there is an mbed example showing how to control the ouputs:
 
 ??? example "mbed example: switching outputs"
 	```C++
 	DigitalOut relay1(PG_2);
-
+ 
 	relay1 = 1; //enable output1
 	wait(5);
 	relay1 = 0; //disable output1
 	```	
-
+ 
 ## Main MCU
 
 ## OLED display

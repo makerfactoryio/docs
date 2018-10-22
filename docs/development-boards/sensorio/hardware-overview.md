@@ -59,15 +59,17 @@ The board can be powered through the on-board USB Micro B connector or directly 
 
 The *ST-Link* interface also exposes a virtual serial port in addition to the SWD debugging interface, which can be used to print debug and logging information during the application development.
 
+### WiFi
+
 *SensorIO* integrates the Industrial-grade *CC3120R* SoC from *Texas Instruments*, a *Wi-Fi&reg;* Network Processor designed for Internet of Things applications. This subsystem includes an 802.11b/g/n radio, baseband, and MAC with a powerful crypto engine for fast, secure Internet connections with 256-bit encryption. The device also supports WPA2 personal and enterprise security. The external SPI flash connected to it is used to store the *Wi-Fi&reg;* and security stacks.
 
 The board takes advantage of the main MCU's 20+ communication interfaces available through its 114 I/O ports to provide an unmached set of options to extend its functionalities through the [expansion interfaces](../interfaces) (Grove, MikroBUS and ArduinoR3 sockets).
 
-## User interaction
+### User interaction
 
 In order to quickly evaluate the board and prototype a series of use-cases, the device integrates a set of [sensors](../sensors), two opto-isolated solid state relays for controlling power outputs, an RGB LED, a push-button and a small 128x32 pixels OLED monocrome display useful to show real-time information. 
 
-Please refer to the [*Schematics*](../schematics) section to learn how to control these peripherals. Most of these peripherals are showcased on the [out-of-the-box application](../demo-app).
+Please refer to the [*Schematics*](../schematics) section to learn how to control these peripherals. Most of the peripherals are showcased on the [out-of-the-box application](../demo-app).
 
 
 
