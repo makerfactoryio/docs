@@ -14,7 +14,7 @@ The figure below shows the connections for USB connector (P1), ESD protection di
 	If the device needs to be installed in a permanent setup, it is also possible to provide 5V power through any of the the MikroBUS sockets +5V pins.
 
 !!! warning ""
-	Please note that in case this pins are used to power the board, the AP22802A protection will be bypassed, therefore care must be taken to avoid damages caused by short circuits.
+	Please note that in case these pins are used to power the board, the AP22802A protection will be bypassed, therefore care must be taken to avoid damages caused by short circuits.
 
 <img src="/images/sensorio/MikroBUS-5V-input.png" class="img-center" width="50%" > 
 
@@ -32,13 +32,13 @@ The board integrates the *ST-Link/V2-1* from *STMicroelectronics*. This debugger
 
 This MCU interfaces directly to the USB connector. It uses an STM proprietary protocol to transfer the SWD/JTAG protocol data, control the Reset/Run state of the target MCU and converts the Virtual Comm Port into the physical UART connected to the target MCU (STLK_TX and STLK_RX lines) which can be used by the application to send logging data or receive commands from the host PC.
 
-The NPN transistor Q1 is used to pull-high the USB_DP line to force a USB re-enumeration after a firmware update.
+The NPN transistor Q1 is used to push the USB_DP line to force a USB re-enumeration after a firmware update.
 
 ![st-link-debugger](../../images/sensorio/st-link-debugger.png)
 
 The bi-color LED (LD1) indicates the state of the ST-Link interface:
 
-!!! note "LD1 status indication:"
+!!! note "ST-Link status indication:"
 	* **Blinking RED**: the first USB enumeration with the PC is taking place
 	* **RED**: communication between the PC and ST-LINK/V2 is established (end of
 	enumeration)
@@ -53,6 +53,7 @@ Please check the [*tools*](../tools) section for more information on how to flas
 The target MCU uses the [STM32f413ZHJ6](https://www.st.com/en/microcontrollers/stm32f413zh.html) version of this STMicro MCU (UFBGA144 packaging version, 1.5MB Flash, 320KB RAM).
 Please check the [board pinout](../pinout) section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.
 
+### Oscillators
 The MCU has 2 external crystals used for the reference oscillators:
 
 * Y4 (16 MHz): used as a more precise main clock source (the MCU has a less-precise internal RC oscillator):
@@ -61,7 +62,7 @@ The MCU has 2 external crystals used for the reference oscillators:
 * and Y3 (32.768 kHz) which can be used to mantain a real-time clock:
 <img src="/images/sensorio/32khz-oscillator.png" class="img-center" width="80%">
 
-
+### Internal ADC VREF
 The image below shows the connections for the Analog supply and VREF pins used to configure the internal 12-bit ADC:
 <img src="/images/sensorio/mcu-VREF.png" class="img-center" width="60%">
 The LC filter (L10 and C86) attenuates the "digital" noise that can be present in the VCC power rail. VREF+ is attached to the AnalogVCC and decoupled by C87 and C88. With this configuration, the input range for the ADC converter will be [0-3.3V]. 
