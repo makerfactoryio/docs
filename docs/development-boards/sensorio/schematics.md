@@ -6,7 +6,7 @@ The full *SensorIO* design Schematics can be found <a href="../assets/SensorIO-r
 
 !!! info "Power input"
 	The primary power source during development is the USB Micro B connector
-The figure below shows the connections for USB connector (P1), ESD protection diodes (D1) and the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is solved.
+The figure below shows the connections for USB connector (P1), ESD protection diodes (D1) and the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved.
 
 ![micro-usb-and-protection](../../images/sensorio/micro-usb-and-protection.png)
 
@@ -48,6 +48,26 @@ The bi-color LED (LD1) indicates the state of the ST-Link interface:
 
 Please check the [*tools*](../tools) section for more information on how to flash a binary and connect to a GDB client.
 
+## Main MCU
+
+The target MCU uses the [STM32f413ZHJ6](https://www.st.com/en/microcontrollers/stm32f413zh.html) version of this STMicro MCU (UFBGA144 packaging version, 1.5MB Flash, 320KB RAM).
+Please check the [board pinout](../pinout) section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.
+
+The MCU has 2 external crystals used for the reference oscillators:
+
+* Y4 (16 MHz): used as a more precise main clock source (the MCU has a less-precise internal RC oscillator):
+<img src="/images/sensorio/16mhz-oscillator.png" class="img-center" width="50%">
+
+* and Y3 (32.768 kHz) which can be used to mantain a real-time clock:
+<img src="/images/sensorio/32khz-oscillator.png" class="img-center" width="80%">
+
+
+The image below shows the connections for the Analog supply and VREF pins used to configure the internal 12-bit ADC:
+<img src="/images/sensorio/mcu-VREF.png" class="img-center" width="60%">
+The LC filter (L10 and C86) attenuates the "digital" noise that can be present in the VCC power rail. VREF+ is attached to the AnalogVCC and decoupled by C87 and C88. With this configuration, the input range for the ADC converter will be [0-3.3V]. 
+
+Please refer to the [expansion interfaces](../interfaces) section for more information on using the analog inputs.
+ 
 ## RGB LED
 
 The user status (LD2) is a RGB LED (a Red, a Blue and a Green LEDs packaged together). Each LED should be controlled separately. The 3 control pins are wired to the timer TIM5 CH[1:3] so the brightness can be controlling using PWM (pulse-width modulation). 
@@ -98,12 +118,12 @@ The example below shows how configure the button to trigger an interrupt:
 
 ## Solid State Relays
 
-The outputs OUT1 and OUT2, are driven by the opto-isolated "solid-state relay" [TLP241A](https://toshiba.semicon-storage.com/info/docget.jsp?did=14237&prodName=TLP241A) from Toshiba Semiconductor. These devices consist of a photo MOSFET optically coupled to an infrared light emitting diode. They are housed in a 4-pin DIP package. They provide an isolation voltage of 5000 Vrms, making them suitable for applications that require reinforced insulation.
+The outputs OUT1 and OUT2, are driven by the opto-isolated "solid-state relay" [TLP241A](https://toshiba.semicon-storage.com/info/docget.jsp?did=14237&prodName=TLP241A) from *Toshiba Semiconductor*. These devices consist of a photo MOSFET optically coupled to an infrared light emitting diode. They are housed in a 4-pin DIP package. 
 
 !!! info "TLP241A output characteristics:"
 	* ON-state current: 2 A max. continuous, 6 A pulsed (t=100 mseg, duty=10%)
-	* IN0state resistance" 150 mOhm (continuous)
-	* Isolation voltage: 5 kVrms
+	* ON-state resistance: 150 mOhm (continuous)
+	* Isolation voltage: 5,000 Vrms
 	* Maximum DC voltage: 26 V (limited by the varistor)
 	* Maximum AC voltage: 20 Vrms (limited by the varistor)
 
@@ -127,6 +147,26 @@ Here there is an mbed example showing how to control the ouputs:
 	relay1 = 0; //disable output1
 	```	
  
-## Main MCU
 
-## OLED display
+## Display
+
+The display is a *Vishay* [OLED-128O032D-SPP3N00000](https://www.vishay.com/docs/37895/oled128o032dspp3n00000.pdf), a monochrome 0.9 inches graphic display OLED  with a resolution of 128x32 pixels. The display is interfaced to the MCU through the SPI4 bus plus a *Data/#command* and *reset* control lines.
+
+<img src="/images/sensorio/OLED_display.png" class="img-center" width="60%">
+
+## Memory card interface
+
+The Micro SD card socket is interfaced to the MCU through the SDIO bus. The interface is configured to use the 4-bit mode. The schematic is shown below:
+
+<img src="/images/sensorio/micro-sd.png" class="img-center" width="60%">
+
+
+## SWD debug connector
+
+As an option to using the ST-Link interface to debug and program the target MCU, the *Cortex-M™* 10-pin connector present in the front (SWD) can be used. Debug probes like *Segger's J-Link®* can be attached to this connector if preferred.
+The D8 diode array protects the MCU from ESD. 
+
+<img src="/images/sensorio/SWD-connector.png" class="img-center" width="55%">
+
+!!! note "Using the SWD connector"
+	Please note that, as the SWD lines are directly shared with the ST-Link interface, if the external debugger is used, the ST-Link application shouldn't be initialized or both debuggers will compete for the SWD lines. In general, it's sufficient to not initialize the ST-Link software on the host side (OpenOCD or ST-Util). In case this situation arises, just re-connect the USB cable to fix it.
