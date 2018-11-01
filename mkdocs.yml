@@ -44,7 +44,7 @@ nav:
       - Power Supply: development-boards/esp32/power-supply.md
       - mikro BUS: development-boards/esp32/foo.md
       - ESP32 module: development-boards/esp32/esp32_module.md
-      - Grove: development-boards/esp32/foo.md
+      - Grove: development-boards/esp32/grove.md
       - Temperature: development-boards/esp32/temperature.md
       - RGB LED: development-boards/esp32/rgb-led.md
       - OLED-LCD: development-boards/esp32/foo.md
@@ -54,13 +54,13 @@ nav:
       - IMU: development-boards/esp32/gyro.md
       - Microphone: development-boards/esp32/microphone.md
       - LCD: development-boards/esp32/foo.md
-      - Menu: development-boards/esp32/foo.md
+      - Menu: development-boards/esp32/menu.md
       - IO: development-boards/esp32/foo.md
-      - RFID: development-boards/esp32/foo.md
-      - Motor: development-boards/esp32/foo.md
-      - SD Card: development-boards/esp32/foo.md
-      - Audio Amplifier: development-boards/esp32/foo.md
-      - Camera: development-boards/esp32/foo.md
+      - RFID: development-boards/esp32/rfid.md
+      - Motor: development-boards/esp32/motor.md
+      - SD Card: development-boards/esp32/sd_card.md
+      - Audio Amplifier: development-boards/esp32/audio.md
+      - Camera: development-boards/esp32/camera.md
   - SensorIO:
     - Introduction: 'development-boards/sensorio/index.md'
     - Hardware:
