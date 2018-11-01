@@ -2,7 +2,7 @@
 
 The board has **four** WS2813 RGB LEDs. The LEDs are connected to each other and therefore they could be handled like an LED strip.
 
-![RGB LED Component](../../images/esp32/board_rgb-led_component.png)
+![RGB LED Component](../../images/esp32/block_rgb_led.png)
 
 The four LEDs are labeled on the board. The first LED in the strip is the LED **D300** near by the switches.
 
