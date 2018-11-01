@@ -34,14 +34,18 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 ## Install the extension for ESP32
 
-No you could install the development extension for the ESP32 into the Arduino IDE.
+Now you could install the development extension for the ESP32 into the Arduino IDE. Go to *Tools > Board > Boards Manager...*
 
 ![menu_boards_manager](../../images/esp32/arduino_ide/menu_boards_manager.jpg)
 
-tet
+Use the search input file. Search for *esp32* and select *Install*.
 
 ![](../../images/esp32/arduino_ide/board_manager_01.png)
 
-tet
+After the install a section *ESP 32* in the menu *Tools > Board* should occur.
 
 ![esp32_menu_entry](../../images/esp32/arduino_ide/esp32_menu_entry.jpg)
+
+Now select the ESP32 Dev Module in *Tools -> Board*.
+
+![select_board](../../images/esp32/arduino_ide/select_board.jpg)
