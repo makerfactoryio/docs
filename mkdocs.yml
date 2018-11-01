@@ -40,19 +40,19 @@ nav:
       - Programming the board: development-boards/esp32/program.md
     - Core: development-boards/esp32/esp32.md
     - Components:
-      - USB Programming: development-boards/esp32/foo.md
-      - Power Supply: development-boards/esp32/foo.md
+      - USB Programming: development-boards/esp32/usb-programming.md
+      - Power Supply: development-boards/esp32/power-supply.md
       - mikro BUS: development-boards/esp32/foo.md
-      - ESP32 module: development-boards/esp32/foo.md
+      - ESP32 module: development-boards/esp32/esp32_module.md
       - Grove: development-boards/esp32/foo.md
-      - Temperature: development-boards/esp32/foo.md
+      - Temperature: development-boards/esp32/temperature.md
       - RGB LED: development-boards/esp32/rgb-led.md
       - OLED-LCD: development-boards/esp32/foo.md
       - UNIT-Bus: development-boards/esp32/foo.md
-      - Potentiometer: development-boards/esp32/foo.md
-      - I2C Pull-up: development-boards/esp32/foo.md
-      - IMU: development-boards/esp32/foo.md
-      - Microphone: development-boards/esp32/foo.md
+      - Potentiometer: development-boards/esp32/potentiometer.md
+      - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
+      - IMU: development-boards/esp32/gyro.md
+      - Microphone: development-boards/esp32/microphone.md
       - LCD: development-boards/esp32/foo.md
       - Menu: development-boards/esp32/foo.md
       - IO: development-boards/esp32/foo.md
