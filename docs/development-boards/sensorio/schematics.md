@@ -6,7 +6,7 @@ The full *SensorIO* design Schematics can be found <a href="../assets/SensorIO-r
 
 !!! info "Power input"
 	The primary power source during development is the USB Micro B connector
-The figure below shows the connections for USB connector (P1), ESD protection diodes (D1) and the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved.
+The figure below shows the connections for USB connector (P1), ESD protection diodes (D1) and the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch, which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved.
 
 ![micro-usb-and-protection](../../images/sensorio/micro-usb-and-protection.png)
 
@@ -53,6 +53,7 @@ Please check the [*tools*](../tools) section for more information on how to flas
 The target MCU uses the [STM32f413ZHJ6](https://www.st.com/en/microcontrollers/stm32f413zh.html) version of this STMicro MCU (UFBGA144 packaging version, 1.5MB Flash, 320KB RAM).
 Please check the [board pinout](../pinout) section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.
 
+### Clocks
 The MCU has 2 external crystals used for the reference oscillators:
 
 * Y4 (16 MHz): used as a more precise main clock source (the MCU has a less-precise internal RC oscillator):
@@ -62,6 +63,7 @@ The MCU has 2 external crystals used for the reference oscillators:
 <img src="/images/sensorio/32khz-oscillator.png" class="img-center" width="80%">
 
 
+### Analog VREF
 The image below shows the connections for the Analog supply and VREF pins used to configure the internal 12-bit ADC:
 <img src="/images/sensorio/mcu-VREF.png" class="img-center" width="60%">
 The LC filter (L10 and C86) attenuates the "digital" noise that can be present in the VCC power rail. VREF+ is attached to the AnalogVCC and decoupled by C87 and C88. With this configuration, the input range for the ADC converter will be [0-3.3V]. 
@@ -100,10 +102,10 @@ The example below shows how configure the button to trigger an interrupt:
 ??? example "mbed example: button interrupt"
 	```C++
 	InterruptIn button(PC_13);
+	DigitalOut greenLed(PF_4);
 
 	void pinInt(){
-		printf("Button pressed!!\n\r");
-		wait(.5);
+		greenLed = !greenLed;	//flip the green LED on each button press
 	}
 	int main(){
 	    button.fall(&pinInt);  // attach the pinInt() function to the falling edge
@@ -113,6 +115,9 @@ The example below shows how configure the button to trigger an interrupt:
 	    }
 	}
 	```	
+
+!!! tip
+	To detect a button press, remember that the mechanical action usually indroduces some signal bouncing. It's reasonable to add a delay of at least 20ms before taking any action (software debouncing). 
 
 ## Wi-Fi
 
@@ -131,7 +136,7 @@ The outputs are mapped to PG_2 (OUT1) and PG_3 (OUT2). The varistors R63 and R69
 
 <img src="/images/sensorio/opto-relays.png" class="img-center" width="60%">
 
-These outputs can be used to control small DC motors, AC/DC solenoids, or resistive loads (i.e. a termoelectric peltier element). If these outputs want to be used to control high power loads (i.e. a pump or a HVAC system) the ouputs can be used to drive contactors with 12V coils (as the *Schneider Electric* [LC1D12JL](https://www.schneider-electric.com/en/product/LC1D12JL/tesys-d-contactor---3p%283-no%29---ac-3---%3C%3D-440-v-12-a---12-v-dc-coil) for example).
+These outputs can be used to control small DC motors (as a small water pump for your plants), AC/DC solenoid valves, or resistive loads (i.e. a termoelectric peltier element). If these outputs want to be used to control high power loads (i.e. a pump or a HVAC system) the ouputs can be used to drive contactors with 12V coils (as the *Schneider Electric* [LC1D12JL](https://www.schneider-electric.com/en/product/LC1D12JL/tesys-d-contactor---3p%283-no%29---ac-3---%3C%3D-440-v-12-a---12-v-dc-coil) for example).
 
 !!! danger "Warning!!!"
 	The outputs' maximum voltage is 26 Vdc, DO NOT DIRECTLY CONNECT TO MAINS under any circumstance.	
@@ -156,7 +161,7 @@ The display is a *Vishay* [OLED-128O032D-SPP3N00000](https://www.vishay.com/docs
 
 ## Memory card interface
 
-The Micro SD card socket is interfaced to the MCU through the SDIO bus. The interface is configured to use the 4-bit mode. The schematic is shown below:
+The Micro MMC/SD card socket is interfaced to the MCU through the SDIO bus. The interface is configured to use the 4-bit mode. The schematic is shown below:
 
 <img src="/images/sensorio/micro-sd.png" class="img-center" width="60%">
 
