@@ -1,6 +1,5 @@
 Depending on your needs SensorIO offers several ways of monitoring and debugging your firmware.
 
-
 ## With SensorIO only
 
 ### RGB Led
@@ -28,7 +27,7 @@ Mbed OS makes it easy to use serial port in firmware:
 2. Create `Serial` object:
 
     ```c++
-    mbed::Serial pc(USBTX, USBRX);
+    mbed::Serial pc(USBTX, USBRX, 115200);
     ```
 
 3. Use this object to send text to PC:
