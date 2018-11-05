@@ -38,22 +38,25 @@ public:
             static_cast<uint8_t>(b * 255));
     }
 
-    void HSVtoRGB(float *r, float *g, float *b, float h, float s, float v )
+    // this algorithm is from https://www.cs.rit.edu/~ncs/color/t_convert.html
+    void HSVtoRGB(float* r, float* g, float* b, float h, float s, float v)
     {
         int i;
         float f, p, q, t;
-        if( s == 0 ) {
+        if(s == 0)
+        {
             // achromatic (grey)
             *r = *g = *b = v;
             return;
         }
         h /= 60;            // sector 0 to 5
-        i = std::floor( h );
+        i = std::floor(h);
         f = h - i;          // factorial part of h
-        p = v * ( 1 - s );
-        q = v * ( 1 - s * f );
-        t = v * ( 1 - s * ( 1 - f ) );
-        switch( i ) {
+        p = v * (1 - s);
+        q = v * (1 - s*f);
+        t = v * (1 - s*(1 - f));
+        switch(i)
+        {
             case 0:
                 *r = v;
                 *g = t;
