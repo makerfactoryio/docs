@@ -1,6 +1,6 @@
 # Mbed OS based firmware compilation
 
-Once [Mbed OS project is set up](./code-setup.md) firmware can be compiled with simple command from terminal:
+Once [Mbed OS project is set up](./code-setup.md), firmware can be compiled with simple command from terminal:
 
 ```bash
 mbed compile --profile debug.json
