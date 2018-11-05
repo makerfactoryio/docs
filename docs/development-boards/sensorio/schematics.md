@@ -97,7 +97,7 @@ The board has 2 push-buttons:
 * A user-programmable button **(S1)**, wired to PC_13:
 <img src="/images/sensorio/user-button.png" class="img-center" width="35%" >
 
-The example below shows how configure the button to trigger an interrupt:
+The example below shows how configure the button to trigger an interrupt on press:
 
 ??? example "mbed example: button interrupt"
 	```C++
@@ -120,6 +120,32 @@ The example below shows how configure the button to trigger an interrupt:
 	To detect a button press, remember that the mechanical action usually indroduces some signal bouncing. It's reasonable to add a delay of at least 20ms before taking any action (software debouncing). 
 
 ## Wi-Fi
+
+The capture below shows the TI CC3210 Network Processor SoC and it's associated power supply and oscillator components.
+<img src="/images/sensorio/CC3120.png" class="img-center" width="100%" >
+
+The CC3120 is powered by the main 3.3V rail, and integrates 3 internal DC/DC converters to generate the voltages needed for the operation of each SoC section. 
+The main oscillator uses an external 40 MHz crystal (Y2) and a 32.768 kHz crystal (Y1) is used for power management and real-time bookkeping.
+An external SPI flash memory (MX25R1635FM1IL0, 16Mbit) is used to store the network stack and credentials.
+
+### MCU interface
+The interfacing with the target MCU is done through the SPI bus (signals shown below). The interface contains also a "factory restore" pin, which can be used by the target application to restore the factory image.
+<img src="/images/sensorio/CC-MCU-interface.png" class="img-center" width="40%" >
+In order to restore the original flash image, the CC_FACTORY_RESTORE line has to be hold in low state for about 8 seconds after the CC_nRESET is released.
+
+### Flash programming interface
+
+The CC3210 exposes an extra UART that can be used to program the external flash memory. These signals (along with the nHIB line) are exposed on testpoints on the back of the board. For more information on how to use this interface, refer to the [SRU469C](http://www.ti.com/lit/ug/swru469c/swru469c.pdf) application note from TI.
+<img src="/images/sensorio/CC-extUART.png" class="img-center" width="30%" >
+
+### RF section
+
+The capture below shows the CC3120 RF 50ohm interface.
+A bandpass filter centered on 2.45 GHz helps to remove unwanted noise entering the SoC. In case that the board will be installed in a metallic box, or the WiFi range needs to be increased with a directional antenna, the circuit provides the possibility to use an external antenna connected to the u-Fl connector:
+<img src="/images/sensorio/WiFi-RF-section.png" >
+
+In order to route the RF signal to the u-Fl connector instead the PCB antenna, the 0 Ohm resistor R5 needs to be unsoldered and installed in the R4 location.
+The small J1 connector is used for testing purposes, the matching test probe MXHQ87WA3000 from *Murata Electronics* can be used for such purposes.
 
 ## Solid State Relays
 
