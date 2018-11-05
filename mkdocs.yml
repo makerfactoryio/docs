@@ -81,6 +81,7 @@ nav:
       - Overview: 'development-boards/sensorio/fw-overview.md'
       - Sensors:
         - Light sensor: 'development-boards/sensorio/ltr303.md'
+        - Accelerometer: 'development-boards/sensorio/bma253.md'
 
 - Educational Robotics:
   - RoboBug Hexapod Platform: educational-robotics/robobug-hexapod/index.md
