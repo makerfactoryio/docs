@@ -1,1 +1,1 @@
-# RoboBug Hexapod Platform
+# Hexapod RoboBug Platform

@@ -58,4 +58,3 @@ SensorIO is tested with custom binary built from source and following configurat
 ## Segger JLink
 
 SensorIO provides a 10 pin JTAG/SWD header that can be used to connect external debuggers. [Segger JLink probes](https://www.segger.com/products/debug-probes/j-link/) work well with SensorIO and Segger software can be downloaded [from their website](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack).
-
