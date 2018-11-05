@@ -55,13 +55,14 @@ void buttonPressed()
 
 int main(int argc, char **argv)
 {
+    console.printf("This is SensorIO\r\n");
+
     mbed::InterruptIn button(USER_BUTTON);
     // attach function to button press
     button.fall(&buttonPressed);
 
     tickColor.attach(&scheduleColorChange, 1.0f/60.0f);
 
-    console.printf("This is SensorIO\r\n");
     // running event loop
     scheduler.dispatch_forever();
 }

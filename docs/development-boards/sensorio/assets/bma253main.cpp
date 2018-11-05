@@ -5,7 +5,7 @@
 #include "bma253.h"
 #include "mbed_wait_api.h"
 
-mbed::Serial log(USBTX, USBRX, 115200);
+mbed::Serial console(USBTX, USBRX, 115200);
 events::EventQueue scheduler;
 
 constexpr uint8_t BMA253_I2C_ADDRESS = 0b0011000 << 1;
@@ -21,18 +21,18 @@ Bma253 sensor(iic,
 // executor in this context
 void measDone(Bma253::Output& data)
 {
-    log.printf("Accelerometer output:\r\n"
-               "x = %f mg [new: %d]\r\n"
-               "y = %f mg [new: %d]\r\n"
-               "z = %f mg [new: %d]\r\n"
-               "temp = %f C\r\n",
-               data.x,
-               data.newData[0],
-               data.y,
-               data.newData[1],
-               data.z,
-               data.newData[2],
-               data.temp);
+    console.printf("Accelerometer output:\r\n"
+                   "x = %f mg [new: %d]\r\n"
+                   "y = %f mg [new: %d]\r\n"
+                   "z = %f mg [new: %d]\r\n"
+                   "temp = %f C\r\n",
+                   data.x,
+                   data.newData[0],
+                   data.y,
+                   data.newData[1],
+                   data.z,
+                   data.newData[2],
+                   data.temp);
 }
 
 // callback from driver in separate execution context
@@ -44,7 +44,7 @@ void dataCallback(Bma253::Output data)
 
 int main(int argc, char **argv)
 {
-    log.printf("Start\n");
+    console.printf("This is SensorIO\r\n");
 
     // enable sensor and configure interrupt to trigger on a new data event
     Bma253::Config accConfig;
@@ -55,12 +55,12 @@ int main(int argc, char **argv)
 
     if(configOk)
     {
-        log.printf("Sensor configured correctly\n");
+        console.printf("Sensor configured correctly\n");
         sensor.enable();
     }
     else
     {
-        log.printf("Sensor configuration failed\n");
+        console.printf("Sensor configuration failed\n");
     }
 
     // running event loop

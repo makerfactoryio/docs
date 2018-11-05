@@ -2,7 +2,7 @@
 #include "Serial.h"
 #include "ltr303.h"
 
-mbed::Serial log(USBTX, USBRX, 115200);
+mbed::Serial console(USBTX, USBRX, 115200);
 mbed::I2C iic(SENSORS_SDA, SENSORS_SCL);
 mbed::InterruptIn irq(LTR303_INT, PinMode::PullUp);
 events::EventQueue scheduler;
@@ -20,14 +20,14 @@ void dataCallback(float result)
 // executor in this context
 void measDone(float result)
 {
-    log.printf("Light sensor output: %5.3f lux.\n", result);
+    console.printf("Light sensor output: %5.3f lux.\n", result);
     // request next measurement
     sensor.get(dataCallback);
 }
 
 int main(int argc, char **argv)
 {
-    log.printf("Start\n");
+    console.printf("This is SensorIO\r\n");
 
     // schedule first measurement, it will chain next in callback
     sensor.get(dataCallback);
