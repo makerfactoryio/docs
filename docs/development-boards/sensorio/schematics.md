@@ -141,11 +141,17 @@ The CC3210 exposes an extra UART that can be used to program the external flash 
 ### RF section
 
 The capture below shows the CC3120 RF 50ohm interface.
-A bandpass filter centered on 2.45 GHz helps to remove unwanted noise entering the SoC. In case that the board will be installed in a metallic box, or the WiFi range needs to be increased with a directional antenna, the circuit provides the possibility to use an external antenna connected to the u-Fl connector:
+A bandpass filter centered on 2.45 GHz helps to remove unwanted noise entering the SoC. 
+
 <img src="/images/sensorio/WiFi-RF-section.png" >
 
+The LC network formed by L4 and C11 perform the impedance match from the PCB antenna to the 50 Ohm required by the SoC. The capture below shows the return loss seen by the CC3210 RF pin. The VSWR is approximately 1.16:1 (-22 dB at the center of the WiFi band).
+<img src="/images/sensorio/CC-RF-returnLoss.png" class="img-center" width="60%">
+
+In case that the board will be installed in a metallic box, or the WiFi range needs to be increased with a directional antenna, the circuit provides the possibility to use an external antenna connected to the u-Fl connector:
+
 In order to route the RF signal to the u-Fl connector instead the PCB antenna, the 0 Ohm resistor R5 needs to be unsoldered and installed in the R4 location.
-The small J1 connector is used for testing purposes, the matching test probe MXHQ87WA3000 from *Murata Electronics* can be used for such purposes.
+The small J1 connector is used for testing purposes, the matching test probe MXHQ87WA3000 from *Murata Electronics* can be used for such purposes. When that probe is connected, the connector switches off the output side.
 
 ## Solid State Relays
 
