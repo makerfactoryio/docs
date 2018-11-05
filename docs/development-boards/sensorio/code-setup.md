@@ -10,7 +10,7 @@ All firmware examples in this documentation are based on [Mbed OS](https://os.mb
 The easiest way to start is to clone [SensorIO template](https://github.com) repository:
 
 ```bash
-git clone https://github.com/sensorio-teplate sensorio-example
+git clone https://github.com/slashdevteam/sensorio-template.git sensorio-example
 ```
 
 and initialize submodules:

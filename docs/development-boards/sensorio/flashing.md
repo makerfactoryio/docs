@@ -7,7 +7,7 @@ For all methods SensorIO has to be connected to computer with a USB cable.
 
 An easy way to flash new firmware to SensorIO is to drag the binary from build folder (for Mbed OS it is usually located in `./BUILD/SENSORIO/GCC_ARM-DEBUG/` directory) and drop it to `SENSORIO` removable drive.
 
-Once the copy is complete removable drive will disappear and `LD1` LED will blink red and green. After a few seconds removable drive should reappear again and SensorIO will start executing new firmware.
+Once the copy is complete removable drive will disappear and `LD1` LED will blink red and green. After a few seconds removable drive should reappear and SensorIO will start executing new firmware.
 
 ## Copy from terminal
 
@@ -17,7 +17,7 @@ Of course, [Drag & drop](#drag-drop) can be executed directly from terminal:
 cp /path/to/firmware.bin /path/to/SENSORIO
 ```
 
-After this command SensorIO should behave the same way as in [Drag & drop](#drag-drop). On some operating systems syncing (via `sync`) and/or explicit `SENSORIO` removal might be required.
+After this command, SensorIO should behave the same way as in [Drag & drop](#drag-drop). On some operating systems syncing (via `sync`) and/or explicit `SENSORIO` removal might be required.
 
 ## OpenOCD
 
@@ -27,7 +27,7 @@ With a [correctly installed OpenOCD](./tools.md#openocd) binary can be flash fro
 openocd -f stlink-v2.cfg -f stm32f4x_stlink.cfg -c "program ./path/to/firmware.elf verify reset exit"
 ```
 
-This command assumes that SensorIO is connected only via USB cable and flashing is done with on-board ST-Link V2 debugger. For other debuggers (like Segger JLink) configuration files have to be adjusted
+This command assumes that SensorIO is connected only via USB cable and flashing is done with on-board ST-Link V2 debugger. For other debuggers (like Segger JLink) configuration files have to be adjusted.
 
 ## Segger JLink
 
