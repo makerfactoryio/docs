@@ -26,6 +26,7 @@ extra_css:
   - assets/css/dropdown.css
   - assets/css/nav.css
   - assets/css/extra.css
+  - assets/css/images.css
 
 extra_javascript:
   - assets/js/header.js
@@ -40,27 +41,27 @@ nav:
       - Programming the board: development-boards/esp32/program.md
     - Core: development-boards/esp32/esp32.md
     - Components:
-      - USB Programming: development-boards/esp32/foo.md
-      - Power Supply: development-boards/esp32/foo.md
-      - mikro BUS: development-boards/esp32/foo.md
-      - ESP32 module: development-boards/esp32/foo.md
-      - Grove: development-boards/esp32/foo.md
-      - Temperature: development-boards/esp32/foo.md
+      - USB Programming: development-boards/esp32/usb-programming.md
+      - Power Supply: development-boards/esp32/power-supply.md
+      - mikroBUS: development-boards/esp32/mikro_bus.md
+      - ESP32 module: development-boards/esp32/esp32_module.md
+      - Grove: development-boards/esp32/grove.md
+      - Temperature: development-boards/esp32/temperature.md
       - RGB LED: development-boards/esp32/rgb-led.md
-      - OLED-LCD: development-boards/esp32/foo.md
-      - UNIT-Bus: development-boards/esp32/foo.md
-      - Potentiometer: development-boards/esp32/foo.md
-      - I2C Pull-up: development-boards/esp32/foo.md
-      - IMU: development-boards/esp32/foo.md
-      - Microphone: development-boards/esp32/foo.md
-      - LCD: development-boards/esp32/foo.md
-      - Menu: development-boards/esp32/foo.md
-      - IO: development-boards/esp32/foo.md
-      - RFID: development-boards/esp32/foo.md
-      - Motor: development-boards/esp32/foo.md
-      - SD Card: development-boards/esp32/foo.md
-      - Audio Amplifier: development-boards/esp32/foo.md
-      - Camera: development-boards/esp32/foo.md
+      - OLED-LCD: development-boards/esp32/lcd.md
+      - Unit-Bus: development-boards/esp32/unit-bus.md
+      - Potentiometer: development-boards/esp32/potentiometer.md
+      - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
+      - IMU: development-boards/esp32/gyro.md
+      - Microphone: development-boards/esp32/microphone.md
+      - TFT: development-boards/esp32/tft.md
+      - Menu: development-boards/esp32/menu.md
+      - GPIO: development-boards/esp32/gpio.md
+      - RFID: development-boards/esp32/rfid.md
+      - Motor: development-boards/esp32/motor.md
+      - SD Card: development-boards/esp32/sd_card.md
+      - Audio Amplifier: development-boards/esp32/audio.md
+      - Camera: development-boards/esp32/camera.md
   - SensorIO:
     - Introduction: 'development-boards/sensorio/index.md'
     - Getting Started:
@@ -84,7 +85,11 @@ nav:
         - Accelerometer: 'development-boards/sensorio/bma253.md'
 
 - Educational Robotics:
-  - RoboBug Hexapod Platform: educational-robotics/robobug-hexapod/index.md
+  - Hexapod Robobug Platform:
+    - Quick start: 'educational-robotics/robobug-hexapod/quick-start.md'
+    - Preparatory work: 'educational-robotics/robobug-hexapod/preparatory-work.md'
+    - Transferring the firmware: 'educational-robotics/robobug-hexapod/transferring-the-firmware.md'
+    - Preparing the leg servos: 'educational-robotics/robobug-hexapod/preparing-the-leg-servos.md'
 
 markdown_extensions:
   - markdown.extensions.admonition
