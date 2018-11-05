@@ -82,7 +82,7 @@ nav:
       - Overview: 'development-boards/sensorio/fw-overview.md'
       - Sensors:
         - Light sensor: 'development-boards/sensorio/ltr303.md'
-	- Accelerometer: 'development-boards/sensorio/bma253.md'
+        - Accelerometer: 'development-boards/sensorio/bma253.md'
       - Peripherals:
         - Display: 'development-boards/sensorio/oled.md'
         - Relays: 'development-boards/sensorio/relays.md'
