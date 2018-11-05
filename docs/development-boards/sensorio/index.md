@@ -18,7 +18,7 @@ This guide will show you the capabilities of the board and walk you through the 
 
 The guide is broken-down in 3 parts for ease of use:
 
-* [**Getting Started**](/development-boards/sensorio/getting-started): if you are anxious and can't wait to start developing, here you will find a quick overview of the out-of-the-box application and will get you up-to-speed with the *SensorIO* development workflow as well as tooling setup.
+* [**Getting Started**](/development-boards/sensorio/tools): if you are anxious and can't wait to start developing, here you will find a quick overview of the out-of-the-box application and will get you up-to-speed with the *SensorIO* development workflow as well as tooling setup.
 * [**Hardware documentation**](/development-boards/sensorio/hardware-overview) details the different functional blocks and helps the users to understand the functionalities of the expansion interfaces, how to configure the software-controlled multiplexers, list all the peripherals exposed and pinouts and provides some technical specifications.
 * [**Firmware documentation**](/development-boards/sensorio/fw-overview): this section details sensors' drivers and all code facilities for easy SensorIO programming.
 
