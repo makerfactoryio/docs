@@ -18,15 +18,6 @@ Bma253 sensor(iic,
               BMA253_I2C_ADDRESS,
               {&bma253Irq1, &bma253Irq2});
 
-void measDone(Bma253::Output& data);
-
-// callback from driver in separate execution context
-void dataCallback(Bma253::Output data)
-{
-    // not necessary if moving to main execution context is not needed
-    scheduler.call(measDone, data);
-}
-
 // executor in this context
 void measDone(Bma253::Output& data)
 {
@@ -44,11 +35,18 @@ void measDone(Bma253::Output& data)
                data.temp);
 }
 
+// callback from driver in separate execution context
+void dataCallback(Bma253::Output data)
+{
+    // not necessary if moving to scheduler execution context is not needed
+    scheduler.call(measDone, data);
+}
+
 int main(int argc, char **argv)
 {
     log.printf("Start\n");
 
-    // enable sensor and configure interrupt to trigger on a new data available
+    // enable sensor and configure interrupt to trigger on a new data event
     Bma253::Config accConfig;
     accConfig.attachCallback(Bma253::IrqLine::LINE_1, &dataCallback)
              .enableEvent(Bma253::IrqLine::LINE_1, Bma253::Event::NEW_DATA);
