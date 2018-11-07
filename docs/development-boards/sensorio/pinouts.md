@@ -1,8 +1,8 @@
 #Board Pinouts
 
-The MCU PinNames mappings are listed as [PortName_Bit]. When available, the alternate functions are described.
+The MCU PinNames mappings are listed as [PortName_Bit]. When available, the alternative functions are described.
 
-!!! tip
+!!! tip "mbed target pin-mapping"
 	For the mbed platform, the pin mappings are done in the SensorIO target (**mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH/TARGET_SENSORIO/PinNames.h**) 
 
 ## OnBoard interfaces
@@ -21,16 +21,19 @@ PinName | Signal Name | Description / Alternative functions
 ------------ | ------------- | ------------
 PC_13 | BUTTON_1  | DigitalIn / InterruptIn
 
+!!! tip "IRQ on input change"
+	In the STM32F4XX, all the I/Os can be configured to trigger interrupts when configured as inputs (*InterruptIn* in mbed) 
+
 #### Relays
 
-PinName | Signal Name | Description / Alternative functions
+PinName | Signal Name | Description
 ------------ | ------------- | ------------
 PG_2 | RELAY_1  | DigitalOut
 PG_3 | RELAY_2  | DigitalOut
 
 #### Sensors
 
-PinName | Signal Name | Description / Alternative functions
+PinName | Signal Name | Description
 ------------ | ------------- | ------------
 PF_0 | I2C_SDA  | Sensors I2C data line
 PF_1 | I2C_SCL  | Sensors I2C clock line
@@ -40,7 +43,7 @@ PG_13 | LTR303_INT | Luminosity sensor IRQ
 
 #### OLED display
 
-PinName | Signal Name | Description / Alternative functions
+PinName | Signal Name | Description
 ------------ | ------------- | ------------
 PE_6 | OLED_MOSI  | SPI4 data
 PE_2 | OLED_SCK  | SPI4 clock
@@ -50,7 +53,7 @@ PE_4 | OLED_CS | SPI4 Chip Select
 
 #### Micro-SD / MMC
 
-PinName | Signal Name | Description / Alternative functions
+PinName | Signal Name | Description
 ------------ | ------------- | ------------
 PC_8  | MMC_D0    | MMC Data 0
 PC_9  | MMC_D1    | MMC Data 1
@@ -61,7 +64,7 @@ PD_2 | MMC_CMD    | MMC command / data
 
 #### CC3120 WiFi
 
-PinName | Signal Name | Description / Alternative functions
+PinName | Signal Name | Description
 ------------ | ------------- | ------------
 PE_8  | CC_NRESET    | CC3120 #Reset
 PE_9  | CC_IRQ    | CC3120 Interrupt
@@ -76,7 +79,7 @@ PA_7 | CC_SPI_MOSI    | SPI1 MOSI
 
 ### MikroBUS
 
-!!! info
+!!! info "Shared signals"
 	The I2C (I2C1) and SPI (SPI5) buses are shared by both connectors (but not with other interfaces). 
 
 	This should be taken in account if these pins want to be used as digital IN/OUT (in this case, only one MikroBUS interface should be used).
@@ -118,7 +121,7 @@ PB_13 | MB2_UART_TX | UART5 TXD / PWM / I2S2_CK / CAN2_TX
 
 ### Grove
 
-!!! info
+!!! info "Pin multiplexing"
 	This interface multiplexes the UART, I2C, Analog and PWM lines to the external connectors. Please check the [Grove description](../interfaces#grove-connectors) for information on how to configure them.
 
 #### Grove 1
@@ -137,10 +140,10 @@ PC_4 | GROVE1_AI2 | Pin#2 Analog Input (ADC1_IN14)
 **PWM / I/O:**
 PD_14 | GROVE1_P1_PWM | Pin#1 PWM out
 PD_15 | GROVE1_P2_PWM | Pin#2 PWM out
-**Multiplexer & Power control**
+**MUX & Power control**
 PD_10 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#grove-connectors)
 PD_11 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#grove-connectors)
-PG_9 | GROVE1_SW_5V | VCC control switch
+PG_9 | GROVE1_SW_5V | VCC control switch (3.3V/5V)
 
 
 #### Grove 2
@@ -159,23 +162,23 @@ PC_5 | GROVE2_AI2 | Pin#2 Analog Input (ADC1_IN15)
 **PWM / I/O:**
 PD_12 | GROVE2_P1_PWM | Pin#1 PWM out
 PD_13 | GROVE2_P2_PWM | Pin#2 PWM out
-**Multiplexer & Power control**
+**MUX & Power control**
 PG_4 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#grove-connectors)
 PG_5 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#grove-connectors)
-PG_10 | GROVE1_SW_5V | VCC control switch
+PG_10 | GROVE1_SW_5V | VCC control switch (3.3V/5V)
 
 
 
 ### Arduino R3
 
-!!! info
+!!! info "Analog multiplexing"
 	This interface uses an analog multiplexer for the Analog Inputs A0 to A5. Check the [Arduino interface](../interfaces##arduino-r3-socket) for more information.
 
 
 PinName | Signal Name | Description / Alternative functions
 ------------ | ------------- | ------------
-PB_4 (1) | ARD_A4/SDA | I2C3_SDA / PWM / UART7_TX / CAN3_TX
-PA_8 (1) | ARD_A5/SCL | I2C3_SCL / PWM / UART7_TX / CAN3_RX
+PB_4 **(1)** | ARD_A4/SDA | I2C3_SDA / PWM / UART7_TX / CAN3_TX
+PA_8 **(1)** | ARD_A5/SCL | I2C3_SCL / PWM / UART7_TX / CAN3_RX
 PA_1 | ARD_D0/RX | UART4_RX / PWM / ADC1_IN1
 PA_0 | ARD_D1/TX | UART4_TX / PWM / ADC1_IN0
 PF_9 | ARD_D2 | UART8_RX / PWM
@@ -190,10 +193,10 @@ PA_11 | ARD_D10/CS | SPI2_NSS (Chip Select) / PWM / CAN1_RX / UART6_TX
 PA_10 | ARD_D11/MOSI | SPI2_MOSI / PWM / UART1_RX
 PA_12 | ARD_D12/MISO | SPI2_MISO / UART6_RX/ CAN1_TX/ UART4_RX
 PC_0 | ARD_ANALOG_IN | Analog inputs [A0:A5] + Calib LOW/HIGH
-**Analog Multiplexer control**
+**Analog MUX control**
 PG_6 | ARD_MUX_A | Analog Multiplexer pin A
 PG_7 | ARD_MUX_B | Analog Multiplexer pin B
 PG_8 | ARD_MUX_C | Analog Multiplexer pin C
 
-!!! note
-	(1) In the Arduino UNO R3 interface, pins A4 is shared with D14 and A5 is shared with D15. Therefore, if these pins are to be used as Analog Inputs, the correspondent I2C pins PB_4 and PA_8 need to be configured as Input (high-impedance, default behaviour).
+!!! note "Shared signals"
+	**(1)** In the Arduino UNO R3 interface, pins A4 is shared with D14 and A5 is shared with D15. Therefore, if these pins are to be used as Analog Inputs, the correspondent I2C pins PB_4 and PA_8 need to be configured as Input (high-impedance, default behaviour).
