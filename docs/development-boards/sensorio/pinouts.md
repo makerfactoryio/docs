@@ -1,6 +1,6 @@
 #Board Pinouts
 
-The MCU PinNames mappings are described here [PortName_Bit]. When available, the alternate functions are described.
+The MCU PinNames mappings are listed as [PortName_Bit]. When available, the alternate functions are described.
 
 !!! tip
 	For the mbed platform, the pin mappings are done in the SensorIO target (**mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH/TARGET_SENSORIO/PinNames.h**) 
