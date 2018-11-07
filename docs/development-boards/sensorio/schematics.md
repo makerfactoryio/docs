@@ -116,7 +116,7 @@ The example below shows how configure the button to trigger an interrupt on pres
 	}
 	```	
 
-!!! tip
+!!! tip "Tip: debouncing"
 	To detect a button press, remember that the mechanical action usually indroduces some signal bouncing. It's reasonable to add a delay of at least 20ms before taking any action (software debouncing). 
 
 ## Wi-Fi
