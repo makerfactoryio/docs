@@ -2,11 +2,9 @@
 #include "InterruptIn.h"
 #include "Serial.h"
 #include "rgbled.h"
-#include "Ticker.h"
 
 mbed::Serial console(SERIAL_TX, SERIAL_RX, 115200);
 events::EventQueue scheduler;
-mbed::Ticker tickColor;
 
 RGBLed rgb(RGB_RED, RGB_GREEN, RGB_BLUE);
 bool ledOn = false;
@@ -34,23 +32,19 @@ void changeColor()
     }
 }
 
-void scheduleColorChange()
-{
-    scheduler.call(&changeColor);
-}
-
 void rgbLedStatus(int status)
 {
+    ledOn = status;
     console.printf("RGB Led is %s\r\n", (status == 1) ? "ON" : "OFF");
 }
 
 void buttonPressed()
 {
-    // toggle RGB Led state
-    ledOn = !ledOn;
+    // select new LED state
+    bool newLedState = !ledOn;
 
-    // log RGB Led state via Serial (via EventLoop)
-    scheduler.call(&rgbLedStatus, ledOn);
+    // set & log RGB Led state via Serial (via EventLoop)
+    scheduler.call(&rgbLedStatus, newLedState);
 }
 
 int main(int argc, char **argv)
@@ -61,7 +55,7 @@ int main(int argc, char **argv)
     // attach function to button press
     button.fall(&buttonPressed);
 
-    tickColor.attach(&scheduleColorChange, 1.0f/60.0f);
+    scheduler.call_every(20, &changeColor);
 
     // running event loop
     scheduler.dispatch_forever();
