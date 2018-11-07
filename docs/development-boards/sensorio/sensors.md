@@ -28,12 +28,17 @@ The sensor is interfaced via the I2C bus, and the slave address is **0x18**. The
 
 ## LiteOn LTR-303ALS
 
-The LTR-303ALS is a light sensor with a spectral response close to the human eye, which it makes it useful for indoor luminosity control application. This sensor converts light intensity to a digital output signal and it provides a linear response over a wide dynamic range from 0.01 lux to 64k lux and is well suited to applications under high ambient brightness. To increase the usable dynamic range, is has six configurable gain settings (1X, 2X, 4X, 8X, 48X and 96X).
+The [LTR-303ALS](https://www.mouser.com/ds/2/239/Lite-On_LTR-303ALS-01_DS_ver%201.1-1175269.pdf) is a light sensor with a spectral response close to the human eye, which it makes it useful for indoor luminosity control application. This sensor converts light intensity to a digital output signal and it provides a linear response over a wide dynamic range from 0.01 lux to 64k lux and is well suited to applications under high ambient brightness. To increase the usable dynamic range, is has six configurable gain settings (1X, 2X, 4X, 8X, 48X and 96X).
 
 
 <img src="/images/sensorio/LTR303.png" class="img-center" width="65%">
 
 The sensor is also interfaced through the I2C bus and the slave address is **0x29**. 
+
+The sensor integrates two photodiodes (CH0 and CH1) which responses are combined to calculate the final luminosity value. This process is performed by the driver on the MCU.
+
+The plot below shows the normalized response of both channels:
+<img src="/images/sensorio/LTR303-spectralResponse.png" class="img-center" width="65%">
 
 !!! tip "IRQ"
 	The sensor supports an interrupt feature that removes the need to poll the sensor for a reading which improves system efficiency. 
