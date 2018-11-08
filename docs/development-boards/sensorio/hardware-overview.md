@@ -33,7 +33,7 @@ This is an overview of the main components and features:
 
 !!! info "USB functions:"
 	- Power input
-	- Debugging port
+	- Debugging port (GDB compatible)
 	- Virtual Serial COMM
 	- Mass storage programming (simply drag & drop to flash)
 
