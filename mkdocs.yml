@@ -41,27 +41,27 @@ nav:
       - Programming the board: development-boards/esp32/program.md
     - Core: development-boards/esp32/esp32.md
     - Components:
-      - USB Programming: development-boards/esp32/usb-programming.md
-      - Power Supply: development-boards/esp32/power-supply.md
-      - mikroBUS: development-boards/esp32/mikro_bus.md
-      - ESP32 module: development-boards/esp32/esp32_module.md
-      - Grove: development-boards/esp32/grove.md
-      - Temperature: development-boards/esp32/temperature.md
-      - RGB LED: development-boards/esp32/rgb-led.md
-      - OLED-LCD: development-boards/esp32/lcd.md
-      - Unit-Bus: development-boards/esp32/unit-bus.md
-      - Potentiometer: development-boards/esp32/potentiometer.md
-      - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
-      - IMU: development-boards/esp32/gyro.md
-      - Microphone: development-boards/esp32/microphone.md
-      - TFT: development-boards/esp32/tft.md
-      - Menu: development-boards/esp32/menu.md
-      - GPIO: development-boards/esp32/gpio.md
-      - RFID: development-boards/esp32/rfid.md
-      - Motor: development-boards/esp32/motor.md
-      - SD Card: development-boards/esp32/sd_card.md
       - Audio Amplifier: development-boards/esp32/audio.md
       - Camera: development-boards/esp32/camera.md
+      - ESP32 module: development-boards/esp32/esp32_module.md
+      - GPIO: development-boards/esp32/gpio.md
+      - Grove: development-boards/esp32/grove.md
+      - IMU: development-boards/esp32/gyro.md
+      - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
+      - Menu: development-boards/esp32/menu.md
+      - Microphone: development-boards/esp32/microphone.md
+      - mikroBUS: development-boards/esp32/mikro_bus.md
+      - Motor: development-boards/esp32/motor.md
+      - OLED-LCD: development-boards/esp32/lcd.md
+      - Potentiometer: development-boards/esp32/potentiometer.md
+      - Power Supply: development-boards/esp32/power-supply.md
+      - RFID: development-boards/esp32/rfid.md
+      - RGB LED: development-boards/esp32/rgb-led.md
+      - SD Card: development-boards/esp32/sd_card.md
+      - Temperature: development-boards/esp32/temperature.md
+      - TFT: development-boards/esp32/tft.md
+      - Unit-Bus: development-boards/esp32/unit-bus.md
+      - USB Programming: development-boards/esp32/usb-programming.md
   - SensorIO:
     - Introduction: 'development-boards/sensorio/index.md'
     - Hardware:
