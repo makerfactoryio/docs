@@ -1,1 +1,3 @@
-![Block Gyro](../../images/esp32/block_gyro.png)
+## Overview
+
+<img src="/images/esp32/block_gyro.png"  width="30%">

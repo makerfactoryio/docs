@@ -15,23 +15,28 @@ The following picture shows the ESP32 Evaluation Board in Version V1.3.
 
 The EBB for ESP32 comes with a bunch of peripheral components which could be used for own projects. The usage of these component is described in this document. The follwing table lists the components:
 
-- [mirkoBUS](./mikro_bus.md)
-- [Grove](./grove.md)
-- [Temperature](./temperature.md)
-- [RGB LED](./rgb-led.md)
-- [LCD](./lcd.md)
-- [Unit-Bus](./unit-bus.md)
-- [Potentiometer](./potentiometer.md)
-- [I2C Pull-up](./i2c_pull_up.md)
-- [IMU](./gyro.md)
-- [Microphone](./microphone.md)
-- [TFT](./tft.md)
-- [Menu](./menu.md)
-- [GPIO](./gpio.md)
-- [RFID](./rfid.md)
-- [Motor](./motor.md)
+!!! hint
+    The ESP32 module has a **limited** number of usable IO ports. It's **not possible** to use all components on the board to the same time. Therefore you have to decide which component on the evaluation board you want to use in your project. In order to use a component you have you switch the appropriate dip switches to on. Additionally you have to switch conflicting components to off. The components which are using the same IO are described in the component pages.
+
 - [Audio Amplifier](./audio.md)
 - [Camera](./camera.md)
+- [GPIO](./gpio.md)
+- [Grove](./grove.md)
+- [I2C Pull-up](./i2c_pull_up.md)
+- [IMU](./gyro.md)
+- [LCD](./lcd.md)
+- [Menu](./menu.md)
+- [Microphone](./microphone.md)
+- [mirkoBUS](./mikro_bus.md)
+- [Motor](./motor.md)
+- [Potentiometer](./potentiometer.md)
+- [RFID](./rfid.md)
+- [RGB LED](./rgb-led.md)
+- [SD CARD](./sd_card.md)
+- [Temperature](./temperature.md)
+- [TFT](./tft.md)
+- [Unit-Bus](./unit-bus.md)
+
 
 ## Schematics of the evaluation board
 
