@@ -15,7 +15,7 @@ Datasheet: [link](http://www.ti.com/lit/ds/symlink/cc3120.pdf)
 !!! info "Compiling example"
     This example is based on Mbed OS and requires a simple setup. For full description check [Code Setup](./code-setup.md) page.
 
-### MicroSD Card driver
+### CC3120 WiFi driver
 
 Mbed OS driver for CC3120 can be found here: [CC3120 on Github](https://github.com).
 
