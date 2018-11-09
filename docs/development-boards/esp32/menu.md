@@ -23,7 +23,7 @@ The component has a dip switch *SW401* for activating the buttons. Each of the f
 
 It's very important to switch on the right switches on *SW401*. Additonally it's recommend to define constants for the IO ports of the appropriate ports. This could be done as follows:
 
-```
+```c
 #define BTN_UP      34
 #define BTN_DOWN    25
 #define BTN_LEFT    26
@@ -33,7 +33,7 @@ It's very important to switch on the right switches on *SW401*. Additonally it's
 
 Before you could use the buttons, you have to setup the io ports.
 
-```
+```c
 void setup()
 {
 
@@ -47,13 +47,13 @@ void setup()
 ```
 If you want to see debug messages on the serial monitor you have to add the following line in the setup method:
 
-```
+```c
     Serial.begin(115200);
 ```
 
 Now you could read the state from the Button. If you press the button you get a **0**, otherwise you get a **1**.
 
-```
+```c
 void loop()
 {
  Serial.print(digitalRead(BTN_UP));

@@ -22,13 +22,13 @@ The component has a dip switch *SW310* for activating the component. Each of the
 It's very important to switch on *SW401*.
 
 First you should define two constants for the two I2C signal lines: SDA (serial data) and SCL (serial clock):
-```
+```c
 #define SDA 19
 #define SCL 4
 ```
 
 Additionally constants for the addresses of the IMU component are recommended:
-```
+```c
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
 
@@ -44,7 +44,7 @@ Additionally constants for the addresses of the IMU component are recommended:
 ```
 
 With two utility functions (defined in the sample project *Gyro.ino*) data is read and write from the I2C bus. With these functions the component is configured in the setup method:
-```
+```c
 void setup()
 {
     // Arduino initializations
@@ -77,13 +77,13 @@ void setup()
 In the loop method you could access the three IMU components.
 
 *Accelerometer*
-```
+```c
  int16_t ax = -(Buf[0]<<8 | Buf[1]);
  int16_t ay = -(Buf[2]<<8 | Buf[3]);
  int16_t az = Buf[4]<<8 | Buf[5];
 ```
 *Gyroscope*
-```
+```c
 int16_t gx = -(Buf[8]<<8 | Buf[9]);
 int16_t gy = -(Buf[10]<<8 | Buf[11]);
 int16_t gz = Buf[12]<<8 | Buf[13];
@@ -91,7 +91,7 @@ int16_t gz = Buf[12]<<8 | Buf[13];
 
 *Magnetometer*
 
-```
+```c
 uint8_t ST1;
 do
 {
