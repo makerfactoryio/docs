@@ -66,6 +66,10 @@ The *ST-Link* interface also exposes a virtual serial port in addition to the SW
 
 The board takes advantage of the main MCU's 20+ communication interfaces available through its 114 I/O ports to provide an unmached set of options to extend its functionalities through the [expansion interfaces](../interfaces) (Grove, MikroBUS and ArduinoR3 sockets).
 
+!!! tip "Maximum flexibility with peripherals multiplexing"
+	Most of the Grove interfaces on the ​Grove-compatible​ boards include multiple connectors since they have one fixed bus hard-wired per connector. Which means that in order to support the 4 interfaces types, they need to add multiple connectors. SensorIO supports all of the interface types in each connector for maximum flexibility.
+
+
 ### User interaction
 
 In order to quickly evaluate the board and prototype a series of use-cases, the device integrates a set of [sensors](../sensors), two opto-isolated solid state relays for controlling power outputs, an RGB LED, a push-button and a small 128x32 pixels OLED monocrome display useful to show real-time information. 
