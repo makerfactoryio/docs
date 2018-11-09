@@ -11,7 +11,7 @@ The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperatu
 The component has a dip switch *SW315* for activating the temperature sensor. Each of the five buttons is connected to one IO port. *Switch 1* is not connected and therefore the state of this switch is not relevant. The buttons are connected to the following ports
 
 |Function|SWITCH|IO port|Conflicts with|Remarks|
-|------------------|----------|----------|----------|
+|------------------|----------|----------|----------|----------|
 |DQ|1|35|**CAMERA**, SW400-2, D6
 
 
