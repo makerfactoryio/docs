@@ -46,7 +46,7 @@ nav:
       - ESP32 module: development-boards/esp32/esp32_module.md
       - GPIO: development-boards/esp32/gpio.md
       - Grove: development-boards/esp32/grove.md
-      - IMU: development-boards/esp32/gyro.md
+      - Gyro (IMU): development-boards/esp32/gyro.md
       - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
       - Menu: development-boards/esp32/menu.md
       - Microphone: development-boards/esp32/microphone.md
