@@ -141,9 +141,9 @@ PC_4 | GROVE1_AI2 | Pin#2 Analog Input (ADC1_IN14)
 PD_14 | GROVE1_P1_PWM | Pin#1 PWM out
 PD_15 | GROVE1_P2_PWM | Pin#2 PWM out
 **MUX & Power control**
-PD_10 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#grove-connectors)
-PD_11 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#grove-connectors)
-PG_9 | GROVE1_SW_5V | VCC control switch (3.3V/5V)
+PD_10 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#analog-multiplexers)
+PD_11 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#analog-multiplexers)
+PG_9 | GROVE1_SW_5V | [VCC control switch (3.3V/5V)](../interfaces/#power-switches)
 
 
 #### Grove 2
@@ -163,9 +163,9 @@ PC_5 | GROVE2_AI2 | Pin#2 Analog Input (ADC1_IN15)
 PD_12 | GROVE2_P1_PWM | Pin#1 PWM out
 PD_13 | GROVE2_P2_PWM | Pin#2 PWM out
 **MUX & Power control**
-PG_4 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#grove-connectors)
-PG_5 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#grove-connectors)
-PG_10 | GROVE1_SW_5V | VCC control switch (3.3V/5V)
+PG_4 | GROVE1_MUXA | [Multiplexer pin A](../interfaces#analog-multiplexers)
+PG_5 | GROVE1_MUXB | [Multiplexer pin B](../interfaces#analog-multiplexers)
+PG_10 | GROVE1_SW_5V | [VCC control switch (3.3V/5V)](../interfaces/#power-switches)
 
 
 
