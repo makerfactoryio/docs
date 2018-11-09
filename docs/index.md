@@ -1,13 +1,9 @@
-# Makerfactory docs
+# **Welcome to the Makerfactory Documentation**
 
-!!! todo
-	We need to create an index page pointing to the different MakerFactory projects
+## **Development Boards**
+![ESP32_ICON](../../images/icons/ICON_ESP32.png)&emsp;&emsp;![SensorIO_ICON](../../images/icons/ICON_sensorio.png)<br>
+&emsp;[ESP32 Development Kit](/development-boards/esp32)&emsp;&emsp;&emsp;&emsp;[SensorIO Development Kit](development-boards/sensorio)
 
-	
-
-## Makerfactory Development Boards
-
-[ESP32 Evaluation Board](/development-boards/esp32)
-
-[SensorIO Development Kit](development-boards/sensorio)
-
+## **Educational Robotics**
+![RoboBug_ICON](../../images/icons/ICON_robobug.png)<br>
+&emsp;&emsp;[RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
