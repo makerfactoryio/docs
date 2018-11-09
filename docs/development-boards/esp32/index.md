@@ -40,4 +40,4 @@ The EBB for ESP32 comes with a bunch of peripheral components which could be use
 
 ## Schematics of the evaluation board
 
-Download the schematics of the evaluation board if you need deep information about the structure of the board. The schematics could be found here: **SCHEMATICS DOWNLOAD**
+Download the schematics of the evaluation board if you need deep information about the structure of the board. The schematics could be found [here](../../assets/pdf/ESP32_Eval_V13_CS.PDF).
