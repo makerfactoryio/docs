@@ -7,3 +7,4 @@
 ## **Educational Robotics**
 ![RoboBug_ICON](../../images/icons/ICON_robobug.png)<br>
 &emsp;&emsp;[RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
+
