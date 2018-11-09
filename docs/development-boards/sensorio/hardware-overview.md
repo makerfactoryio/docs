@@ -49,6 +49,9 @@ This is an overview of the main components and features:
 
 The board can be powered through the on-board USB Micro B connector or directly by the +5V pins of the MikroBUS connectors. Please check the [*Technical specifications*](../datasheet) and the [*circuit Schematics*](../schematics) for more details.
 
+!!! tip "Full 5V support in all the I/Os"
+	The board supports 5V input logic levels in all of the I/Os. The analog inputs of the Arduino and Grove interfaces provide 5V support through level conditioning stages. Check the [expansion interfaces](../interfaces/#level-conditioning) section for more information.
+
 ### ST-Link
 
 !!! info "The target MCU can be programmed in 3 different ways:"
@@ -64,7 +67,7 @@ The *ST-Link* interface also exposes a virtual serial port in addition to the SW
 
 ### Expansion interfaces
 
-The board takes advantage of the main MCU's 20+ communication interfaces available through its 114 I/O ports to provide an unmached set of options to extend its functionalities through the [expansion interfaces](../interfaces) (Grove, MikroBUS and ArduinoR3 sockets).
+The board takes advantage of the main MCU's 20+ communication interfaces available through its 114 I/O ports to provide an unmached set of options to extend its functionalities through the [expansion interfaces](../interfaces/#level-conditioning) (Grove, MikroBUS and ArduinoR3 sockets).
 
 !!! tip "Maximum flexibility with peripherals multiplexing"
 	Most of the Grove interfaces on the ​Grove-compatible​ boards include multiple connectors since they have one fixed bus hard-wired per connector. Which means that in order to support the 4 interfaces types, they need to add multiple connectors. SensorIO supports all of the interface types in each connector for maximum flexibility.

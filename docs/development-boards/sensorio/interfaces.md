@@ -37,6 +37,9 @@ The capture below shows the I2C pull-up resistors. Please note the I2C lines are
 
 ## Grove connectors
 
+<img src="/images/sensorio/Grove-logo.png" class="img-left" width="15%" > 
+
+
 ### Grove system introduction
 
 The Seedstudio’s ​[Grove system](http://wiki.seeedstudio.com/Grove_System/)​  consist of a 4-pin standardized connector and expansion boards that are attached using extension cables. 
@@ -78,10 +81,24 @@ Position | Grove_n_MUX_B | Grove_n_MUX_A | Peripheral Connected
 3 | 1 | 1 | Analog In
 
 ### Level conditioning
-<img src="/images/sensorio/Grove-analog-cond.png" class="img-center" width="100%" > 
 
-!!! tip "Software configurable 5V / 3.3V power switch"
+!!! tip "Analog levels conditioning"
+	Some of the Grove modules are designed to work with 5V supply and they provide a 0 to 5V analog output. As the maximum input voltage for the MCU's integrated ADC is 3.3V, a level conditioning and protection stage is added per channel (replicated 4 times).
+
+The image below shows the circuit for the pin 1 of the Grove 2 connector. R45 and R46 transtlate the input voltage with a ratio of 0.68. The operational amplifier U6C acts as a buffer to provide better input impedance to the ADC channel. The input impedance presented to the Grove pins is then 147 kOhm. 
+<img src="/images/sensorio/Grove-analog-cond.png" class="img-center" width="100%" > 
+The double Schottky diode D4 clamps the voltage to GND or 3.3V to protect the MCU in case that the input voltage exceeds the allowed limits.
+
+
+### Power switches
+
+!!! tip "Software configurable 5V / 3.3V power switches"
 	As some of the Grove modules support either 5V or 3.3V power only, SensorIO integrates two separate software-configurable 5/3.3V switches to provide the proper voltage to the power pins. Most boards support only 3.3V for the interfaces and power, and some of them provide the option to switch to 5V by unsoldering/soldering resistors or manually changing the position of jumpers. SensorIO has the software-controlled functionality, individually per connector.
+
+The schematic below shows the power switch for the Grove 1 connector. When the control pin is low (default), the output will provide 3.3V, when the output is pushed high, the power pin will be connected to 5V.	
+
+<img src="/images/sensorio/Power_switch.png" class="img-center" width="90%" > 
+
 
 ## Arduino R3 socket	
 
