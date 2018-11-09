@@ -2,24 +2,46 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Install mkdocs",
-      "command": "pip",
+      "label": "Install mkdocs with Python 2",
+      "command": "pip2",
       "args": [
         "install",
         "--user",
         "-r",
-        "requirements.txt"
+        "requirements-python2.txt"
       ],
       "problemMatcher": []
     },
     {
-      "label": "Remove mkdocs",
-      "command": "pip",
+      "label": "Remove mkdocs with Python 2",
+      "command": "pip2",
       "args": [
         "uninstall",
         "-y",
         "-r",
-        "requirements.txt"
+        "requirements-python2.txt"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Install mkdocs with Python 3",
+      "command": "pip3",
+      "args": [
+        "install",
+        "--user",
+        "-r",
+        "requirements-python3.txt"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Remove mkdocs with Python 3",
+      "command": "pip3",
+      "args": [
+        "uninstall",
+        "-y",
+        "-r",
+        "requirements-python3.txt"
       ],
       "problemMatcher": []
     },
