@@ -11,7 +11,7 @@ The component **MENU** has five switches which could be used for control tasks.
 The component has a dip switch *SW401* for activating the buttons. Each of the five buttons is connected to one IO port. *Switch 1* is not connected and therefore the state of this switch is not relevant. The buttons are connected to the following ports
 
 |Function|SWITCH|IO port|Conflicts with|Remarks|
-|------------------|----------|----------|----------|
+|------------------|----------|----------|----------|----------|
 |Button UP|6|34|**CAMERA**, SW400-3, D7; **GROVE, UART**, SW205-1, ADC6
 |Button LEFT|3|26|**CAMERA**, SW402-6, D4; **Audio**, SW306-2, BCKL
 |Button CENTER|4|27|**CAMERA**, SW402-5, D3; **SD CARD**, SW407-2, CDET

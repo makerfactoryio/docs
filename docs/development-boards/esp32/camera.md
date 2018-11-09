@@ -6,7 +6,7 @@
 The component has three dip switches for controlling the component: *SW400*, *SW402* and *SW403*.
 
 |Function|SWITCH|IO port|Conflicts with|Remarks|
-|------------------|----------|----------|----------|
+|------------------|----------|----------|----------|----------|
 |RRST|SW403-1|17|**Microphone**, SW301-2, SCK; **mikroBus**, SW404-4, TX; **Unit-Bus**, SW201-2, CN212 - PIN 4; **Grove UART**, SW202-1, UART - RX; **Grove Digital4**, SW209-2, IO17
 |WRST|SW403-2|16|**Audio**, SW306-1, SD_MODE; **mikroBus**, SW404-3, RX; **Unit-Bus**, SW201-1, CN212 - PIN 3; **Grove UART**, SW202-2, UART - TX
 |OE|SW403-3|GND|-|
