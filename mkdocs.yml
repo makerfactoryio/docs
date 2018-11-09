@@ -94,8 +94,12 @@ nav:
   - Hexapod Robobug Platform:
     - Quick start: 'educational-robotics/robobug-hexapod/quick-start.md'
     - Preparatory work: 'educational-robotics/robobug-hexapod/preparatory-work.md'
-    - Transferring the firmware: 'educational-robotics/robobug-hexapod/transferring-the-firmware.md'
+    - Test firmware installation: 'educational-robotics/robobug-hexapod/test-firmware-installation.md'
     - Preparing the leg servos: 'educational-robotics/robobug-hexapod/preparing-the-leg-servos.md'
+    - Assembling the mechanical parts: 'educational-robotics/robobug-hexapod/assembling-the-mechanical-parts.md'
+    - Transferring the firmware: 'educational-robotics/robobug-hexapod/transferring-the-firmware.md'
+    - Controlling wiht the Gamepad: 'educational-robotics/robobug-hexapod/controlling-with-the-gamepad.md'
+    - Calibrate legs: 'educational-robotics/robobug-hexapod/calibrate-legs.md'
 
 markdown_extensions:
   - markdown.extensions.admonition
