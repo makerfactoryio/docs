@@ -32,7 +32,7 @@ The board integrates the *ST-Link/V2-1* from *STMicroelectronics*. This debugger
 
 This MCU interfaces directly to the USB connector. It uses an STM proprietary protocol to transfer the SWD/JTAG protocol data, control the Reset/Run state of the target MCU and converts the Virtual Comm Port into the physical UART connected to the target MCU (STLK_TX and STLK_RX lines) which can be used by the application to send logging data or receive commands from the host PC.
 
-The NPN transistor Q1 is used to pull-high the USB_DP line to force a USB re-enumeration after a firmware update.
+The NPN transistor Q1 is used to push the USB_DP line to force a USB re-enumeration after a firmware update.
 
 ![st-link-debugger](../../images/sensorio/st-link-debugger.png)
 
@@ -51,7 +51,7 @@ Please check the [*tools*](../tools) section for more information on how to flas
 ## Main MCU
 
 The target MCU uses the [STM32f413ZHJ6](https://www.st.com/en/microcontrollers/stm32f413zh.html) version of this STMicro MCU (UFBGA144 packaging version, 1.5MB Flash, 320KB RAM).
-Please check the [board pinout](../pinout) section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.
+Please check the [board pinouts](../pinouts) section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.
 
 ### Clocks
 The MCU has 2 external crystals used for the reference oscillators:
