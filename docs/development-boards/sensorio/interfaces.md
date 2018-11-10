@@ -50,11 +50,11 @@ The connector uses two pins for power (GND and 3.3V or 5V depending on the modul
 	There are basically 4 types of interfaces for these modules:
 
 	- **Digital:** ​the 2 remaining pins are either digital Input or Output. Usually used for relays or motor control, but some modules also use proprietary protocols as in the ​LED Bar module​.
-	- **Analog:** ​2 analog inputs (from the MCU standpoint). Common modules can be potentiometers or gas sensors.
+	- **Analog:** ​2 analog inputs. Common modules can be potentiometers or gas sensors.
 	- **UART:** ​Full-duplex serial interface (TXD and RXD). The RF Link module or ​RFID reader use this interface.
 	- **I2C:** ​This bus can support daisy chaining in some cases. Some sensors and LCD displays use this bus.
 
-The image below shows the Grove connector markings and the correspondent signal names.
+The image below shows the Grove connector markings and the corresponding signal names.
 <img src="/images/sensorio/grove-picture.jpg" class="img-center" width="60%" > 
 <img src="/images/sensorio/Grove-connector.png" class="img-center" width="40%" > 
 
@@ -101,5 +101,55 @@ The schematic below shows the power switch for the Grove 1 connector. When the c
 
 
 ## Arduino R3 socket	
+
+The Arduino R3 socket is a traditional form factor and there are multiple companies building extension boards or so called "shields" for different applications. The figure below shows the pinout:
+<img src="/images/sensorio/Arduino-socket.png" class="img-center" width="80%" > 
+
+The NRST input signal is connected to the reset line driven by the main Reset push-button (S2). Some shields use this signal to initialize their internal logic (as is the case of some GPS / GSM modem shields).
+
+The IOREF pin is optionally used by some shields to select the digital pins interfacing level (3.3V or 5V).
+
+!!! tip "5V compatibility for inputs and outputs"
+	Some Arduino shields use 5V logic levels for the digital interfaces. This doesn't present a problem for the STM32F413 inputs since they are 5V tolerant. The issue would be evident when the MCU outputs are used to drive the inputs on these shields: some logic families are compatible with 3.3V input levels, but some are not. To overcome this potential incompatibility, the board uses a Schottky diode (D6 in the capture below) in series with the 5V power rail to produce a small voltage drop on the Arduino 5V pin. This reduces the shield Vcc to about 4.7V, which is not an issue for the correct functioning of these logic families since it's tolerated in the nominal range, but enough to allow the outputs of the MCU to fit in the safe range for the logic HIGH (in other words: a 3.3V output on the MCU will ensure a high level on the shield's inputs for all the logic families).
+
+<img src="/images/sensorio/Arduino-power-diode.png" class="img-center" width="80%" >
+
+### Analog multiplexer
+
+The interface defines 6 analog inputs, and as this interface has a long legacy coming from a 8-bit 5V logic level MCU, the ranges on the analog inputs could be still 5V on some shields, while the STM32F413 internal ADCs support 3.3V maximum. 
+
+SensorIO solve this problem in a similar fashion to the Grove interface, it uses the [SN74LV4051A](http://www.ti.com/lit/ds/symlink/sn74lv4051a.pdf), an 8 to 1 analog multiplexer to switch between the 6 analog inputs and a voltage adaptation stage and protection to translate the 0-5V range into 0-3.3V:
+
+<img src="/images/sensorio/Arduino-mux.png" class="img-center" width="80%" >
+
+!!! tip "'Calibrating' the A0-A6 analog channels"
+	As the multiplexer has 2 free inputs (Y6 and Y7), we can take advantage of this and use them to get the possibility to switch the ARD_ANALOG output to 5V and 0V. By doing this, we can compensate for the small errors added by the multiplexer and the level translator stage. The procedure could be the following:
+
+	- Select input Y6 (routed to 5V). Read the ADC output (it could be useful to take several measurements and simply average them) and store the result.
+	- Select input Y7 (routed to 0V). Average several ADC readings and store the result.
+	- Use the stored values to compensate for readings on the channels A0 to A5.
+
+	An example implementation of this procedure can be found on the [ADC section].
+
+The schematic below shows the signal conditioning stage (from 5V to 3.2V) and diode clamping circuit to protect the internal ADC from voltages out of its maximum ranges. 	
+
+<img src="/images/sensorio/Arduino-level-conditioning.png" class="img-center" width="80%" >
+
+The table below shows the combination of the multiplexer control lines needed to select each channel:	
+
+Position | MUX_C | MUX_B | MUX_A | Channel selected
+-------- | ------- | ------- | ------- | -------
+Y0 | 0 | 0 | 0 | A0
+Y1 | 0 | 0 | 1 | A1
+Y2 | 0 | 1 | 0 | A2
+Y3 | 0 | 1 | 1 | A3
+Y4 | 1 | 0 | 0 | A4 (**1**)
+Y5 | 1 | 0 | 1 | A5 (**1**)
+Y6 | 1 | 1 | 0 | Calibration High (5V)
+Y7 | 1 | 1 | 1 | Calibration Low  (0V)
+
+!!! note "A4 and A5 inputs"
+	In the Arduino UNO R3, and in some shields, the A4 and A5 inputs are internally connected with the I2C bus on the D15 and D14 pins (SDA and SCL lines). Therefore, in order to use the A4 and A5 pins as Analog Inputs, the correspondent I2C pins on the MCU (PB_4 and PA_8) need to be configured as high-impedance (or input, the default state).
+	
 
 
