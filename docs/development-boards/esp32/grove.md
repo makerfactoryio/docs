@@ -69,8 +69,8 @@ The switch for *I2C* is *SW203*.
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
-|I2C - SDA|1|19|
-|I2C - SCL|2|4|
+|I2C - SDA|1|19|**RFID**, SW303-3, MISO; **Gyro**, SW310-3, SDA/SDI; **OLED**, SW309-2, SDA; **TFT**, SW314-1, MISO; **mikroBus**, SW405-2, MISO; **Unit-Bus**, SW200-2, CN212 - PIN 5
+|I2C - SCL|2|4|**Gyro**, SW310-4, SCL/SCLK; **OLED**, SW309-1, SCL; **Camera**, SW402-1, RCK/RCKL; **SD Card**, SW406-3, DAT1; **Unit-Bus**, SW200-1, CN212 - Pin 6
 
 ### UART
 
@@ -79,7 +79,7 @@ The switch for *UART* is *SW202*.
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
 |UART - RX|1|17|**Microphone**, SW301-2, SCK; **mikroBus**, SW404-4, TX; **Camera**, SW403-1, RRST; **Unit-Bus**, SW202-1, CN212 - PIN 4; **Grove DIGITAL2**, SW209-2, IO17
-|UART - TX|2|16|
+|UART - TX|2|16|**Audio**, SW306-1, SD_MODE; **mirkoBus**, SW404-3, RX; **Camera**, SW403-2, WRST; **Unit-Bus**, SW201-1, CN212 - PIN 3
 
 
 ## Using the component

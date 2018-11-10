@@ -17,8 +17,11 @@ The component has a dip switch *SW315* for activating the temperature sensor. Ea
 
 ## Using the component
 
-!!! Caution
-  In order to use the component you need the OneWire-Library. The latested version could be download from the [GitHub repository](https://github.com/PaulStoffregen/OneWire). If you want to use the version from GitHub download a zip archiv. Addtionally you could [download](../../source/esp32/Temperature/OneWire-master.zip) a tested version. After the download it's necessary to add the library to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. After a sucessful installation the menu *Sketch > Include Library* should contain an entry *OneWire* in the category *Contributed libraries*.
+!!! Info
+    **Required libraries**
+    In order to use the component you need the OneWire-Library. The latested version could be download from the [GitHub repository](https://github.com/PaulStoffregen/OneWire). If you want to use the version from GitHub download a zip archiv. Addtionally you could [download](../../source/esp32/Temperature/OneWire-master.zip) a tested version. After the download it's necessary to add the library to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. After a sucessful installation the menu *Sketch > Include Library* should contain an entry *OneWire* in the category *Contributed libraries*.
+
+
 
 ## Sample project
 

@@ -5,6 +5,9 @@
 
 ## Activating the component
 
+Function|SWITCH|IO port|Conflicts with|Remarks|
+|------------------|----------|----------|----------|----------|
+
 ## Using the component
 
 
