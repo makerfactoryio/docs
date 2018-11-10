@@ -1,6 +1,6 @@
-# **Welcome to the Makerfactory Documentation**
+# Welcome to the Makerfactory Documentation
 
-## **Development Boards**
+## Development Boards
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 50%">
@@ -15,7 +15,7 @@
   </div>
 </div>
 
-## **Educational Robotics**
+## Educational Robotics
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 50%">
