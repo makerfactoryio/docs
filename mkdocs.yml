@@ -39,14 +39,13 @@ nav:
     - Getting Started:
       - Installing the IDE: development-boards/esp32/install.md
       - Programming the board: development-boards/esp32/program.md
-    - Core: development-boards/esp32/esp32.md
     - Components:
       - Audio Amplifier: development-boards/esp32/audio.md
       - Camera: development-boards/esp32/camera.md
       - ESP32 module: development-boards/esp32/esp32_module.md
       - GPIO: development-boards/esp32/gpio.md
       - Grove: development-boards/esp32/grove.md
-      - IMU: development-boards/esp32/gyro.md
+      - Gyro (IMU): development-boards/esp32/gyro.md
       - I2C Pull-up: development-boards/esp32/i2c_pull_up.md
       - Menu: development-boards/esp32/menu.md
       - Microphone: development-boards/esp32/microphone.md
@@ -94,8 +93,21 @@ nav:
   - Hexapod Robobug Platform:
     - Quick start: 'educational-robotics/robobug-hexapod/quick-start.md'
     - Preparatory work: 'educational-robotics/robobug-hexapod/preparatory-work.md'
-    - Transferring the firmware: 'educational-robotics/robobug-hexapod/transferring-the-firmware.md'
+    - Test firmware installation: 'educational-robotics/robobug-hexapod/test-firmware-installation.md'
     - Preparing the leg servos: 'educational-robotics/robobug-hexapod/preparing-the-leg-servos.md'
+    - Assembling the mechanical parts: 'educational-robotics/robobug-hexapod/assembling-the-mechanical-parts.md'
+    - Transferring the firmware: 'educational-robotics/robobug-hexapod/transferring-the-firmware.md'
+    - Controlling with the Gamepad: 'educational-robotics/robobug-hexapod/controlling-with-the-gamepad.md'
+    - Calibrate legs: 'educational-robotics/robobug-hexapod/calibrate-legs.md'
+    - Using user boards: 'educational-robotics/robobug-hexapod/using_user_boards.md'
+    - Demo programs: 'educational-robotics/robobug-hexapod/demo_programs.md'
+    - Overview of the connections and components: 'educational-robotics/robobug-hexapod/Overview_of_the_connections_and_components.md'
+    - Schematic system overview: 'educational-robotics/robobug-hexapod/schematic_system_overview.md'
+    - Pan unit: 'educational-robotics/robobug-hexapod/pan_unit.md'
+    - Pin assignment of the user board: 'educational-robotics/robobug-hexapod/pin_assignment_of_the_user_board.md'
+    - FAQ: 'educational-robotics/robobug-hexapod/FAQ.md'
+    - Cleaning: 'educational-robotics/robobug-hexapod/cleaning.md'
+    - Technical Data: 'educational-robotics/robobug-hexapod/technical_data.md'
 
 markdown_extensions:
   - markdown.extensions.admonition
@@ -124,5 +136,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.extra
   - markdown_include.include:
       base_path: docs

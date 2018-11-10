@@ -193,7 +193,7 @@ PA_11 | ARD_D10/CS | SPI2_NSS (Chip Select) / PWM / CAN1_RX / UART6_TX
 PA_10 | ARD_D11/MOSI | SPI2_MOSI / PWM / UART1_RX
 PA_12 | ARD_D12/MISO | SPI2_MISO / UART6_RX/ CAN1_TX/ UART4_RX
 PC_0 | ARD_ANALOG_IN | Analog inputs [A0:A5] + Calib LOW/HIGH
-**Analog MUX control**
+[**Analog MUX control**](../interfaces#arduino-r3-socket)
 PG_6 | ARD_MUX_A | Analog Multiplexer pin A
 PG_7 | ARD_MUX_B | Analog Multiplexer pin B
 PG_8 | ARD_MUX_C | Analog Multiplexer pin C
