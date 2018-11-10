@@ -21,7 +21,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 !!! Info
     **Required libraries**
 
-    In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you download](../../source/esp32/OLED1/Adafruit_SSD1306-master.zip) a tested version.
+    In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you could [download](../../source/esp32/OLED1/Adafruit_SSD1306-master.zip) a tested version.
     After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries. After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Contributed libraries*.
 
 ### Import the necessary libraries
