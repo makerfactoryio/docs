@@ -61,7 +61,9 @@ The *ST-Link* interface also exposes a virtual serial port in addition to the SW
 
 ### WiFi
 
-*SensorIO* integrates the Industrial-grade *CC3120R* SoC from *Texas Instruments*, a *Wi-Fi&reg;* Network Processor designed for Internet of Things applications. This subsystem includes an 802.11b/g/n radio, baseband, and MAC with a powerful crypto engine for fast, secure Internet connections with 256-bit encryption. The device also supports WPA2 personal and enterprise security. The external SPI flash connected to it is used to store the *Wi-Fi&reg;* and security stacks.
+*SensorIO* integrates the Industrial-grade *CC3120R* SoC from *Texas Instruments*, a *Wi-Fi&reg;* Network Processor designed for Internet of Things applications. A dedicated ARM® Cortex®-M3 Microcontroller Unit (MCU) completely offloads Wi-Fi and Internet protocols from the application MCU. 
+
+This subsystem includes an 802.11b/g/n radio, baseband, and MAC with a powerful crypto engine for fast, secure Internet connections with 256-bit encryption. The device also supports WPA2 personal and enterprise security. It uses an external SPI flash to store the *Wi-Fi&reg;* and security stacks.
 
 ### Expansion interfaces
 
