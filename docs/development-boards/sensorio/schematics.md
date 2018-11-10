@@ -5,10 +5,14 @@ The full *SensorIO* design Schematics can be found <a href="../assets/SensorIO-r
 ## Power supply
 
 !!! info "Power input"
-	The primary power source during development is the USB Micro B connector
-The figure below shows the connections for USB connector (P1), ESD protection diodes (D1) and the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch, which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved.
+	The primary power source during development is the USB Micro B connector.
 
-![micro-usb-and-protection](../../images/sensorio/micro-usb-and-protection.png)
+The figure below shows the connections for USB connector (P1) and ESD protection diodes (D1). The ferrite L2 helps to reduce noise coming from the USB shielding. The USB data lines are routed to the STM32F103 [(ST-Link probe)](#st-link).
+
+<img src="/images/sensorio/USB-connector.png" class="img-center" width="85%" > 
+
+ The VBUS rail is connected through the [AP22802A](https://www.diodes.com/assets/Datasheets/AP22802.pdf) load switch, which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved:
+<img src="/images/sensorio/USB-power-distribution.png" class="img-center" width="75%" > 
 
 !!! tip "Alternative 5V input"
 	If the device needs to be installed in a permanent setup, it is also possible to provide 5V power through any of the the MikroBUS sockets +5V pins.

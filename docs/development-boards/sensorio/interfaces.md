@@ -1,6 +1,6 @@
 # Expansion interfaces
 
-This section describes the Grove, MikroBUS and Arduino R3 expansion interfaces. 
+This section describes the Grove, MikroBUS and Arduino R3 expansion interfaces:
 
 ## MikroBUS sockets
 

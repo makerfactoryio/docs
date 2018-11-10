@@ -1,8 +1,6 @@
 ##Hardware description
 
 
-*SensorIO* is a powerful and flexible *ARM Cortex&reg;-M4*, [*mbed&trade;*](https://www.mbed.com)-enabled Internet-of-Things hardware development kit.
-
 In order to maximize the flexibility of use for different applications, all the expansion interfaces have software-configurable support for 3.3V and 5V boards, providing compatibility for more than 500+ different expansion boards available in the market from different manufacturers.
 
 The core of the SensorIO board is the [*STM32F413ZH*](https://www.st.com/en/microcontrollers/stm32f413zh.html), a powerful *ARM Cortex&reg;-M4* MCU with a very rich set of peripherals presented into a 144-balls 10x10mm BGA chip.
