@@ -1,11 +1,11 @@
 ## Overview
 
-The development board supports monochrome OLED displays with the SSD1306 driver.
+The development board supports monochrome OLED displays with the SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
 
 !!! example
     A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino)
 
-<img src="/images/esp32/block_lcd.png"  width="25%">
+<img src="/images/esp32/block_lcd.png"  width="24%"> <img src="/images/esp32/block_lcd_with_oled.png"  width="25%">
 
 ## Activating the component
 
@@ -163,4 +163,6 @@ display.clearDisplay();
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino)
+A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino). The following image shows the oled display with results from the sample project:
+
+<img src="/images/esp32/oled_sample.png"  width="25%">
