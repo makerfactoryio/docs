@@ -85,7 +85,7 @@ Position | Grove_n_MUX_B | Grove_n_MUX_A | Peripheral Connected
 !!! tip "Analog levels conditioning"
 	Some of the Grove modules are designed to work with 5V supply and they provide a 0 to 5V analog output. As the maximum input voltage for the MCU's integrated ADC is 3.3V, a level conditioning and protection stage is added per channel (replicated 4 times).
 
-The image below shows the circuit for the pin 1 of the Grove 2 connector. R45 and R46 transtlate the input voltage with a ratio of 0.68. The operational amplifier U6C acts as a buffer to provide better input impedance to the ADC channel. The input impedance presented to the Grove pins is then 147 kOhm. 
+The image below shows the circuit for the pin 1 of the Grove 2 connector. R45 and R46 transtlate the input voltage with a ratio of 0.68. The operational amplifier U6C acts as a buffer to provide better input impedance to the ADC channel. The input impedance presented to the Grove pins is then 147 kΩ. 
 <img src="/images/sensorio/Grove-analog-cond.png" class="img-center" width="100%" > 
 The double Schottky diode D4 clamps the voltage to GND or 3.3V to protect the MCU in case that the input voltage exceeds the allowed limits.
 
