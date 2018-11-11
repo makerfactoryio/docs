@@ -36,8 +36,16 @@ This is an overview of the main components and features:
 	- Mass storage programming (simply drag & drop to flash)
 
 
-!!! todo
-	Add total interfaces counts
+!!! tip "Total peripherals exposed on the expansion connectors:"
+	- 8 x UART interfaces
+	- 3 x I2C buses
+	- 2 x SPI buses
+	- 2 x I2S interfaces
+	- 3 x CAN buses
+	- 19 x PWM capable outputs
+	- 15 x Analog input channels
+	- 2 x Isolated, high-power outputs (solid state relays)
+	- 47 x Total exposed GPIOs!
 
 
 ##Block Diagram
