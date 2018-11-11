@@ -81,13 +81,29 @@ I/O pin capacitance | - | 5 | - | pF
 	* The main oscillator is driven by the external [crystal Y4](https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-20H&lang=en) (16.000 MHz ± 10 p.p.m.). 
 	* The low frequency oscillator is driven by the  [crystal Y3](https://abracon.com/Resonators/ABS07.pdf) (32.768 kHz ± 20 p.p.m.).
 
+## Solid-state outputs characteristics
+
+[Toshiba TLP241A](https://toshiba.semicon-storage.com/info/docget.jsp?did=14237&prodName=TLP241A):
+
+Parameter 	| Min | Typ	| Max | Unit
+----------- | ------------- | ------ | ------ | ------
+ON-state current (continuous) | - | - | 2 | A
+ON-state current (pulsed, t=100 mseg, duty=10%) | - | - | 6 | A
+ON-state resistance (continuous) | - | 90 | 150 | mΩ
+Isolation voltage | 5,000 | - | - | V
+Maximum DC voltage **(1)** | - | - | 26 | V[dc]
+Maximum AC voltage **(1)**| - | - | 20 | V[rms]
+
+**(1)** Limited by the protection varistors (R63 and R69).
+
+
 ## Mechanical Dimensions
 
-Dimension | Value [mm] | Comment
------------- | ------------- | ------
-External dimensions |  100.97 x 65.79 x 19 
-Mounting holes diameter | 3.25 | M3 screws size
-Mounting holes distances |  93.22 (X), 58.17 (Y)
+Dimension | Value | Unit | Comment
+------------ | ------------- | ------ | -----
+External dimensions |  100.97 x 65.79 x 19 | mm
+Mounting holes diameter | 3.25 | mm | for M3 screws size
+Mounting holes distances |  93.22 (X), 58.17 (Y) | mm
 
 
 <img src="/images/sensorio/PCB-dimensions.png" class="img-left" width="70%" > 
