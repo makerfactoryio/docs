@@ -23,7 +23,7 @@ Supply Input Current (WiFi, LEDs & display on)	| - | 105 | 150 | mA
 Power consumption (WiFi, LEDs & display on) | - | 0.5 | 0.75 | W
 Operation Temperature |		-20 | - |	+60 | 	°C
 Humidity Range / non-condensing |		- | - |	95 | %RH
-STM32F413 operating frequency |		- | 200 **(1)** |	200 | MHz 
+STM32F413 operating frequency |		- | 100 **(1)** |	100 | MHz 
 
 **(1)** default configuration for the mbed target.
 
