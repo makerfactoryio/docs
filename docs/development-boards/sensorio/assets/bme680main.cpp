@@ -12,8 +12,9 @@ void getMeasurements(BME680* sensor)
 {
     if(sensor->performReading())
     {
-        console.printf("Temp: %3.2f %cC Humidity: %2.2f %%, Pressure: %4.2f hPA, VOC resistance: %4.4f kOhm\r\n",
-                       sensor->getTemperature(), 161,
+        // \u00B0 is Unicode Character 'DEGREE SIGN'
+        console.printf("Temp: %3.2f \u00B0C Humidity: %2.2f %%, Pressure: %4.2f hPA, VOC resistance: %4.4f kOhm\r\n",
+                       sensor->getTemperature(),
                        sensor->getHumidity(),
                        sensor->getPressure()/100.0f,
                        sensor->getGasResistance()/1000.0f);

@@ -110,25 +110,22 @@ int main(int argc, char **argv)
 
     while(1)
     {
-        const volatile int64_t timeStamp = tickSource.read_us();
+        const volatile us_timestamp_t timeStamp = tickSource.read_high_resolution_us();
         const volatile int64_t nextStepAt = airQuality.get(results, timeStamp);
 
-        console.printf("IAQ: %3.0f - %s / %s Temp: %3.2f %cC Humidity: %2.2f %%, Pressure: %4.2f hPA, VOC resistance: %4.4f kOhm\r\n",
+        // \u00B0 is Unicode Character 'DEGREE SIGN'
+        console.printf("IAQ: %3.0f - %s / %s Temp: %3.2f \u00B0C Humidity: %2.2f %%, Pressure: %4.2f hPA, VOC resistance: %4.4f kOhm\r\n",
                        results.airQuality,
                        airQualityToText(results.airQuality),
                        airQualityAccuracyToText(results.airQualityAccuracy),
-                       results.temp, 161,
+                       results.temp,
                        results.humidity,
                        results.rawPressure/100.0f,
                        results.rawGas/1000.0f);
 
-        volatile int64_t currTim = tickSource.read_us();
-        int64_t timeDiff = (nextStepAt - (currTim * 1000))/1000;
+        volatile us_timestamp_t currTim = tickSource.read_high_resolution_us();
+        us_timestamp_t timeDiff = (nextStepAt - (currTim * 1000))/1000;
 
-        if(timeDiff < 0)
-        {
-            continue;
-        }
         wait_ms(timeDiff/1000);
     }
 }

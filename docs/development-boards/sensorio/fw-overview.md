@@ -9,6 +9,7 @@ Following pages contain detailed description and example usage of all SensorIO o
 - [Multiplexers for Grove and Arduino connectors](./multiplexers.md)
 - [MicroSD Card](./sdcard.md)
 - [WiFi - CC3120](./wifi.md)
+- [Extension ports](./extension-ports.md)
 
 ## Sensors
 
@@ -18,3 +19,4 @@ Following pages contain detailed description and example usage of all SensorIO o
 - [Luminosity - LTR303-ALS](./ltr303.md)
 - [Acceleration - BMA253](./bma253.md)
 - [Environmental sensor - BME680](./bme680.md)
+

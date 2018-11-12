@@ -69,7 +69,6 @@ nav:
       - Compilation: 'development-boards/sensorio/compilation.md'
       - Flashing: 'development-boards/sensorio/flashing.md'
       - Debugging: 'development-boards/sensorio/debugging.md'
-      - Demo App: 'development-boards/sensorio/demo-app.md'
     - Hardware:
       - Overview: 'development-boards/sensorio/hardware-overview.md'
       - Circuit Schematics: 'development-boards/sensorio/schematics.md'
@@ -91,6 +90,7 @@ nav:
         - Multiplexers: 'development-boards/sensorio/multiplexers.md'
         - SD Card: 'development-boards/sensorio/sdcard.md'
         - WiFi: 'development-boards/sensorio/wifi.md'
+        - Extension ports: 'development-boards/sensorio/extension-ports.md'
 
 - Educational Robotics:
   - Hexapod Robobug Platform:
