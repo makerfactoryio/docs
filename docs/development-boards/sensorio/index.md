@@ -6,7 +6,7 @@
 
 
 
-Its rich set of [features](/development-boards/sensorio/hardware-overview/#features) makes it a versatile prototyping and development plaftorm for *Wi-Fi&trade;* connected products.
+Its rich set of [features](/development-boards/sensorio/hardware-overview/#features) makes it a versatile prototyping and development platform for *Wi-Fi&trade;* connected products.
 
 It was designed with flexibility in mind, and unlike any other development board on the market, *SensorIO* has full support for [Arduino R3](https://store.arduino.cc/other-shields/shields) shields, [Seedstudio's Grove](https://www.seeedstudio.com/category/Grove-c-1003.html) modules and [MikroBUS Click](https://www.mikroe.com/click) expansion boards.
 
