@@ -22,19 +22,30 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
     **Required libraries**
 
     In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you could [download](../../source/esp32/OLED1/Adafruit_SSD1306-master.zip) a tested version.
-    After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries. After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Contributed libraries*.
+    After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries.
+
+    After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Recommended libraries*.
+
+    ![menu_boards_manager](../../images/esp32/arduino_ide/menu_recommended.png)
+
 
 ### Import the necessary libraries
 ```c
-#include <SPI.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include "Adafruit_SSD1306.h"
+#include <Adafruit_SSD1306.h>
 ```
+
+You need both libraries (Adafruit_SSD1306, Adafruit GFX) in for using this sample codes. In case of compilation error you should check whether you have added both libraries to your Arduino development environment. The *Adafruit GFX* library is used from *Adafruit_SSD1306*.
 
 ### Setup the display
 
-Initialize with the I2C addr 0x3D (for the 128x64).
+The first step is to create an instance of the class *Adafruit_SSD1306* in order to work with the display.
+
+```c
+#define OLED_RESET 4
+Adafruit_SSD1306 display(OLED_RESET);
+```
+
+Open the display on the I2C addr 0x3D (for the 128x64).
 
 ```c
 void setup()   {
@@ -42,6 +53,9 @@ void setup()   {
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 }
 ```
+
+!!! note
+     The line *Serial.begin(9600)* is only for debugging purposes. You could remove this line if you don't need outputs in the Serial console.
 
 ### Draw a Pixel
 
@@ -106,8 +120,7 @@ void testdrawline() {
   delay(250);
 }
 ```
-
-### Draw many lines
+### Scroll text
 
 ```c
 void testscrolltext(void) {

@@ -14,8 +14,8 @@ The switch for *Analog1* is *SW204*.
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
-|VN|1|SENSOR_VN|**Potentiometer**, SW302, VN
-|VP|2|SENSOR_VP|**Potentiometer**, SW300, VP
+|VN|1|39|**Potentiometer**, SW302, VN
+|VP|2|36|**Potentiometer**, SW300, VP
 
 ### ANALOG2
 

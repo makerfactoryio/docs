@@ -1,6 +1,6 @@
 ## Overview
 
-<img src="/images/esp32/block_audio.png"  width="20%">
+<img src="/images/esp32/block_audio.png"  width="15%">
 
 ## Activating the component
 The component has the dip switch *SW306* for activating the component.
