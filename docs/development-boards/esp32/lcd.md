@@ -30,8 +30,12 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 
 
 ### Import the necessary libraries
+
+!!! Caution
+    It's important that you use the *"*-sign for important the *Adafruit_SSD1306* library. With the quotation marks the enviroment searches first in the local directory for this library. Here it's important that you put a patched version of this library in your working directory of the sketch. You need [Adafruit_SSD1306.h](../../source/esp32/OLED_1/Adafruit_SSD1306.h) and  [Adafruit_SSD1306.cpp](../../source/esp32/OLED_1/Adafruit_SSD1306.cpp).
+
 ```c
-#include <Adafruit_SSD1306.h>
+#include "Adafruit_SSD1306.h"
 ```
 
 You need both libraries (Adafruit_SSD1306, Adafruit GFX) in for using this sample codes. In case of compilation error you should check whether you have added both libraries to your Arduino development environment. The *Adafruit GFX* library is used from *Adafruit_SSD1306*.
