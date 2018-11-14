@@ -5,6 +5,9 @@ python:
 
 cache: pip
 
+git:
+  depth: 3
+
 install:
   - pip install -r requirements-python3.txt
 
