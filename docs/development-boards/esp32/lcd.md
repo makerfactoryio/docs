@@ -1,6 +1,6 @@
 ## Overview
 
-The development board supports monochrome OLED displays with the SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
+The development board supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
 
 !!! example
     A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino)
@@ -21,7 +21,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 !!! Info
     **Required libraries**
 
-    In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you could [download](../../source/esp32/OLED1/Adafruit_SSD1306-master.zip) a tested version.
+    In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you could [download](../../source/esp32/OLED_1/Adafruit_SSD1306-master.zip) a tested version.
     After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries.
 
     After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Recommended libraries*.
