@@ -47,5 +47,46 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 
     After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Ucglib* in the category *Contributed libraries*.
 
+### Including necessary libaries
+
+```c
+  #include <Ucglib.h>
+```
+
+### Definition the appropriate constructor
+
+```c
+  Ucglib_ILI9341_18x240x320_HWSPI ucg(/*cd=*/5, /*cs=*/33, /*reset=*/17);
+```
+
+### Configuration
+
+```c
+void setup(void)
+{
+  delay(1000);
+  ucg.begin(UCG_FONT_MODE_TRANSPARENT);
+  ucg.clearScreen();
+}
+```
+
+### Writing on the display
+
+```c
+void loop(void)
+{
+  ucg.setFont(ucg_font_ncenR12_tr);
+  ucg.setColor(255, 255, 255);
+  ucg.setColor(1, 255, 0,0);
+
+  ucg.setPrintPos(0,25);
+  ucg.print("Hello World!");
+
+
+  delay(500);
+}
+```
+
+
 ## Sample project
 There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).
