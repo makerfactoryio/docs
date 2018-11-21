@@ -53,7 +53,6 @@ Change: Ucglib.cpp -> #if defined(__PIC32MX) || defined(__arm__) || defined(ESP8
   
 */
 
-#include <SPI.h>
 #include <Ucglib.h>
     
 Ucglib_ILI9341_18x240x320_HWSPI ucg(/*cd=*/5, /*cs=*/33, /*reset=*/17);
@@ -62,16 +61,13 @@ void setup(void)
 {
   delay(1000);
   ucg.begin(UCG_FONT_MODE_TRANSPARENT);
-  //ucg.begin(UCG_FONT_MODE_SOLID);
   ucg.clearScreen();
 }
 
 void loop(void)
 {
-  //ucg.setRotate90();
   ucg.setFont(ucg_font_ncenR12_tr);
   ucg.setColor(255, 255, 255);
-  //ucg.setColor(0, 255, 0);
   ucg.setColor(1, 255, 0,0);
   
   ucg.setPrintPos(0,25);
