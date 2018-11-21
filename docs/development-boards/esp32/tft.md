@@ -39,6 +39,13 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 
 ## Using the component
 
+!!! Info
+    **Required libraries**
+
+    In order to use the component you need the Ucglib in Version 1.5.2. This version could be downloaded from [GitHub](). Additionally you could [download](../../source/esp32/TFT-HelloWorld/Ucglib_Arduino-1.5.2) from this site..
+    After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries.
+
+    After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Ucglib* in the category *Contributed libraries*.
 
 ## Sample project
 There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).
