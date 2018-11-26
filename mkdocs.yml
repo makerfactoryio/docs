@@ -91,7 +91,14 @@ nav:
 
 - Educational Robotics:
   - Hexapod Robobug Platform:
+    - Introduction: 'educational-robotics/robobug-hexapod/introduction.md'
+    - Explanation of symbols: 'educational-robotics/robobug-hexapod/explanation_of_symbols.md'
+    - Intended Use: 'educational-robotics/robobug-hexapod/intended_use.md'
+    - Package Contents: 'educational-robotics/robobug-hexapod/package_contents.md'
     - Quick start: 'educational-robotics/robobug-hexapod/quick-start.md'
+    - Safety Instructions: 'educational-robotics/robobug-hexapod/safety_instructions.md'
+    - Required accessories: 'educational-robotics/robobug-hexapod/required_accessories.md'
+    - General notes: 'educational-robotics/robobug-hexapod/general_notes.md'
     - Preparatory work: 'educational-robotics/robobug-hexapod/preparatory-work.md'
     - Test firmware installation: 'educational-robotics/robobug-hexapod/test-firmware-installation.md'
     - Preparing the leg servos: 'educational-robotics/robobug-hexapod/preparing-the-leg-servos.md'
@@ -107,6 +114,7 @@ nav:
     - Pin assignment of the user board: 'educational-robotics/robobug-hexapod/pin_assignment_of_the_user_board.md'
     - FAQ: 'educational-robotics/robobug-hexapod/FAQ.md'
     - Cleaning: 'educational-robotics/robobug-hexapod/cleaning.md'
+    - Declaration of Conformity (DOC): 'educational-robotics/robobug-hexapod/declaration_of_conformity.md'
     - Technical Data: 'educational-robotics/robobug-hexapod/technical_data.md'
 
 markdown_extensions:
