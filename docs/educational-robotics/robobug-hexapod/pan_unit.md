@@ -4,4 +4,5 @@ Optionally, an additional servo can be purchased, and the robot can be extended 
 
 The servos can then be controllers via a user board, e.g. via the Arduino&trade; UNO. The servo is connected to one of the pin headers SU1 to SU3.
 
-![Figure 83](../../images/robobug-hexapod/Abb_83.png)
+![Figure 81](../../images/robobug-hexapod/Abb_81.png "Figure 81")   
+**Figure 81**
