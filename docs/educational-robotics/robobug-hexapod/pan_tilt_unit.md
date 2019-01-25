@@ -5,18 +5,15 @@ Optionally, an additional servo can be purchased, and the robot can be extended 
 The servos can then be controllers via a user board, e.g. via the Arduino&trade; UNO. The servo is connected to one of the pin headers SU1 to SU3.
 
 ![Figure 81](../../images/robobug-hexapod/Abb_81.png "Figure 81")   
-**Figure 81**
 
-#Tilt unit
-
-The 3D parts can be printed with a standard FDM 3D printer with a minimum print area of ​​60 x 60 x 60 mm and in different combinations for different servos, sensors and head models. The 3D printed part “B1 PanMount” has to be attached to the pan bracket which is already included in the Robobug set. An additional MF-06HEX 6V-Servo drives the pan unit.
+#Tilt unit (3D-printable)
 
 ![Figure T1](../../images/robobug-hexapod/Abb_T1.png "Figure T1")<br>
 
-The 3D parts can be printed with a standard FDM 3D printer with a minimum print area of ​​60 x 60 x 60 mm and in different combinations for different servos, sensors and head models. The 3D printed part “B1 PanMount” has to be attached to the pan bracket which is already included in the Robobug set. An additional MF-06HEX 6V-Servo drives the pan unit.
+The 3D models can be printed with a standard FDM 3D printer with a minimum print area of ​​60 x 60 x 60 mm and in different combinations for different servos, sensors and head models. The 3D printed part “B1 PanMount” has to be attached to the pan bracket which is already included in the Robobug set. An additional MF-06HEX 6V-Servo drives the pan unit.
 
 
-A unit always consists of the following 3D components:
+A unit always contains the following 3D components:
 
 1x PanMount.stl <br>
 1x Mount-Servo-xxx (xxx = servo type) <br>
