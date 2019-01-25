@@ -13,7 +13,7 @@ The servos can then be controllers via a user board, e.g. via the Arduino&trade;
 The 3D models can be printed with a standard FDM 3D printer with a minimum print area of ​​60 x 60 x 60 mm and in different combinations for different servos, sensors and head models. The 3D printed part “B1 PanMount” has to be attached to the pan bracket which is already included in the Robobug set. An additional MF-06HEX 6V-Servo drives the pan unit.
 
 
-A unit always contains the following 3D components:
+The Tilt Unit always consists of three parts:
 
 1x PanMount.stl <br>
 1x Mount-Servo-xxx (xxx = servo type) <br>
