@@ -9,5 +9,5 @@
 -->
 
 ## **Educational Robotics**
-![RoboBug_ICON](../../images/icons/ICON_robobug.png)<br>
+[![RoboBug_ICON](../../images/icons/ICON_robobug.png)](/educational-robotics/robobug-hexapod/quick-start/)<br>
 &emsp;&emsp;[Hexapod Robobug](/educational-robotics/robobug-hexapod/quick-start/)
