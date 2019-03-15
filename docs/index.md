@@ -1,8 +1,11 @@
 # **Welcome to the Makerfactory Documentation**
 
 ## **Development Boards**
-![ESP32_ICON](../../images/icons/ICON_ESP32.png)&emsp;&emsp;![SensorIO_ICON](../../images/icons/ICON_sensorio.png)<br>
-&emsp;[ESP32 Development Kit](/development-boards/esp32)&emsp;&emsp;&emsp;&emsp;[SensorIO Developments Kit](development-boards/sensorio)
+![ESP32_ICON](../../images/icons/ICON_ESP32.png)<br>
+&emsp;[ESP32 Development Kit](/development-boards/esp32)<br>
+<br>
+![SensorIO_ICON](../../images/icons/ICON_sensorio.png)<br>
+[SensorIO Development Kit](development-boards/sensorio)<br>
 
 ## **Educational Robotics**
 ![RoboBug_ICON](../../images/icons/ICON_robobug.png)<br>
