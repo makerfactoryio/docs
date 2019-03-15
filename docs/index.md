@@ -1,7 +1,7 @@
 # **Welcome to the Makerfactory Documentation**
 
 ## **Development Boards**
-[![ESP32_ICON](../../images/icons/ICON_ESP32.png)](/development-boards/esp32)<br>
+[![ESP32_ICON](../../images/icons/ICON_ESP32.png)](/development-boards/esp32)
 &emsp;[ESP32 Development Kit](/development-boards/esp32)<br>
 <!--
 ![SensorIO_ICON](../../images/icons/ICON_sensorio.png)<br>
