@@ -32,7 +32,7 @@ extra_javascript:
   - assets/js/header.js
 
 nav:
-- OverView: index.md
+- Overview: index.md
 - Development Boards:
   - ESP32:
     - Quick start: development-boards/esp32/index.md
