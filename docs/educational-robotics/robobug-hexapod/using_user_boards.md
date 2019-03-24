@@ -16,7 +16,8 @@ Also, make sure that all pin header pins are plugged into the sockets of the "Ar
 It is possible to use almost all Arduino UNO compatible boards.
 After plugging in the board, you can jump directly to the chapter "Demo Programmes".
 
-![Figure 75](../../images/robobug-hexapod/Abb_75.png)
+![Figure 73](../../images/robobug-hexapod/Abb_73.png "Figure 73")   
+**Figure 73**
 
 ##NodeMCU WiFi Board
 The WiFi board called "NodeMCU" and the ESP8266 WiFi chip used can be used as a user board on the inner slot.
@@ -24,18 +25,21 @@ If you want to extend the robot board with WiFi, you can easily do so with the h
 Plug a NodeMCU board onto the Hexapod Robot Board as shown in Figure 74. Proceed carefully and make sure that the pin strips are not bent and that all pins are plugged in correctly.
 After plugging in the board, you can jump directly to the chapter [Demo Programs](..demo_programs.md).
 
-![Figure 76](../../images/robobug-hexapod/Abb_76.png)
+![Figure 74](../../images/robobug-hexapod/Abb_74.png "Figure 74")   
+**Figure 74**
 
 !!! Caution
     When buying, make sure that the distance between the pin strips is correct! There are two different versions on the market. One has a Silabs CP2102 as USB chip while the other version has a CH340G.
-    The	version	with	the	CH340G	has	a	wider	pin	spacing	and	does	not	fit	into	the	robot board! The NodeMCU board to be used must have a pin strip spacing of 23 mm.
+    The version with the CH340G has a wider pin spacing and does not fit into the robot board! The NodeMCU board to be used must have a pin strip spacing of 23 mm.
 
-![Figure 77](../../images/robobug-hexapod/Abb_77.png)
+![Figure 75](../../images/robobug-hexapod/Abb_75.png "Figure 75")   
+**Figure 75**
 
 ##Single-Board-Computer (SBCs) and other Boards
 The robot board offers the possibility to mount an SBC like e.g., a Raspberry Pi 2/3 or compatible via board spacers. SBCs with a different hole spacing can be easily mounted with a self-made adapter board. Here the robot board offers enough space for proper extensions. The pin header shown next to the "ISP-U" connection is a universal connection port for SBC or your own extensions. For the wiring between the SBC and the robot board, it is best to use the so-called "jumpwire" (socket - socket).
 
-![Figure 78](../../images/robobug-hexapod/Abb_78.png)
+![Figure 76](../../images/robobug-hexapod/Abb_76.png "Figure 76")   
+**Figure 76**
 
 ## Pin description (see inscription below the pins in Figure 76):
 
@@ -54,9 +58,9 @@ The robot board offers the possibility to mount an SBC like e.g., a Raspberry Pi
 
 Figure 77 shows the robot and a Raspberry Pi 2 mounted on three 25 mm long circuit board spacers. The holes for mounting are already present in the robot board. The connection between the Raspberry Pi and the robot board was made using jumpwire connectors. The cables of the jumpers were placed under the Raspberry Pi to get a clean wiring.
 
-![Figure 79](../../images/robobug-hexapod/Abb_79.png)
+![Figure 77](../../images/robobug-hexapod/Abb_77.png "Figure 77")   
+**Figure 77**
 
-!!! Info
-    It's	possible	that	your	SBC	reacts	very	sensitively	to	voltage	fluctuations	and	safe	operation	is	not	possible	via	the	battery,	which	also	supplies	the	leg	servos.  In this case we recommend to supply the SBC via a small separate power bank. In practice, a battery capacity with a Powerbank of 2000 - 3000 mAh is	sufficient	to	supply	the	SBC	until	the	Hexapod	battery	is	empty.	Sometimes	it	is	also	sufficient	to	support	the	power	supply	directly	at	the	SBC	with	a	large	capacitor	of	2200	μF	(or	more).	 The reason for the unstable operation might come from a battery that is too small with high internal resistance, or from servos with very high current consumption or large current peaks.
+&rarr; It's possible that your SBC reacts very sensitively to voltage fluctuations and safe operation is not possible via the battery, which also supplies the leg servos.  In this case we recommend to supply the SBC via a small separate power bank. In practice, a battery capacity with a Powerbank of 2000 - 3000 mAh is sufficient to supply the SBC until the Hexapod battery is empty. Sometimes it is also sufficient to support the power supply directly at the SBC with a large capacitor of 2200 μF (or more).  The reason for the unstable operation might come from a battery that is too small with high internal resistance, or from servos with very high current consumption or large current peaks.
 
 

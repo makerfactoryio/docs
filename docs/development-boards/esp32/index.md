@@ -1,6 +1,6 @@
 # Documentation for the Embedded Board Builder for ESP32
 
-This documentation describes ESP32 Evalulation board as part of the Embedded Board Builder (EBB) familiy from Makerfactory. This board is an an devleopment board for the ESP32 module from Expressif. With this development board you could develop projects for the **ESP32-WROOM** or **ESP32-WROVER**.
+This documentation describes the **ESP32 Evalulation board** as part of the Embedded Board Builder (EBB) familiy from Makerfactory. This board is an an devleopment board for the ESP32 module from [Expressif Systems](https://www.espressif.com/). With this development board you could develop projects for the **ESP32-WROOM-32** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)) or **ESP32-WROVER** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf)).
 
 !!! info
     The screenshots are created with the english version of Windows 10. If screenshots completly differs from the Mac OS version it's mentioned in the text.

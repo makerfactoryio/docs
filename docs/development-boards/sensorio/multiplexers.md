@@ -24,7 +24,7 @@ Multiplexer for Arduino selects which analog input pin on Arduino port (`A0` to 
 
 #### Pin settings
 
-ARD_MUX_A | ARD_MUX_B | ARD_MUX_C | Selection
+ARD_MUX_C | ARD_MUX_B | ARD_MUX_A | Selection
 :-------: |:---------:| :-------: | :-------:
  0 | 0 | 0 | A0
  0 | 0 | 1 | A1

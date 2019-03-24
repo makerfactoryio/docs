@@ -13,6 +13,7 @@ pinMode(chipSelect, OUTPUT);
 digitalWrite(chipSelect, HIGH);  
 
 **The Gamepad does not connect or show any reaction**  
+
 - Check the batteries in the transmitter  
 - Is the reciever correctly connected to the robot board?  
 - Is the "motion firmware" installed on the robot board?  
@@ -21,6 +22,7 @@ digitalWrite(chipSelect, HIGH);
 - Jumper J7 must not be plugged in.  
 
 **The robot does not react to the gamepad**  
+
 - Check the batteries in the transmitter  
 - Is the reciever correctly connected to the robot board?  
 - Is the "motion firmware" installed on the robot board?  
@@ -29,6 +31,7 @@ digitalWrite(chipSelect, HIGH);
 - Jumper J7 removed?  
 
 **The robot is not running cleanly**  
+
 - Have the legs been calibrated?  
 - Are the batteries sufficient strong and charged?  
 - Is the robot too heavy?  
@@ -43,6 +46,7 @@ The circuit diagram can be found in the "Schematic" folder in the download bundl
 
 
 **The robot carries out the reset after switching on or getting up**  
+
 - Make sure that the battery is fully charged.  
 - Is the battery connection cable too thin (< 1.5 mm²) or longer than 20 cm?  
 - Is the battery plug soldered on cleanly?  

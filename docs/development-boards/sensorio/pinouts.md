@@ -3,7 +3,7 @@
 The MCU PinNames mappings are listed as [PortName_Bit]. When available, the alternative functions are described (as extra ADC channels, CAN Bus or I2S for audio for instance).
 
 !!! tip "mbed target pin-mapping"
-	For the mbed platform, the pin mappings are done in the SensorIO target (**mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH/TARGET_SENSORIO/PinNames.h**) 
+	In the mbed platform, the pin mappings are done in the SensorIO target (**mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH/TARGET_SENSORIO/PinNames.h**) 
 
 ## OnBoard interfaces
 
@@ -184,11 +184,11 @@ PA_0 | ARD_D1/TX | UART4_TX / PWM / ADC1_IN0
 PF_9 | ARD_D2 | UART8_RX / PWM
 PA_2 | ARD_D3 | PWM (TIM9_CH1)
 PF_10 | ARD_D4 | PWM (TIM5_CH4)
-PA_2 | ARD_D5 | PWM (TIM9_CH2) / UART2_TX / I2S2_CKIN / ADC1_IN2
+PA_3 | ARD_D5 | PWM (TIM9_CH2) / UART2_TX / I2S2_CKIN / ADC1_IN2
 PB_10 | ARD_D6 | PWM (TIM2_CH3) / I2S3_MCK / USART3_TX
 PF_11 | ARD_D7 | I/O
 PF_12 | ARD_D8 | I/O
-PB_10 | ARD_D9 | PWM (TIM2_CH4) / I2S3_MCK
+PB_11 | ARD_D9 | PWM (TIM2_CH4) / I2S3_MCK
 PA_11 | ARD_D10/CS | SPI2_NSS (Chip Select) / PWM / CAN1_RX / UART6_TX
 PA_10 | ARD_D11/MOSI | SPI2_MOSI / PWM / UART1_RX
 PA_12 | ARD_D12/MISO | SPI2_MISO / UART6_RX/ CAN1_TX/ UART4_RX
@@ -199,4 +199,4 @@ PG_7 | ARD_MUX_B | Analog Multiplexer pin B
 PG_8 | ARD_MUX_C | Analog Multiplexer pin C
 
 !!! note "Shared signals"
-	**(1)** In the Arduino UNO R3 interface, pins A4 is shared with D14 and A5 is shared with D15. Therefore, if these pins are to be used as Analog Inputs, the correspondent I2C pins PB_4 and PA_8 need to be configured as Input (high-impedance, default behaviour).
+	**(1)** In the Arduino UNO R3 interface, the pin A4 is shared with D14 and A5 is shared with D15. Therefore, if these pins are to be used as Analog Inputs, the correspondent I2C pins PB_4 and PA_8 need to be configured as Input (high-impedance, default behaviour).
