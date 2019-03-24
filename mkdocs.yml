@@ -122,6 +122,30 @@ nav:
       - Avoid obstacles with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_demo.md'
       - Follow objects with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_follow.md'
 
+- M5STACK:
+  - M5STACK Core:
+    - Quickstart:
+      - Overview: 'm5stack/core/quickstart/overview.md'
+      - Windows: 'm5stack/core/quickstart/windows.md'
+      - macOS: 'm5stack/core/quickstart/macos.md'
+      - UIFlow: 'm5stack/core/quickstart/uiflow.md'
+    - M5Core BASIC: 'm5stack/core/black.md'
+    - M5Core GRAY: 'm5stack/core/gray.md'
+    - M5Core FIRE: 'm5stack/core/fire.md'
+  - M5STACK Kit:
+    - Quickstart: 'm5stack/kit/quickstart.md'
+    - M5GO Kit: 'm5stack/kit/m5go.md'
+    - FACES Kit: 'm5stack/kit/faces.md'
+  - M5STACK Module:
+    - Quickstart: 'm5stack/module/quickstart.md'
+    - GPS: 'm5stack/module/gps.md'
+    - BATTERY: 'm5stack/module/battery.md'
+    - PROTO: 'm5stack/module/proto.md'
+  - M5STACK Unit:
+    - M5Camera: 'm5stack/unit/m5camera.md'
+  - M5STACK Base:
+    - BTC: 'm5stack/base/btc.md'
+
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
