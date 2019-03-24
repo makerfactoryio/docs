@@ -129,13 +129,15 @@ nav:
       - Windows: 'm5stack/core/quickstart/windows.md'
       - macOS: 'm5stack/core/quickstart/macos.md'
       - UIFlow: 'm5stack/core/quickstart/uiflow.md'
-    - M5Core BASIC: 'm5stack/core/black.md'
+      - M5Core BASIC: 'm5stack/core/black.md'
     - M5Core GRAY: 'm5stack/core/gray.md'
     - M5Core FIRE: 'm5stack/core/fire.md'
   - M5STACK Kit:
     - Quickstart: 'm5stack/kit/quickstart.md'
     - M5GO Kit: 'm5stack/kit/m5go.md'
     - FACES Kit: 'm5stack/kit/faces.md'
+    - PROTO Kit: 'm5stack/kit/proto.md'
+    - WRISTBAND Kit: 'm5stack/kit/wristband.md'
   - M5STACK Module:
     - Quickstart: 'm5stack/module/quickstart.md'
     - GPS: 'm5stack/module/gps.md'
@@ -144,7 +146,8 @@ nav:
   - M5STACK Unit:
     - M5Camera: 'm5stack/unit/m5camera.md'
   - M5STACK Base:
-    - BTC: 'm5stack/base/btc.md'
+    - LOADING: 'm5stack/base/btc.md'
+    - FRAME: 'm5stack/base/frame.md'
 
 markdown_extensions:
   - markdown.extensions.admonition
