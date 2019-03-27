@@ -11,6 +11,7 @@ html .md-nav--primary .md-nav__title--site {
 }
 
 .md-logo img {
+  width: auto;
   height: 7rem;
 }
 
