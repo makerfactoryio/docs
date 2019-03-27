@@ -1,13 +1,13 @@
 # M5GO IOT Starter Kit
 
 <div markdown="span" class="float-container text-center">
-  <div markdown="span" class="pull-left" style="width: 33%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 33%">
 <img src="/images/m5stack/product_pics/core/m5go/m5go_01.jpg">
   </div>
-  <div markdown="span" class="pull-left" style="width: 33%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 33%">
 <img src="/images/m5stack/product_pics/core/m5go/m5go_02.jpg">
   </div>
-  <div markdown="span" class="pull-left" style="width: 33%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 33%">
 <img src="/images/m5stack/product_pics/core/m5go/m5go_03.jpg">
   </div>
 </div>
