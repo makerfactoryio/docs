@@ -1,5 +1,5 @@
 site_name: Makerfactory Documentation
-copyright: "&copy; Makerfactory 2018"
+copyright: "&copy; Makerfactory 2019"
 
 extra:
   social:
@@ -27,6 +27,7 @@ extra_css:
   - assets/css/nav.css
   - assets/css/extra.css
   - assets/css/float.css
+  - assets/css/layout.css
 
 extra_javascript:
   - assets/js/header.js
@@ -123,31 +124,55 @@ nav:
       - Follow objects with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_follow.md'
 
 - M5STACK:
-  - M5STACK Core:
-    - Quickstart:
-      - Overview: 'm5stack/core/quickstart/overview.md'
-      - Windows: 'm5stack/core/quickstart/windows.md'
-      - macOS: 'm5stack/core/quickstart/macos.md'
-      - UIFlow: 'm5stack/core/quickstart/uiflow.md'
+  - Products:
+    - M5STACK Core:
+      - Quickstart:
+        - Overview: 'm5stack/core/quickstart/overview.md'
+        - Windows: 'm5stack/core/quickstart/windows.md'
+        - macOS: 'm5stack/core/quickstart/macos.md'
+        - UIFlow: 'm5stack/core/quickstart/uiflow.md'
+        - M5Cloud: 'm5stack/core/quickstart/m5cloud.md'
       - M5Core BASIC: 'm5stack/core/black.md'
-    - M5Core GRAY: 'm5stack/core/gray.md'
-    - M5Core FIRE: 'm5stack/core/fire.md'
-  - M5STACK Kit:
-    - Quickstart: 'm5stack/kit/quickstart.md'
-    - M5GO Kit: 'm5stack/kit/m5go.md'
-    - FACES Kit: 'm5stack/kit/faces.md'
-    - PROTO Kit: 'm5stack/kit/proto.md'
-    - WRISTBAND Kit: 'm5stack/kit/wristband.md'
-  - M5STACK Module:
-    - Quickstart: 'm5stack/module/quickstart.md'
-    - GPS: 'm5stack/module/gps.md'
-    - BATTERY: 'm5stack/module/battery.md'
-    - PROTO: 'm5stack/module/proto.md'
-  - M5STACK Unit:
-    - M5Camera: 'm5stack/unit/m5camera.md'
-  - M5STACK Base:
-    - LOADING: 'm5stack/base/btc.md'
-    - FRAME: 'm5stack/base/frame.md'
+      - M5Core GRAY: 'm5stack/core/gray.md'
+      - M5Core FIRE: 'm5stack/core/fire.md'
+    - M5STACK Kit:
+      - M5GO Kit: 'm5stack/kit/m5go.md'
+      - FACES Kit: 'm5stack/kit/faces.md'
+      - PROTO Kit: 'm5stack/kit/proto.md'
+      - WRISTBAND Kit: 'm5stack/kit/wristband.md'
+      - Quickstart:
+        - FACES NES Game: 'm5stack/kit/quickstart/faces-nes.md'
+    - M5STACK Module:
+      - GPS: 'm5stack/module/gps.md'
+      - BATTERY: 'm5stack/module/battery.md'
+      - PROTO: 'm5stack/module/proto.md'
+    - M5STACK Unit:
+      - Quickstart: 'm5stack/unit/quickstart.md'
+      - M5Camera: 'm5stack/unit/m5camera.md'
+    - M5STACK Base:
+      - FACES Base: 'm5stack/base/faces.md'
+      - Frame Base: 'm5stack/base/frame.md'
+      - Loading Base: 'm5stack/base/btc.md'
+      - M5GO Base: 'm5stack/base/m5go.md'
+      - M5GO Charger: 'm5stack/base/m5go_charger.md'
+  - Arduino API:
+    - Overview: 'm5stack/api/overview.md'
+    - Button: 'm5stack/api/button.md'
+    - LCD: 'm5stack/api/lcd.md'
+    - MPU9250: 'm5stack/api/mpu9250.md'
+    - Power: 'm5stack/api/power.md'
+    - Speaker: 'm5stack/api/speaker.md'
+    - System: 'm5stack/api/system.md'
+    - TF: 'm5stack/api/tf.md'
+  - Use-Cases: 'm5stack/cases.md'
+  - Related Documents:
+    - Overview: 'm5stack/related-documents/overview.md'
+    - Establish Serial Connection: 'm5stack/related-documents/serial-connection.md'
+    - How to Install Git and Arduino: 'm5stack/related-documents/git-arduino.md'
+    - Upgrade M5Stack Lib: 'm5stack/related-documents/upgrade-lib.md'
+    - How to Burn Firmware: 'm5stack/related-documents/burn-firmware.md'
+    - How to Connect WiFi Using Core: 'm5stack/related-documents/wifi-core.md'
+    - How to Connect WiFi Using M5Cloud: 'm5stack/related-documents/wifi-m5cloud.md'
 
 markdown_extensions:
   - markdown.extensions.admonition

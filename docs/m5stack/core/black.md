@@ -2,10 +2,10 @@
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/basic/basic_02.png" alt="basic_02" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/basic/basic_02.jpg">
   </div>
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/basic/basic_03.png" alt="basic_03" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/basic/basic_03.jpg">
   </div>
 </div>
 
@@ -21,7 +21,7 @@
 
 This is a [Bottom board](en/base/core_bottom) on the back of M5Core. It's designed for expanding gpio on M-Bus besides I2S Pins(GPIO0, GPIO12, GPIO13, GPIO15, GPIO34)for DIY. Each gpio on M-Bus is expanded as pin and port for convenience and flexibility.
 
-<img src="assets/img/product_pics/core/basic/basic_07.png" width="350" height="350"><img src="assets/img/product_pics/core/basic/basic_08.png" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/basic/basic_07.jpg"><img src="/images/m5stack/product_pics/core/basic/basic_08.jpg">
 
 ## Feature
 
@@ -132,15 +132,15 @@ This is a [Bottom board](en/base/core_bottom) on the back of M5Core. It's design
 -  Type-C USB Cable
 -  User Manual
 
-<img src="assets/img/product_pics/core/basic/basic_04.png" alt="basic_04" width="80%" height="80%">
+<img src="/images/m5stack/product_pics/core/basic/basic_04.jpg">
 
-<!-- <img src="assets/img/product_pics/core/basic/basic_04.png" alt="basic_04" width="80%" height="80%">
+<!--<img src="/images/m5stack/product_pics/core/basic/basic_04.jpg">
 
-<img src="assets/img/product_pics/core/basic/basic_06.png" width="250" height="250"> <img src="assets/img/product_pics/core/basic/basic_07.png" width="250" height="250">
+<img src="/images/m5stack/product_pics/core/basic/basic_06.jpg"><img src="/images/m5stack/product_pics/core/basic/basic_07.jpg">
 
-<img src="assets/img/product_pics/core/basic/basic_08.png" width="250" height="250"> <img src="assets/img/product_pics/core/basic/basic_09.png" width="250" height="250"> -->
+<img src="/images/m5stack/product_pics/core/basic/basic_08.jpg"><img src="/images/m5stack/product_pics/core/basic/basic_09.jpg"> -->
 
-<img src="assets/img/product_pics/core/basic/basic_10.png" width="50%" height="50%">
+<img src="/images/m5stack/product_pics/core/basic/basic_10.jpg">
 
 ## Related Link
 
