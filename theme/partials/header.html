@@ -44,15 +44,23 @@
                     <div href="{{ item_url | url }}" class="mute">
                       {{ nav_item.title }}
                     </div>
-
+                    
+                    {% set ns = namespace(sub_url="", sub_children=[]) %}
                     {% for sub_item in nav_item.children %}
-                      {% set sub_url = sub_item.url %}
+                      {% set ns.sub_url = sub_item.url %}
+                      {% set ns.sub_children = sub_item.children %}
 
-                      {% if sub_item.children %}
-                        {% set sub_url = sub_item.children[0].url %}
+                      {% if not ns.sub_url and ns.sub_children %}
+                        {% for sub_index in range(4) %}
+                          {% set ns.sub_url = ns.sub_url or ns.sub_children[0].url %}
+
+                          {% if ns.sub_children[0].children %}
+                            {% set ns.sub_children = ns.sub_children[0].children %}
+                          {% endif %}
+                        {% endfor %}
                       {% endif %}
 
-                      <a href="{{ sub_url | url }}">
+                      <a href="{{ ns.sub_url | url }}">
                         {% if sub_item.active %}
                           <span class="selected">
                               {{ sub_item.title }}
