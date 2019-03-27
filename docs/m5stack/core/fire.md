@@ -2,10 +2,10 @@
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/fire/product_pic_fire.png" alt="fire_01" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/fire/product_pic_fire.jpg">
   </div>
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/fire/m5_fire_01.png" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/fire/m5_fire_01.jpg">
   </div>
 </div>
 
@@ -17,7 +17,7 @@
 
 ## Description
 
-The M5Stack **FIRE** is a development kit based on ESP32 chip. FIRE is a kit which composed of red m5core, [M5Go Base](zh_CN/base/m5go_bottom) and [M5Go CHG. Base](zh_CN/base/m5go_charger) (for charging red m5core). You can even program The M5Stack FIRE through Blockly, Arduino or MicroPython.
+The M5Stack **FIRE** is a development kit based on ESP32 chip. FIRE is a kit which composed of red m5core, [M5Go Base](../../base/m5go) and [M5Go CHG. Base](../../base/m5go_charger) (for charging red m5core). You can even program The M5Stack FIRE through Blockly, Arduino or MicroPython.
 
 The M5Stack FIRE equips ESP32 with everything necessary to program. It also features a 9-Axis (Gyro + Accelerometer + Magnetometer) MEMS (**MPU-9250**) and a TFT LCD, so you can create a 3D remote gesture controller, a simple "Leap Motion" via M5Stack FIRE in a day in stead of couple weeks and so on.
 
@@ -25,7 +25,7 @@ M5Go CHG. Base is composed of POGO pin. M5Go Base is composed of PORT B, PORT C,
 
 **Charging instructions:** The charging indicator light will blink when base is charging, but the light will keep on when charge completed.
 
-<img src="assets/img/product_pics/base/m5go_charger_10.png" width="50%" height="50%"><img src="assets/img/product_pics/base/m5go_charger_09.png" width="50%" height="50%">
+<img src="/images/m5stack/product_pics/base/m5go_charger_10.jpg"><img src="/images/m5stack/product_pics/base/m5go_charger_09.jpg">
 
 ## Feature
 

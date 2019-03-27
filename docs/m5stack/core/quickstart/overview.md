@@ -2,6 +2,6 @@
 
 **Pick up your programming mode below for getting started**
 
-<img src="assets/img/macos-logo.png"> | <img src="assets/img/windows-logo.png"> | <img src="assets/img/uiflow-logo.png">
+<img src="/images/m5stack/macos-logo.png"> | <img src="/images/m5stack/windows-logo.png"> | <img src="/images/m5stack/uiflow-logo.png">
 ---|---|---
 [Arduino-MacOS](../macos) | [Arduino-Windows](../windows) | [UIFlow](../uiflow)

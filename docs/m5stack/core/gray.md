@@ -2,10 +2,10 @@
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/gray/gray_01.png" alt="gray_02" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/gray/gray_01.jpg">
   </div>
   <div markdown="span" class="pull-left" style="width: 50%">
-    <img src="assets/img/product_pics/core/gray/gray_02.png" alt="gray_02" width="350" height="350">
+<img src="/images/m5stack/product_pics/core/gray/gray_02.jpg">
   </div>
 </div>
 
@@ -21,18 +21,18 @@
 
 The M5Core GRAY equips ESP32 with everything necessary to program. It also features a MEMS Chip(**MPU9250**), and a TFT LCD, so you can create a 3D remote gesture controller, a simple "Leap Motion" via M5Core GRAY in a day in stead of couple weeks and so on.
 
-<img src="assets/img/product_pics/core/gray/gray_09.png" width="500" height="500">
+<img src="/images/m5stack/product_pics/core/gray/gray_09.jpg">
 
 This is a [Bottom board](en/base/core_bottom) on the back of M5Core. It's designed for expanding gpio on M-Bus besides I2S Pins(GPIO0, GPIO12, GPIO13, GPIO15, GPIO34)for DIY. Each gpio on M-Bus is expanded as pin and port for convenience and flexibility.
 
-<img src="assets/img/product_pics/core/gray/gray_08.png" width="500" height="500">
+<img src="/images/m5stack/product_pics/core/gray/gray_08.jpg">
 
 ## Feature
 
 -  Programming Support: [UIFlow](http://flow.m5stack.com), [MicroPython](http://micropython.org/) and [Arduino](http://www.arduino.cc)
 -  TF Card Support(Up to 16GB)
 
-<img src="assets/img/product_pics/core/gray/gray_07.png" width="500" height="500">
+<img src="/images/m5stack/product_pics/core/gray/gray_07.jpg">
 
 ## PinMap
 
@@ -184,9 +184,9 @@ This is a [Bottom board](en/base/core_bottom) on the back of M5Core. It's design
 -  Type-C USB Cable
 -  User Manual
 
-<img src="assets/img/product_pics/core/gray/gray_04.png" alt="gray_04" width="80%" height="80%">
+<img src="/images/m5stack/product_pics/core/gray/gray_04.jpg">
 
-<img src="assets/img/product_pics/core/gray/gray_10.png" width="50%" height="50%">
+<img src="/images/m5stack/product_pics/core/gray/gray_10.jpg">
 
 ## Related Link
 
