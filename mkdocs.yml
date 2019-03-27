@@ -127,15 +127,15 @@ nav:
 - M5STACK:
   - Products:
     - M5STACK Core:
+      - M5Core BASIC: 'm5stack/core/black.md'
+      - M5Core GRAY: 'm5stack/core/gray.md'
+      - M5Core FIRE: 'm5stack/core/fire.md'
       - Quickstart:
         - Overview: 'm5stack/core/quickstart/overview.md'
         - Windows: 'm5stack/core/quickstart/windows.md'
         - macOS: 'm5stack/core/quickstart/macos.md'
         - UIFlow: 'm5stack/core/quickstart/uiflow.md'
         - M5Cloud: 'm5stack/core/quickstart/m5cloud.md'
-      - M5Core BASIC: 'm5stack/core/black.md'
-      - M5Core GRAY: 'm5stack/core/gray.md'
-      - M5Core FIRE: 'm5stack/core/fire.md'
     - M5STACK Kit:
       - M5GO Kit: 'm5stack/kit/m5go.md'
       - FACES Kit: 'm5stack/kit/faces.md'
@@ -148,8 +148,8 @@ nav:
       - BATTERY: 'm5stack/module/battery.md'
       - PROTO: 'm5stack/module/proto.md'
     - M5STACK Unit:
-      - Quickstart: 'm5stack/unit/quickstart.md'
       - M5Camera: 'm5stack/unit/m5camera.md'
+      - Quickstart: 'm5stack/unit/quickstart.md'
     - M5STACK Base:
       - FACES Base: 'm5stack/base/faces.md'
       - Frame Base: 'm5stack/base/frame.md'
