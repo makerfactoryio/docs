@@ -1,10 +1,10 @@
 # M5Stack FIRE
 
 <div markdown="span" class="float-container text-center">
-  <div markdown="span" class="pull-left" style="width: 50%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 50%">
 <img src="/images/m5stack/product_pics/core/fire/product_pic_fire.jpg">
   </div>
-  <div markdown="span" class="pull-left" style="width: 50%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 50%">
 <img src="/images/m5stack/product_pics/core/fire/m5_fire_01.jpg">
   </div>
 </div>

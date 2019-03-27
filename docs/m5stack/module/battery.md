@@ -1,10 +1,10 @@
 # M5Stack BATTERY Module
 
 <div markdown="span" class="float-container text-center">
-  <div markdown="span" class="pull-left" style="width: 50%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 50%">
 <img src="/images/m5stack/product_pics/module/module_battery_01.jpg">
   </div>
-  <div markdown="span" class="pull-left" style="width: 50%">
+  <div markdown="span" class="pull-left slight-padding" style="width: 50%">
 <img src="/images/m5stack/product_pics/module/module_battery_02.jpg">
   </div>
 </div>
