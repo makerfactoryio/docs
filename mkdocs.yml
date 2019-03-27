@@ -28,6 +28,7 @@ extra_css:
   - assets/css/extra.css
   - assets/css/float.css
   - assets/css/layout.css
+  - assets/css/images.css
 
 extra_javascript:
   - assets/js/header.js
