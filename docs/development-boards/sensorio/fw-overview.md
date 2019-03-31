@@ -1,3 +1,5 @@
+Following pages contain detailed description and example usage of all SensorIO on-board peripherals and sensors from firmware perspective. All examples are based on Mbed OS and [SensorIO template project](./code-setup.md#using-template-repository).
+
 ## Peripherals
 
 - [OLED display - SSD1306 128x32 pixels](./oled.md)
@@ -5,6 +7,10 @@
 - [RGB Led](./rgbled.md)
 - [User button](./button.md)
 - [Multiplexers for Grove and Arduino connectors](./multiplexers.md)
+- [MicroSD Card](./sdcard.md)
+- [WiFi - CC3120](./wifi.md)
+- [Extension ports](./extension-ports.md)
+
 ## Sensors
 
 !!! info "I2C"
@@ -12,3 +18,5 @@
 
 - [Luminosity - LTR303-ALS](./ltr303.md)
 - [Acceleration - BMA253](./bma253.md)
+- [Environmental sensor - BME680](./bme680.md)
+

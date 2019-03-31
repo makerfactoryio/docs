@@ -48,7 +48,9 @@ Steps needed to compile Mbed OS based firmware for SensorIO:
 
     ```bash
     git clone https://github.com/slashdevteam/mbed-os.git`
+    cd mbed-os
     git checkout -t origin/sensorio-dev-target
+    cd ..
     ```
 
     !!! warning "Mbed OS repository"

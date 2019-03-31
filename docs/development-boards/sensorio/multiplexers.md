@@ -7,6 +7,9 @@ There are two ways to set multiplexers:
 1. By directly controlling appropriate pins (see Pin Definitions sections) with Mbed OS built-in `DigitalOut` class
 2. By using a simple wrappers with more verbose, one-line settings from [Github](https://github.com)
 
+!!! info "Compiling examples"
+    This example is based on Mbed OS and requires a simple setup. For full description check [Code Setup](./code-setup.md) page.
+
 ## Arduino
 
 Multiplexer for Arduino selects which analog input pin on Arduino port (`A0` to `A5`) is connected to main MCU analog input (`PC_0`/`ARD_ANALOG_IN`).

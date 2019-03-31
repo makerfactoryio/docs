@@ -71,7 +71,6 @@ nav:
       - Compilation: 'development-boards/sensorio/compilation.md'
       - Flashing: 'development-boards/sensorio/flashing.md'
       - Debugging: 'development-boards/sensorio/debugging.md'
-      - Demo App: 'development-boards/sensorio/demo-app.md'
     - Hardware:
       - Overview: 'development-boards/sensorio/hardware-overview.md'
       - Circuit Schematics: 'development-boards/sensorio/schematics.md'
@@ -84,12 +83,16 @@ nav:
       - Sensors:
         - Light sensor: 'development-boards/sensorio/ltr303.md'
         - Accelerometer: 'development-boards/sensorio/bma253.md'
+        - Environmental sensor: 'development-boards/sensorio/bme680.md'
       - Peripherals:
         - Display: 'development-boards/sensorio/oled.md'
         - Relays: 'development-boards/sensorio/relays.md'
         - RGB Led: 'development-boards/sensorio/rgbled.md'
         - User button: 'development-boards/sensorio/button.md'
         - Multiplexers: 'development-boards/sensorio/multiplexers.md'
+        - SD Card: 'development-boards/sensorio/sdcard.md'
+        - WiFi: 'development-boards/sensorio/wifi.md'
+        - Extension ports: 'development-boards/sensorio/extension-ports.md'
 
 - Educational Robotics:
   - Hexapod Robobug Platform:
