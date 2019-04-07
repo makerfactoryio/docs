@@ -50,7 +50,7 @@
 
 .dropdown:hover ul {
   overflow-y: auto;
-  height: 52rem;
+  height: 32rem;
 }
 
 .dropdown ul li {
@@ -90,6 +90,6 @@
   }
 
   .dropdown:hover ul {
-    height: 40rem;
+    height: 24rem;
   }
 }

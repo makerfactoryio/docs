@@ -1,3 +1,8 @@
 .slight-padding {
   padding: 10px;
 }
+
+.bottom-aligned {
+  display: inline-block;
+  vertical-align: bottom;
+}
