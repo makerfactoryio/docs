@@ -1,7 +1,7 @@
 ## Here are the examples for the eggs
 
 ### blink
-A sample project is provided in [**01blink.sb**](../../source/tec-egg/01blink.sb). Have fun.
+A sample project is provided in <h3>[**01blink.sb**](../../source/tec-egg/01blink.sb)</h3>. Have fun.
 
 ### ampel 1
 A sample project is provided in [**02ampel01.sb**](../../source/tec-egg/02ampel01.sb). Have fun.
