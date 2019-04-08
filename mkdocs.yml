@@ -177,6 +177,7 @@ nav:
 - Kits:
   - Tec-Egg:
     - Info: tec-egg/index.md
+    - Examples: tec-egg/examples.md
 
 markdown_extensions:
   - markdown.extensions.admonition
