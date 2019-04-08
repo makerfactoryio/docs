@@ -31,3 +31,13 @@
     [RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
   </div>
 </div>
+
+## Kits
+
+<div markdown="span" class="float-container text-center">
+  <div markdown="span" class="pull-left" style="width: 33%">
+    [![Tec-Egg_ICON](../../images/tec-egg/001891587PI02.jpg)](/tec-egg/index)
+    <br>
+    [Tec Egg](/tec-egg/index)
+  </div>
+</div>
