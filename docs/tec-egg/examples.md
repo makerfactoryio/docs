@@ -12,8 +12,8 @@ A sample project is provided in [*03ampel02.sb*](../../source/tec-egg/03ampel02.
 ### leds
 A sample project is provided in [**04leds.sb**](../../source/tec-egg/04leds.sb). Have fun.
 
-### lauflicht
-A sample project is provided in [**05lauflicht.sb**](../../source/tec-egg/05lauflicht.sb). Have fun.
+###  lauflicht
+A sample project is provided in ['05lauflicht.sb'](../../source/tec-egg/05lauflicht.sb). Have fun.
 
 ### leds 7
 A sample project is provided in [**06leds7.sb**](../../source/tec-egg/06leds7.sb). Have fun.
