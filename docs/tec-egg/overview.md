@@ -1,6 +1,6 @@
 # TEC- EGG Products
 
-### This documentation describes the three Tec-Egg products
+### This documentation describes all three Tec-Egg products
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left slight-padding" style="width: 33%">
