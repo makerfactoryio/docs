@@ -176,7 +176,7 @@ nav:
       - Follow objects with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_follow.md'
 - Kits:
   - Tec-Egg:
-    - Info: tec-egg/index.md
+    - Info: tec-egg/overview.md
     - Examples: tec-egg/examples.md
 
 markdown_extensions:
