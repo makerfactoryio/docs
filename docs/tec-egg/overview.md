@@ -4,7 +4,7 @@
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left slight-padding" style="width: 33%">
-    [![Tec-Egg Raspberry Pi](../../images/tec-egg/001891587PI02.jp)](/tec-egg/raspberry_pi)
+    [![Tec-Egg Raspberry Pi](../../images/tec-egg/001891587PI02.jpg)](/tec-egg/raspberry_pi)
     <br>
     [Tec-Egg Raspberry Pi](/tec-egg/raspberry_pi)
   </div>
