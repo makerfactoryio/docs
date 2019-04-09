@@ -36,8 +36,8 @@
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 33%">
-    [![Tec-Egg_ICON](../../images/tec-egg/001891587PI02.jpg)](/tec-egg/index)
+    [![Tec-Egg_ICON](../../images/tec-egg/001891587PI02.jpg)](/tec-egg/overview)
     <br>
-    [Tec Egg](/tec-egg/index)
+    [Tec Egg](/tec-egg/overview)
   </div>
 </div>
