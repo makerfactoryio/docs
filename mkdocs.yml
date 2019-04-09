@@ -177,6 +177,9 @@ nav:
 - Kits:
   - Tec-Egg:
     - Info: tec-egg/overview.md
+      - raspberry_pi.md
+      - solar.md
+      - ultrasonic.md
     - Examples: tec-egg/examples.md
 
 markdown_extensions:
