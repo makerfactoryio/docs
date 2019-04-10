@@ -177,12 +177,7 @@ nav:
 
 - Tec-Egg:
   - Overview: tec-egg/overview.md
-    - Raspberry Pi: tec-egg/raspberry_pi.md
-    - Solar: tec-egg/solar.md
-    - Ultrasonic: tec-egg/ultrasonic.md
-  - Examples:
-    - Raspberry Pi: tec-egg/examples.md
-
+ 
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
