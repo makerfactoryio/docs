@@ -4,6 +4,6 @@ Learn how to playfully program with the Raspberry Pi using breadboard, LEDs, res
 With the help of the manual, all experiments can be simply built up and programmed on the enclosed breadboard. 
 The easy entry into the world of Raspberry Pi!
 
-### [**MANUAL**](../../source/tec-egg/15043-1 Ei_Tapete.pdf)
-Here the [**MANUAL**](../../source/tec-egg/15043-1 Ei_Tapete.pdf) is provided for download.
+### [**MANUAL**](../../source/tec-egg/raspberry_pi/15043-1 Ei_Tapete.pdf)
+Here the [**MANUAL**](../../source/tec-egg/raspberry_pi/15043-1 Ei_Tapete.pdf) is provided for download.
 
