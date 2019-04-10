@@ -175,8 +175,9 @@ nav:
       - Avoid obstacles with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_demo.md'
       - Follow objects with an ultrasonic sensor: 'educational-robotics/robobug-hexapod/project_us_follow.md'
 
-- Tec-Egg:
-  - Overview: tec-egg/overview.md
+- Kits:
+  - Tec-Egg:
+    - Overview: tec-egg/overview.md
  
 markdown_extensions:
   - markdown.extensions.admonition
