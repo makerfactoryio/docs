@@ -5,7 +5,14 @@ The development board supports monochrome OLED displays with a resolution of 128
 !!! example
     A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino)
 
-<img src="/images/esp32/block_lcd.png"  width="24%"> <img src="/images/esp32/block_lcd_with_oled.png"  width="25%">
+
+<div class="pull-left">
+<img src="/images/esp32/block_lcd.png">
+</div>
+<div class="pull-right">
+<img src="/images/esp32/block_lcd_with_oled.png">
+</div>
+
 
 ## Activating the component
 
