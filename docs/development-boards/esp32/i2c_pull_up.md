@@ -2,7 +2,7 @@
 
 The component **I2C Pull-up** provides two 1k resistors for the usage as pull-up for the I2C bus. The resistors are independent.
 
-<img src="/images/esp32/block_i2c_pull_up.png" | width=50>
+<img src="/images/esp32/block_i2c_pull_up.png" width="50%">
 
 ## Activating the component
 The left resistor could be controlled with *SW307* and the right resistor with *SW308*. The resistor on *SW307* is connected to io port **19** and the resistor on *SW308* is connected to port **4**
