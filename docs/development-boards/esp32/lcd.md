@@ -13,6 +13,8 @@ The development board supports monochrome OLED displays with a resolution of 128
 <img src="/images/esp32/block_lcd_with_oled.png">
 </div>
 
+<p></p>
+
 
 ## Activating the component
 
