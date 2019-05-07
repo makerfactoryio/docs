@@ -12,7 +12,7 @@ After a successful [installation](../install) of the Arduino IDE it's necessary 
 
 Start the Arduino IDE, open the Preferences window with *File > Preferences* in the menu bar.
 
-![Open Preferences windows](../../images/esp32/arduino_ide/open_preferences.png)
+| <img src="/images/esp32/arduino_ide/open_preferences.png"> |  select preferences |
 
 The Preferences window has to tabs:
 
