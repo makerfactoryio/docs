@@ -21,7 +21,7 @@ The Preferences window has to tabs:
 + *Settings*
 + *Network*
 
-| IDE | Additional Boards Manager URLs |
+| IDE | Settings |
 | --- | --- | 
 | ![Preferences window](../../images/esp32/arduino_ide/preferences_window.jpg) | select *Additional Boards Manager URLs* |
 
@@ -49,7 +49,9 @@ Now you could install the development extension for the ESP32 into the Arduino I
 
 Use the search input file. Search for *esp32* and select *Install*.
 
-![](../../images/esp32/arduino_ide/board_manager_01.png)
+| IDE | Boards |
+| --- | --- | 
+| ![](../../images/esp32/arduino_ide/board_manager_01.png) | select *install* |
 
 After the install a section *ESP 32* in the menu *Tools > Board* should occur.
 
