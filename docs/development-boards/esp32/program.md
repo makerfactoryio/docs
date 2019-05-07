@@ -34,7 +34,10 @@ You could directly paste the following url into the input field or open the sepe
 ```
 https://dl.espressif.com/dl/package_esp32_index.json
 ```
-![board_manager_urls](../../images/esp32/arduino_ide/url_dialog.png)
+
+| IDE | insert url |
+| --- | --- | 
+| ![board_manager_urls](../../images/esp32/arduino_ide/url_dialog.png) | insert url |
 
 ## Install the extension for ESP32
 
@@ -42,7 +45,7 @@ Now you could install the development extension for the ESP32 into the Arduino I
 
 | IDE | Boards Manager |
 | --- | --- | 
-| ![menu_boards_manager](../../images/esp32/arduino_ide/menu_boards_manager.jpg)| select *Boards Manager* |
+| ![menu_boards_manager](../../images/esp32/arduino_ide/menu_boards_manager.jpg) | select *Boards Manager* |
 
 Use the search input file. Search for *esp32* and select *Install*.
 
@@ -50,8 +53,12 @@ Use the search input file. Search for *esp32* and select *Install*.
 
 After the install a section *ESP 32* in the menu *Tools > Board* should occur.
 
-![esp32_menu_entry](../../images/esp32/arduino_ide/esp32_menu_entry.jpg)
+| IDE | Boards |
+| --- | --- | 
+| ![esp32_menu_entry](../../images/esp32/arduino_ide/esp32_menu_entry.jpg) | select *Boards* |
 
 Now select the ESP32 Dev Module in *Tools -> Board*.
 
-![select_board](../../images/esp32/arduino_ide/select_board.jpg)
+| IDE | ESP32 Dev Module |
+| --- | --- | 
+| ![select_board](../../images/esp32/arduino_ide/select_board.jpg) | select *ESP32 Dev Module* | 
