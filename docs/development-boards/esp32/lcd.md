@@ -187,6 +187,6 @@ display.clearDisplay();
 
 A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino). The following image shows the oled display with results from the sample project:
 
-| example | OLED_1.ino |
+| OLED_1.ino | example |
 | --- | --- | 
 | <img src="/images/esp32/oled_sample.png"  width="25%"> | showing output |
