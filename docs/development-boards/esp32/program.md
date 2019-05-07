@@ -35,7 +35,7 @@ You could directly paste the following url into the input field or open the sepe
 https://dl.espressif.com/dl/package_esp32_index.json
 ```
 
-| IDE | insert url |
+| IDE | Enter additional URLs |
 | --- | --- | 
 | ![board_manager_urls](../../images/esp32/arduino_ide/url_dialog.png) | insert url |
 
