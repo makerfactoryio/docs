@@ -12,14 +12,14 @@ After a successful [installation](../install) of the Arduino IDE it's necessary 
 
 Start the Arduino IDE, open the Preferences window with *File > Preferences* in the menu bar.
 
-| <img src="/images/esp32/arduino_ide/open_preferences.png"> |  select preferences |
+| ![Open Preferences windows](../../images/esp32/arduino_ide/open_preferences.png) | select *preferences* |
 
 The Preferences window has to tabs:
 
 + *Settings*
 + *Network*
 
-![Preferences window](../../images/esp32/arduino_ide/preferences_window.jpg)
+| ![Preferences window](../../images/esp32/arduino_ide/preferences_window.jpg) | select *Additional Boards Manager URLs* |
 
 It's not necessary to change setting inside the *Network* tab. But a change in the *Settings* tab is necessary. Add an entry to the *Additional Boards Manager URLs*:
 
