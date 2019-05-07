@@ -43,7 +43,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 #include "Adafruit_SSD1306.h"
 ```
 
-You need both libraries (Adafruit_SSD1306, Adafruit GFX) in for using this sample codes. In case of compilation error you should check whether you have added both libraries to your Arduino development environment. The *Adafruit GFX* library is used from *Adafruit_SSD1306*.
+You need both libraries (Adafruit_SSD1306, Adafruit GFX) for using this sample codes. In case of compilation error you should check whether you have added both libraries to your Arduino development environment. The *Adafruit GFX* library is used from *Adafruit_SSD1306*.
 
 ### Setup the display
 
@@ -187,4 +187,6 @@ display.clearDisplay();
 
 A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino). The following image shows the oled display with results from the sample project:
 
-<img src="/images/esp32/oled_sample.png"  width="25%">
+| example | OLED_1.ino |
+| --- | --- | 
+| <img src="/images/esp32/oled_sample.png"  width="25%"> | showing output |
