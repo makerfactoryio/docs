@@ -14,7 +14,7 @@ The development board supports monochrome OLED displays with a resolution of 128
 
 ## Activating the component
 
-The component has a dip switch *SW309*, which have to be activated in order to uhse the component. The component is connected to the following ports:
+The component has a dip switch *SW309*, which has to be activated in order to use the component. The component is connected to the following ports:
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
@@ -29,7 +29,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
     In order to use the component you need two libraries: Adafruit SSD1306 and Adafruit GFX library. The latest version of the Adafruit SSD1306 library could be downloaded from the [GitHub repository](https://github.com/adafruit/Adafruit_SSD1306). Additionally you could [download](../../source/esp32/OLED_1/Adafruit_SSD1306-master.zip) a tested version.
     After the download it's necessary to add both libraries to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. Do it for both libraries.
 
-    After a sucessful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Recommended libraries*.
+    After a successful installation the menu *Sketch > Include Library* should contain an entry *Adafruit GFX library* and *Adafruit SSD 1306** in the category *Recommended libraries*.
 
     ![menu_boards_manager](../../images/esp32/arduino_ide/menu_recommended.png)
 
@@ -37,7 +37,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 ### Import the necessary libraries
 
 !!! Caution
-    It's important that you use the *"*-sign for important the *Adafruit_SSD1306* library. With the quotation marks the enviroment searches first in the local directory for this library. Here it's important that you put a patched version of this library in your working directory of the sketch. You need [Adafruit_SSD1306.h](../../source/esp32/OLED_1/Adafruit_SSD1306.h) and  [Adafruit_SSD1306.cpp](../../source/esp32/OLED_1/Adafruit_SSD1306.cpp).
+    It's important that you use the *"*-sign for including the *Adafruit_SSD1306* library. With the quotation marks the enviroment searches first in the local directory for this library. Here it's important that you put a patched version of this library in your working directory of the sketch. You need [Adafruit_SSD1306.h](../../source/esp32/OLED_1/Adafruit_SSD1306.h) and  [Adafruit_SSD1306.cpp](../../source/esp32/OLED_1/Adafruit_SSD1306.cpp).
 
 ```c
 #include "Adafruit_SSD1306.h"
