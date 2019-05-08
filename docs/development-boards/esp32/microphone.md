@@ -1,10 +1,14 @@
 ## Overview
+The microphone of the ESP board includes the ICS-43432 chip, a digital I2S output microphone. 
+It consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, decimation and anti-aliasing filters, power management, and an industry standard 24-bit I²S interface. 
+The ICS-43432 has a high SNR of 65 dBA and a wideband frequency response.
 
-<img src="/images/esp32/block_microphone.png"  width="30%">
+ESP Board | microphone
+--- | ---
+<img src="/images/esp32/block_microphone.png"  width="30%"> | SW301
 
 !!! example
     A sample project is in process.
-
 
 ## Activating the component
 
@@ -19,6 +23,9 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 Switch 4 (LR) of SW301 is connected to GND.
 
 ## Using the component
+
+You need 6 jumpers to use the microphone connected at the board. 
+The microphone can also be broken out of the board and can then be connected by 6 cables to the board.
 
 ## Sample project
 A sample project is in process.
