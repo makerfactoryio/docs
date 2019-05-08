@@ -5,7 +5,9 @@ The component **Gyro Accelerometer Compass** provides a 9-axis Motion Processing
 !!! example
     A sample project for the Arduino IDE is provided in **Gyro.ino** which could be downloaded [here](../../source/esp32/Gyro/Gyro.ino)
 
-<img src="/images/esp32/block_gyro.png"  width="20%">
+ESP Board | Gyro
+--- | ---
+<img src="/images/esp32/block_gyro.png"  width="30%"> | SW310
 
 ## Activating the component
 The component has a dip switch *SW310* for activating the component. Each of the five buttons is connected to one IO port. *Switch 1* is not connected and therefore the state of this switch is not relevant. The buttons are connected to the following ports
