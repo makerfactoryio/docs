@@ -1,6 +1,12 @@
 ## Overview
+The audio amplifier of the ESP board includes the MAX98357A, a digital 3W Class D Audio Amplifier. 
+This amp an digital pulse-code modulation (PCM) input supporting I2S data and delivers a 3.2W output power into 4Ω ohms at 5V. 
+It accepts specified sample rates between 8kHz and 96kHz for all supported data formats. 
+Connect your 4Ω speaker at connector J300 at P and N.
 
-<img src="/images/esp32/block_audio.png"  width="15%">
+ESP Board | Audio Amplifier
+--- | ---
+<img src="/images/esp32/block_audio.png"  width="15%"> | SW306
 
 ## Activating the component
 The component has the dip switch *SW306* for activating the component.
@@ -16,3 +22,4 @@ The component has the dip switch *SW306* for activating the component.
 
 
 ## Sample project
+An example project for the Arduino IDE can be found in the chapter for the microphone.
