@@ -1,6 +1,6 @@
 ## Overview
 The audio amplifier of the ESP board includes the MAX98357A, a digital 3W Class D Audio Amplifier. 
-This amp an digital pulse-code modulation (PCM) input supporting I2S data and delivers a 3.2W output power into 4Ω ohms at 5V. 
+This amplifier provides an digital pulse-code modulation (PCM) input supporting I2S data and delivers a 3.2W output power into 4Ω (4 Ohms) at 5V. 
 It accepts specified sample rates between 8kHz and 96kHz for all supported data formats. 
 Connect your 4Ω speaker at connector J300 at P and N.
 
