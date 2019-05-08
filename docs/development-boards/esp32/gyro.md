@@ -1,9 +1,9 @@
 ## Overview
 
-The component **Gyro Accelerometer Compass** provides a 9-axis Motion Processing Unit in form of a MPU9250. The component is controll via I2C protocol.
+The component **Gyro Accelerometer Compass** provides a 9-axis Motion Processing Unit in form of a MPU9250. The component is controlled via I2C protocol.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **Gyro.ino** which could be downloaded [here](../../source/esp32/Gyro/Gyro.ino)
+    A sample project for the Arduino IDE is provided in **MPU9250.ino** which could be downloaded [here](../../source/esp32/Gyro/MPU9250.ino)
 
 ESP Board | Gyro
 --- | ---
@@ -20,8 +20,7 @@ The component has a dip switch *SW310* for activating the component. Each of the
 |SCL/SCLK|4|4|**OLED**, SW309-1, SCL; **Camera**, SW402-1, RCK/RCKL; **SD Card**, SW406-3, DAT1; **Unit-Bus**, SW200-1, CN212 - PIN 6; **Grove I2C**, SW203-2, I2C - SCL|I2C Pull-up by SW308
 
 ## Using the component
-
-It's very important to switch on *SW401*.
+Switch on I2C PULL-UP at SW307 and SW308.
 
 First you should define two constants for the two I2C signal lines: SDA (serial data) and SCL (serial clock):
 ```c
@@ -116,4 +115,4 @@ int16_t mz = -(Mag[5]<<8 | Mag[4]);
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **Gyro.ino** which could be downloaded [here](../../source/esp32/Gyro/Gyro.ino)
+A sample project for the Arduino IDE is provided in **MPU9250.ino** which could be downloaded [here](../../source/esp32/Gyro/MPU9250.ino)
