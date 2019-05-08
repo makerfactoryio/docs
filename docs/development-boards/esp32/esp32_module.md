@@ -8,7 +8,9 @@ The component **ESP32 MODULE** contains the ESP32 microchip which will be progra
 !!! example
     You find examples for each component in the component pages.
 
-<img src="/images/esp32/block_esp32_module.png"  width="30%">
+ESP Board | ESP32-WROOM-32
+--- | ---
+<img src="/images/esp32/block_esp32_module.png"  width="30%"> | SW210
 
 ## Activating the component
 Active all four switches of *SW210*.
