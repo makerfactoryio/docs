@@ -1,6 +1,11 @@
 ## Overview
+The camera connector of the ESP board allows the connection of a camera chip of type OV7670. 
+OV7670 is a camera module with FiFo supporting 640x480 VGA. 
+The PIN description is listed at the backside of the board.
 
-<img src="/images/esp32/block_camera.png"  width="30%">
+ESP Board | camera connector
+--- | ---
+<img src="/images/esp32/block_camera.png"  width="15%"> | SW400,SW402,SW403
 
 ## Activating the component
 The component has three dip switches for controlling the component: *SW400*, *SW402* and *SW403*.
