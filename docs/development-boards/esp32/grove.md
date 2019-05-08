@@ -2,7 +2,10 @@
 
 The component **GROVE** provides eight connectors for the **Grove System** from Seeed Studio. These connectors are four digital connectors (named from *DIGITAL1* to *DIGITAL4*), two analog connectors (named from *ANALOG1* to *ANALOG2*), I2C and UART.
 
-<img src="/images/esp32/block_grove.png"  width="30%">
+ESP Board | grove connector
+--- | ---
+<img src="/images/esp32/block_grove.png"  width="30%"> | CN200 up to CN207
+
 
 ## Activating the component
 
