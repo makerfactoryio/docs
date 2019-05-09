@@ -20,15 +20,15 @@ The four switchs of *SW305* are connected to GND. The functions are as follows:
 
 |Function|SWITCH|
 |------------------|----------|
-|EN|SW305-1|
-|CFG1|SW305-2|
-|CFG2|SW305-3|
-|CFG3|SW305-4|
+|CFG3|SW305-1|
+|CFG2|SW305-2|
+|CFG1|SW305-3|
+|EN|SW305-4|
 
 ## Using the component
 
 You have to switch on SW304. 
-Depending on your motor driver, you may need to turn on switch 4 of SW305.
+Depending on your motor driver, you may need to turn on Enable (switch 4 of SW305).
 
 ### Setup the component
 
