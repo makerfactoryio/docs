@@ -4,7 +4,7 @@ The mikroBUS™ socket comprises a pair of 1×8 female headers with a proprietar
 !!! example
     A sample project for the Arduino IDE is coming soon.
     
-ESP Board | camera connector
+ESP Board | mikro Bus
 --- | ---
 <img src="/images/esp32/block_mikro_bus.png"  width="30%"> | SW404,SW405
 
