@@ -1,37 +1,35 @@
 /******************************************************************
 Created with PROGRAMINO IDE for Arduino
-Project     : Maker-Factory ESP32 Board
-Libraries   : https://github.com/laurb9/StepperDriver
-Author      : UlliS
+Project     : Basic stepper motor driver
+Board       : MAKERFACTORY EBB ESP32
+Version     : 1.0
+Date        : 28.12.2018
+Author      : MF
 
-Description : Stepper Driver for DRV8824/25 and A4988
+Description : Stepper driver for DRV8824/25 and A4988 breakout boards
 
-Layout and circuited issue: stepper driver /reset /sleep set to +5 Vcc
+Connect a stepper motor on J301
+Motor connection from left to right:
 
-SW304 all on
-SW305 1 ON
+GND     -   external motor power supply
+VCC     -   external motor power supply
+2B      -   motor coil 2
+2A      -   motor coil 2
+1A      -   motor coil 1
+1B      -   motor coil 1
 
-Copyright (c) 2018 Conrad Electronic SE.
+MOTOR   SW304 all ON  (direction and pulse)
+MOTOR   SW305 1 - 3 OFF (microstepping)
+        SW305 4     ON  (enable)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
+License:
+Copyright (C)2015 Laurentiu Badea
+This file may be redistributed under the terms of the MIT license.
+A copy of this license has been included with this distribution in the file LICENSE.
 ******************************************************************/
-#include <Arduino.h>
-#include <BasicStepperDriver.h>
+
+#include <BasicStepperDriver.h> // https://github.com/laurb9/StepperDriver
 
 // Motor steps per revolution. Most steppers are 200 steps or 1.8 degrees/step
 #define MOTOR_STEPS 200
@@ -39,20 +37,22 @@ SOFTWARE.
 // All the wires needed for full functionality
 #define DIR 33
 #define STEP 23
-//Uncomment line to use enable/disable functionality
+
+// Uncomment line to use enable/disable functionality
 //#define ENBL 7
 
 // Since microstepping is set externally, make sure this matches the selected mode
 // 1=full step, 2=half step etc.
-#define MICROSTEPS 16
+#define MICROSTEPS 32
 
 // 2-wire basic config, microstepping is hardwired on the driver
 BasicStepperDriver stepper(MOTOR_STEPS, DIR, STEP);
 
-//Uncomment line to use enable/disable functionality
+// Uncomment line to use enable/disable functionality
 //BasicStepperDriver stepper(MOTOR_STEPS, DIR, STEP, ENBL);
 
-void setup() {
+void setup() 
+{
     /*
     * Set target motor RPM.
     * These motors can do up to about 200rpm.
@@ -61,7 +61,8 @@ void setup() {
     stepper.setRPM(100);
 }
 
-void loop() {
+void loop() 
+{
     
     // energize coils - the motor will hold position
     // stepper.enable();
