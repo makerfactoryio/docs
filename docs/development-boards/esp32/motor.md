@@ -3,9 +3,12 @@
 !!! example
     A sample project for the Arduino IDE is provided in **BasicStepperDriver.ino** which could be downloaded [here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino)
 
-<img src="/images/esp32/block_motor.png"  width="30%">
+ESP Board | motor
+--- | ---
+<img src="/images/esp32/block_motor.png"  width="30%"> | SW304,SW305
 
 ## Activating the component
+
 The component has two dip switches *SW304* and *SW305* for activating the component.
 
 |Function|SWITCH|IO port|Conflicts with|Remarks|
@@ -24,7 +27,11 @@ The four switchs of *SW305* are connected to GND. The functions are as follows:
 
 ## Using the component
 
+You have to switch on SW304. 
+Depending on your motor driver, you may need to turn on switch 4 of SW305.
+
 ### Setup the component
+
 ```c
 #include <Arduino.h>
 #include <BasicStepperDriver.h>
