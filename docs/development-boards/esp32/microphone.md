@@ -13,7 +13,7 @@ ESP Board | microphone
 
 ## Activating the component
 
-The component has a dip switch *SW301*, which have to be activated in order to uhse the component. The component is connected to the following ports:
+The component has a dip switch *SW301*, which has to be activated in order to use the component. The component is connected to the following ports:
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
@@ -25,8 +25,8 @@ Switch 4 (LR) of SW301 is connected to GND.
 
 ## Using the component
 
-You need 6 jumpers to use the microphone connected at the board. 
-The microphone can also be broken out of the board and can then be connected by 6 cables to the board.
+You need 6 jumpers to use the microphone connected to the board. 
+The microphone can also be broken out of the board and can then be connected to the board by 6 cables.
 
 ## Sample project
 
