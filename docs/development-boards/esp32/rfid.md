@@ -1,6 +1,10 @@
 ## Overview
 
-<img src="/images/esp32/block_rfid.png"  width="30%">
+Read data from RFID RC522
+
+ESP Board | rfid
+--- | ---
+<img src="/images/esp32/block_rfid.png"  width="30%"> | SW303
 
 !!! example
     A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
