@@ -201,7 +201,7 @@ Crop the image to the content
 Scale image to 128 pixels wide (and LINEAR)  
 Export file as file type xbm (X-BitMap image)  
 Edit "xbm" file with Notepad ++  
-Change third line to: "static unsigned char"  
+Change variable in third line to: "static unsigned char"  
 Save file as "images.h"  
 
 | Temp-OLED.ino | example |
