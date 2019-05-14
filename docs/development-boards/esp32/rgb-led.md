@@ -36,8 +36,10 @@ The LED strip could be programmed by using the [Adafruit Neopixel Library](https
 Now restart your Arduino IDE.
 After a successful installation the examples of the library should occur in *File > Examples > Adafruit Neopixel*
 
-![Examples from the Neopixel libray](../../images/esp32/neopixel_1.png)
+ESP Board | RGB LED
+--- | ---
+<img src="/images/esp32/neopixel_1.png"  width="30%"> | Examples from the Neopixel libray
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led/RGB-LED-HSV.ino)
+A sample project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
