@@ -19,7 +19,7 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 |DAT0|IO2|SW406-4|
 |CLK|IO14|SW406-5|
 |CMD|IO15|SW406-6|
-|-----|-----|-----|
+| | | |
 |LED|IO32|SW407-1|
 |CDET|IO27|SW407-2|
 
