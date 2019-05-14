@@ -5,7 +5,9 @@ The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperatu
 !!! example
     A sample project for the Arduino IDE is provided in **Temperature.ino** which could be downloaded [here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it's necessary to to install the OneWire library which is described in the section *Using the component*.
 
-<img src="/images/esp32/block_temperature.png"  width="30%">
+ESP Board | temperature
+--- | ---
+<img src="/images/esp32/block_temperature.png"  width="30%"> | SW315
 
 ## Activating the component
 The component has a dip switch *SW315* for activating the temperature sensor. The switch connected to the following io ports:
