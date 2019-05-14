@@ -1,16 +1,27 @@
 ## Overview
 
+At component SD card you can read and write data to the card.
+
 !!! example
     A sample project for the Arduino IDE is provided in **SD_Dir.ino** which could be downloaded [here](../../source/esp32/SD_Dir/SD_Dir.ino)
 
-
-<img src="/images/esp32/block_sd_card.png"  width="30%">
-
+ESP Board | sd card
+--- | ---
+<img src="/images/esp32/block_sd_card.png"  width="30%"> | SW406,SW407
 
 ## Activating the component
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
+|CD/DAT3|IO13|SW406-1|
+|DAT2|IO12|SW406-2|
+|DAT1|IO4|SW406-3|
+|DAT0|IO2|SW406-4|
+|CLK|IO14|SW406-5|
+|CMD|IO15|SW406-6|
+|-----|-----|-----|
+|LED|IO32|SW407-1|
+|CDET|IO27|SW407-2|
 
 ## Using the component
 ### Setup
