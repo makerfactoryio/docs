@@ -10,7 +10,7 @@ ESP Board | rfid
     A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
 
 ## Activating the component
-The component has a dip switch *SW303* for activating the temperature sensor. The switch connected to the following io ports:
+The component has a dip switch *SW303* for activating the RFID reader. The switch is connected to the following io ports:
 
 Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
