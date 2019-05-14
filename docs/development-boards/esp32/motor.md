@@ -1,5 +1,7 @@
 ## Overview
 
+Stepper driver for DRV8824/25 and A4988 breakout boards
+
 !!! example
     A sample project for the Arduino IDE is provided in **BasicStepperDriver.ino** which could be downloaded [here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino)
 
@@ -24,6 +26,18 @@ The four switchs of *SW305* are connected to GND. The functions are as follows:
 |CFG2|SW305-2|
 |CFG1|SW305-3|
 |EN|SW305-4|
+
+Connect a stepper motor on J301.  
+Motor connection from left to right:
+
+|Function|SWITCH|
+|----|----|
+|GND|external motor power supply|
+|VCC|external motor power supply|
+|2B|motor coil 2|
+|2A|motor coil 2|
+|1A|motor coil 1|
+|1B|motor coil 1|
 
 ## Using the component
 
