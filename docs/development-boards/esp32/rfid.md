@@ -2,12 +2,12 @@
 
 Read data from RFID RC522
 
+!!! example
+    A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
+
 ESP Board | rfid
 --- | ---
 <img src="/images/esp32/block_rfid.png"  width="30%"> | SW303
-
-!!! example
-    A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
 
 ## Activating the component
 The component has a dip switch *SW303* for activating the RFID reader. The switch is connected to the following io ports:
