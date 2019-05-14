@@ -38,4 +38,6 @@ After a successful installation the examples of the library should occur in *Fil
 
 ![Examples from the Neopixel libray](../../images/esp32/neopixel_1.png)
 
-## Programming the LED strip
+## Sample project
+
+A sample project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led/RGB-LED-HSV.ino)
