@@ -190,3 +190,20 @@ A sample project for the Arduino IDE is provided in **OLED_1.ino** which could b
 | OLED_1.ino | example |
 | --- | --- | 
 | <img src="/images/esp32/oled_sample.png"  width="25%"> | showing output |
+
+## Create your own picture
+
+Here a short summary how to show your logo at the display:
+
+Procedure with GIMP and Notepad++:  
+Open image with GIMP  
+Crop the image to the content  
+Scale image to 128 pixels wide (and LINEAR)  
+Export file as file type xbm (X-BitMap image)  
+Edit "xbm" file with Notepad ++  
+Change third line to: "static unsigned char"  
+Save file as "images.h"  
+
+| Temp-OLED.ino | example |
+| --- | --- | 
+| <img src="/images/esp32/oled_MF_logo.jpg"  width="25%"> | showing logo of MakerFactory |
