@@ -193,9 +193,9 @@ A sample project for the Arduino IDE is provided in **OLED_1.ino** which could b
 
 ## Create your own picture
 
-Here a short summary how to show your logo at the display:
-
+Here a short summary how to show your logo at the display.  
 Procedure with GIMP and Notepad++:  
+
 Open image with GIMP  
 Crop the image to the content  
 Scale image to 128 pixels wide (and LINEAR)  
