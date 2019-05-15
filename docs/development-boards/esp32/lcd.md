@@ -1,9 +1,9 @@
 ## Overview
 
-The development board supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
+The component **LCD** supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino)
+    An example project for the Arduino IDE is provided in **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino))
 
 
 | connector | OLED |
@@ -185,7 +185,7 @@ display.clearDisplay();
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **OLED_1.ino** which could be downloaded [here](../../source/esp32/OLED_1/OLED_1.ino). The following image shows the oled display with results from the sample project:
+A sample project for the Arduino IDE is provided in **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)). The following image shows the oled display with results from the sample project:
 
 | OLED_1.ino | example |
 | --- | --- | 
@@ -203,6 +203,9 @@ Export file as file type xbm (X-BitMap image)
 Edit "xbm" file with Notepad ++  
 Change variable in third line to: "static unsigned char"  
 Save file as "images.h"  
+
+A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/OLED_1/Temp-OLED.zip)). The following image shows the oled display with results from the sample project:
+
 
 | Temp-OLED.ino | example |
 | --- | --- | 
