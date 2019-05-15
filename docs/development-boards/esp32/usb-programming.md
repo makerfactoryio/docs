@@ -9,7 +9,8 @@ ESP Board | usb programming
 
 
 ## Using the component
+There is no special source code needed for this component. At component POWER SUPPLY you need to set the switch to position ON if you want to use the board.
 
 
 ## Sample project
-
+There is no specific source code necessary.
