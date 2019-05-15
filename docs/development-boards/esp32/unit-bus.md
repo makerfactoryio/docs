@@ -1,5 +1,11 @@
 ## Overview
 
+This is the connector for the Unit Bus.
+
+!!! example
+    A sample project for the Arduino IDE is coming soon.
+
+
 ESP Board | unit Bus
 --- | ---
 <img src="/images/esp32/block_unit_bus.png"  width="30%"> | SW200,SW201
@@ -21,3 +27,4 @@ Function|SWITCH|Connector|IO port|Conflicts with|Remarks|
 
 ## Sample project
 
+A sample project for the Arduino IDE is coming soon.
