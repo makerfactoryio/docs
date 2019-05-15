@@ -1,5 +1,5 @@
 ## Overview
-The development board supports a 2.8 inch TFT display with a resolution of 240*320 pixels.The display is not soldered on the board, but there is a 14 pin connector for a TFT display. The ILI9341 has been tested.
+The component **TFT** supports a 2.8 inch TFT display with a resolution of 240*320 pixels.The display is not soldered on the board, but there is a 14 pin connector for a TFT display. The ILI9341 has been tested.
 
 !!! example
     There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)). And there are two examples for the Arduino IDE for using the touch functionality which could be downloaded: **TFT-TouchBtn** ([download here](../../source/esp32/TFT-TouchBtn/TFT-TouchBtn.ino)) and **TFT-TouchDraw** ([download here](../../source/esp32/TFT-TouchDraw/TFT-TouchDraw.ino)). 
