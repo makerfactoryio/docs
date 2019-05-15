@@ -125,4 +125,4 @@ fahrenheit = celsius * 1.8 + 32.0;
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **Temperature.ino** [download here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it is necessary to install the OneWire library which is described in the section *Using the component*.
+A sample project for the Arduino IDE is provided in **Temperature.ino** [download here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it is necessary to install the OneWire library which is described in the section [*Using the component*](../../esp32/temperature/#using-the-component).
