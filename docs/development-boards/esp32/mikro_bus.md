@@ -1,5 +1,5 @@
 ## Overview
-The mikroBUS™ socket comprises a pair of 1×8 female headers with a proprietary pin configuration and silkscreen markings. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
+The component **mikroBUS™** comprises a pair of 1×8 female headers with a proprietary pin configuration and silkscreen markings. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).
 
 !!! example
     An example project for the Arduino IDE is coming soon.
