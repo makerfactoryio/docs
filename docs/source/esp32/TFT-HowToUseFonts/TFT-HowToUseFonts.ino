@@ -1,66 +1,63 @@
 /******************************************************************
 Created with PROGRAMINO IDE for Arduino
-Project     : Maker-Factory ESP32 Board
-Libraries   : https://github.com/olikraus/ucglib
-Author      : UlliS
+Project     : TFT Graphic demo
+Board       : MAKERFACTORY EBB ESP32
+Author      : MF
 
-Change: Ucglib.cpp -> #if defined(__PIC32MX) || defined(__arm__) || defined(ESP8266) || defined(ESP32)
+Description : How to use fonts with Ucglib
+
+Switches:
+TFT SW311 all ON
+
+A demonstration on how to use the different types of fonts.
+The following fonts will be used:
+ucg_font_helvB08_hr
+ucg_font_helvB08_tr
+ucg_font_amstrad_cpc_8r
+Good and bad examples are shown.
+
+Universal uC Color Graphics Library
+
+Copyright (c) 2014, olikraus@gmail.com
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this list 
+of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice, this 
+list of conditions and the following disclaimer in the documentation and/or other 
+materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND 
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
 
 ******************************************************************/
 
-/*
-
-  HowToUseFonts.ino
-  
-  A demonstration on how to use the different types of fonts.
-  The following fonts will be used:
-    ucg_font_helvB08_hr
-    ucg_font_helvB08_tr
-    ucg_font_amstrad_cpc_8r
-  Good and bad examples are shown.
-
-  Universal uC Color Graphics Library
-  
-  Copyright (c) 2014, olikraus@gmail.com
-  All rights reserved.
-
-  Redistribution and use in source and binary forms, with or without modification, 
-  are permitted provided that the following conditions are met:
-
-  * Redistributions of source code must retain the above copyright notice, this list 
-    of conditions and the following disclaimer.
-    
-  * Redistributions in binary form must reproduce the above copyright notice, this 
-    list of conditions and the following disclaimer in the documentation and/or other 
-    materials provided with the distribution.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND 
-  CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
-  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
-  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
-  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
-  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
-  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
-  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
-  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
-  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
-  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
-
-*/
-
 #include <SPI.h>
-#include <Ucglib.h>
+#include <Ucglib.h> // https://github.com/olikraus/ucglib
 
-    
 /*
-  Hardware SPI Pins:
-    Arduino Uno     sclk=13, data=11
-    Arduino Due     sclk=76, data=75
-    Arduino Mega    sclk=52, data=51
-    
-  >>> Please uncomment (and update) one of the following constructors. <<<  
+Hardware SPI Pins:
+Arduino Uno     sclk=13, data=11
+Arduino Due     sclk=76, data=75
+Arduino Mega    sclk=52, data=51
+
+>>> Please uncomment (and update) one of the following constructors. <<<  
 */
 //Ucglib8BitPortD ucg(ucg_dev_ili9325_18x240x320_itdb02, ucg_ext_ili9325_18, /* wr= */ 18 , /* cd= */ 19 , /* cs= */ 17, /* reset= */ 16 );
 //Ucglib8Bit ucg(ucg_dev_ili9325_18x240x320_itdb02, ucg_ext_ili9325_18, 0, 1, 2, 3, 4, 5, 6, 7, /* wr= */ 18 , /* cd= */ 19 , /* cs= */ 17, /* reset= */ 16 );
@@ -99,156 +96,155 @@ Change: Ucglib.cpp -> #if defined(__PIC32MX) || defined(__arm__) || defined(ESP8
 //Ucglib_SEPS225_16x128x128_UNIVISION_SWSPI ucg(/*sclk=*/ 13, /*data=*/ 11, /*cd=*/ 9 , /*cs=*/ 10, /*reset=*/ 8);
 //Ucglib_SEPS225_16x128x128_UNIVISION_HWSPI ucg(/*cd=*/ 9 , /*cs=*/ 10, /*reset=*/ 8);
 
-Ucglib_ILI9341_18x240x320_SWSPI ucg(18, 23, 15, 2, 5);
+Ucglib_ILI9341_18x240x320_HWSPI ucg(5, 33, 17);
 
 /*
-  Linear Congruential Generator (LCG)
-  z = (a*z + c) % m;  
-  m = 256 (8 Bit)
-  
-  for period:
-  a-1: dividable by 2
-  a-1: multiple of 4
-  c: not dividable by 2
-  
-  c = 17
-  a-1 = 64 --> a = 65
+Linear Congruential Generator (LCG)
+z = (a*z + c) % m;  
+m = 256 (8 Bit)
+
+for period:
+    a-1: dividable by 2
+a-1: multiple of 4
+c: not dividable by 2
+
+c = 17
+a-1 = 64 --> a = 65
 */
 uint8_t z = 127;    // start value
 uint32_t lcg_rnd(void) {
-  z = (uint8_t)((uint16_t)65*(uint16_t)z + (uint16_t)17);
-  return (uint32_t)z;
+    z = (uint8_t)((uint16_t)65*(uint16_t)z + (uint16_t)17);
+    return (uint32_t)z;
 }
-
 
 void setup(void)
 {
-  delay(1000);
-  ucg.begin(UCG_FONT_MODE_TRANSPARENT);
-
-  ucg.setColor(0, 120, 0, 0);
-  ucg.setColor(2, 0, 120, 0);
-  ucg.setColor(1, 120, 0, 120);
-  ucg.setColor(3, 0, 120, 120);
-
-  ucg.drawGradientBox(0, 0, ucg.getWidth(), ucg.getHeight());
+    delay(1000);
+    ucg.begin(UCG_FONT_MODE_TRANSPARENT);
+    
+    ucg.setColor(0, 120, 0, 0);
+    ucg.setColor(2, 0, 120, 0);
+    ucg.setColor(1, 120, 0, 120);
+    ucg.setColor(3, 0, 120, 120);
+    
+    ucg.drawGradientBox(0, 0, ucg.getWidth(), ucg.getHeight());
 }
 
 void loop(void)
 {
-  // get a random value between 0 and 255
-  uint8_t rnd = lcg_rnd();
-  ucg_int_t y = 0;
-  ucg_int_t h = 14;
-
-
-  // You can not overwrite the previous number with a transparent font
-  y += h;
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("Does not work:");
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-
-  // Using the same transparent font in solid mode works better,
-  // but still some pixel are not overwritten
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("Pixel errors:");
-  ucg.setFontMode(UCG_FONT_MODE_SOLID);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-
-  // Using the "h" or "m" type of font in solid mode will almost work
-  // however, if the number changes from 100 to 99, the last number 
-  // will not be overwritten.
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("Value errors:");
-  ucg.setFontMode(UCG_FONT_MODE_SOLID);
-  ucg.setFont(ucg_font_helvB08_hr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-
-  // Using the "h" or "m" type of font in solid mode will work fine, if
-  // there are extra spaced after the string to overwrite the previous value.
-  // As long as a "h" font is used, the number of spaces is not fixed.
-  // This means, even two spaced my not be sufficent. Better use a monospace font.
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("Almost ok:");
-  ucg.setFontMode(UCG_FONT_MODE_SOLID);
-  ucg.setFont(ucg_font_helvB08_hr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-  ucg.print("  ");  // two extra spaces (not sufficient here)
-
-  // The transparent font and mode can be used, if the previous content
-  // is fully erased or overwritten
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("Manual erase:");  
-  ucg.setColor(0, 255, 40, 80);
-  ucg.setColor(1, 0, 255, 0);
-  ucg.setColor(2, 255, 0, 0);
-  ucg.setColor(3, 65, 255, 40);
-  ucg.drawGradientBox(80-2, y-10, 22, 12);  // red to green bar will erase the previous value
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-
-  // The is will use the solid font with the extra spaces to erase the previous value
-  // A monospaced 8x8 pixel font is used (here: ucg_font_amstrad_cpc_8r).
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("8x8 font:");
-  ucg.setFontMode(UCG_FONT_MODE_SOLID);
-  ucg.setFont(ucg_font_amstrad_cpc_8r);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-  ucg.print("  ");  // extra spaces
-
-  // The is will use the solid font with the extra spaces to erase the previous value
-  // Any monospaced font can be used (here: ucg_font_7x13_mr).
-  y += h;
-  ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
-  ucg.setPrintPos(4,y);
-  ucg.setFont(ucg_font_helvB08_tr);
-  ucg.print("_mr font:");
-  ucg.setFontMode(UCG_FONT_MODE_SOLID);
-  ucg.setFont(ucg_font_7x13_mr);
-  ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
-  ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
-  ucg.setPrintPos(80,y);
-  ucg.print(rnd);
-  ucg.print("  ");  // extra spaces
-
-
-  delay(100);  
+    // get a random value between 0 and 255
+    uint8_t rnd = lcg_rnd();
+    ucg_int_t y = 0;
+    ucg_int_t h = 14;
+    
+    
+    // You can not overwrite the previous number with a transparent font
+    y += h;
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_helvB08_tr);
+    ucg.print("Does not work:");
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setFont(ucg_font_helvB08_tr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    
+    // Using the same transparent font in solid mode works better,
+    // but still some pixel are not overwritten
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_profont12_8f);
+    ucg.print("Pixel errors:");
+    ucg.setFontMode(UCG_FONT_MODE_SOLID);
+    ucg.setFont(ucg_font_helvB08_tr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    
+    // Using the "h" or "m" type of font in solid mode will almost work
+    // however, if the number changes from 100 to 99, the last number 
+    // will not be overwritten.
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_robot_de_niro_hf);
+    ucg.print("Value errors:");
+    ucg.setFontMode(UCG_FONT_MODE_SOLID);
+    ucg.setFont(ucg_font_helvB08_hr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    
+    // Using the "h" or "m" type of font in solid mode will work fine, if
+    // there are extra spaced after the string to overwrite the previous value.
+    // As long as a "h" font is used, the number of spaces is not fixed.
+    // This means, even two spaced my not be sufficent. Better use a monospace font.
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_amstrad_cpc_8f);
+    ucg.print("Almost ok:");
+    ucg.setFontMode(UCG_FONT_MODE_SOLID);
+    ucg.setFont(ucg_font_helvB08_hr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    ucg.print("  ");  // two extra spaces (not sufficient here)
+    
+    // The transparent font and mode can be used, if the previous content
+    // is fully erased or overwritten
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_ncenR08_hf);
+    ucg.print("Manual erase:");  
+    ucg.setColor(0, 255, 40, 80);
+    ucg.setColor(1, 0, 255, 0);
+    ucg.setColor(2, 255, 0, 0);
+    ucg.setColor(3, 65, 255, 40);
+    ucg.drawGradientBox(110, y-10, 22, 12);  // red to green bar will erase the previous value
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setFont(ucg_font_helvB08_tr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    
+    // The is will use the solid font with the extra spaces to erase the previous value
+    // A monospaced 8x8 pixel font is used (here: ucg_font_amstrad_cpc_8r).
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_helvR08_tr);
+    ucg.print("8x8 font:");
+    ucg.setFontMode(UCG_FONT_MODE_SOLID);
+    ucg.setFont(ucg_font_amstrad_cpc_8r);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    ucg.print("  ");  // extra spaces
+    
+    // The is will use the solid font with the extra spaces to erase the previous value
+    // Any monospaced font can be used (here: ucg_font_7x13_mr).
+    y += h;
+    ucg.setFontMode(UCG_FONT_MODE_TRANSPARENT);
+    ucg.setPrintPos(4,y);
+    ucg.setFont(ucg_font_ncenR08_hr);
+    ucg.print("_mr font:");
+    ucg.setFontMode(UCG_FONT_MODE_SOLID);
+    ucg.setFont(ucg_font_7x13_mr);
+    ucg.setColor(0, 255, 255, 255);       // use white as main color for the font
+    ucg.setColor(1, 64, 64, 255);         // use blue as background for SOLID mode
+    ucg.setPrintPos(110,y);
+    ucg.print(rnd);
+    ucg.print("  ");  // extra spaces
+    
+    
+    delay(100);  
 }
