@@ -64,4 +64,4 @@ void loop()
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino))
+A sample project for the Arduino IDE is provided in **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino)).
