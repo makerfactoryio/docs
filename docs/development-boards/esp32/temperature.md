@@ -3,14 +3,14 @@
 The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperature
 
 !!! example
-    A sample project for the Arduino IDE is provided in **Temperature.ino** which could be downloaded [here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it's necessary to to install the OneWire library which is described in the section *Using the component*.
+    A sample project for the Arduino IDE is provided in **Temperature.ino** [download here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it is necessary to install the OneWire library which is described in the section *Using the component*.
 
 ESP Board | temperature
 --- | ---
 <img src="/images/esp32/block_temperature.png"  width="30%"> | SW315
 
 ## Activating the component
-The component has a dip switch *SW315* for activating the temperature sensor. The switch connected to the following io ports:
+The component has a dip switch *SW315* for activating the temperature sensor. The switch is connected to the following io ports:
 
 |Function|SWITCH|IO port|Conflicts with|Remarks|
 |------------------|----------|----------|----------|----------|
@@ -22,7 +22,7 @@ The component has a dip switch *SW315* for activating the temperature sensor. Th
 !!! Info
     **Required libraries**
 
-    In order to use the component you need the OneWire-Library. The latested version could be download from the [GitHub repository](https://github.com/PaulStoffregen/OneWire). If you want to use the version from GitHub download a zip archiv. Addtionally you could [download](../../source/esp32/Temperature/OneWire-master.zip) a tested version. After the download it's necessary to add the library to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. After a sucessful installation the menu *Sketch > Include Library* should contain an entry *OneWire* in the category *Contributed libraries*.
+    In order to use the component you need the OneWire-Library. The latest version could be download from the [GitHub repository](https://github.com/PaulStoffregen/OneWire). If you want to use the version from GitHub download a zip archiv. Addtionally you could [download](../../source/esp32/Temperature/OneWire-master.zip) a tested version. After the download it's necessary to add the library to your Arduino IDE. Open *Sketch > Include Library > Add .ZIP Library ...* and select the downloaded archive. After a successful installation the menu *Sketch > Include Library* should contain an entry *OneWire* in the category *Contributed libraries*.
 
 ### Import the necessary libraries
 
@@ -125,4 +125,4 @@ fahrenheit = celsius * 1.8 + 32.0;
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **Temperature.ino** which could be downloaded [here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it's necessary to to install the OneWire library which is described in the section *Using the component*.
+A sample project for the Arduino IDE is provided in **Temperature.ino** [download here](../../source/esp32/Temperature/Temperature.ino). In order to use the sample it is necessary to install the OneWire library which is described in the section *Using the component*.
