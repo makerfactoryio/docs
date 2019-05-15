@@ -2,6 +2,9 @@
 
 The component **I2C Pull-up** provides two 1k resistors for the usage as pull-up for the I2C bus. The resistors are independent.
 
+!!! example
+    There is no specific source code necessary.
+    
 ESP Board | I2C pull-up
 --- | ---
 <img src="/images/esp32/block_i2c_pull_up.png"  width="30%"> | SW307 and SW308
