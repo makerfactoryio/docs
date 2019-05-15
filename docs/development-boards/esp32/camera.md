@@ -1,5 +1,5 @@
 ## Overview
-The camera connector of the ESP board allows the connection of a camera chip of type OV7670. 
+The component **camera** allows the connection of a camera chip of type OV7670. 
 OV7670 is a camera module with FiFo supporting 640x480 VGA. 
 The PIN description is listed at the backside of the board.
 
