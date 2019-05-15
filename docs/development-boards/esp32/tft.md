@@ -1,11 +1,13 @@
 ## Overview
-The development board supports a 2.8 inch TFT display with an resolution of 240*320 pixels.The display is not soldered on the board, but there is a 14 pin connector for a TFT display. The ILI9341 has been tested.
+The development board supports a 2.8 inch TFT display with a resolution of 240*320 pixels.The display is not soldered on the board, but there is a 14 pin connector for a TFT display. The ILI9341 has been tested.
 
 !!! example
-    There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).
+    There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).  
+And there are two examples for the Arduino IDE for using the touch functionality which could be downloaded: **TFT-TouchBtn** ([download here](../../source/esp32/TFT-TouchBtn/TFT-TouchBtn.ino)) and **TFT-TouchDraw** ([download here](../../source/esp32/TFT-TouchDraw/TFT-TouchDraw.ino)). 
 
-<img src="/images/esp32/block_tft.png"  width="30%">
-
+ESP Board | TFT
+--- | ---
+<img src="/images/esp32/block_tft.png"  width="30%"> | SW311,SW314
 
 ## Activating the component
 There are two dip switches for the component: *SW311* and *SW314*. If you want to use the TFT display all switches on *SW311* have to be on on. If you additonally want to use the touchpad of the display all switch of *SW314* have to be on. The following two tables shows the functions and the potential conflicts with other components
@@ -89,4 +91,5 @@ void loop(void)
 
 
 ## Sample project
-There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).
+There are four sample projects for the Arduino IDE which could be downloaded: **TFT-Box3D** ([download here](../../source/esp32/TFT-Box3D/TFT-Box3D.ino)), **TFT-Graphic-Test** ([download here](../../source/esp32/TFT-Graphic-Test/TFT-Graphic-Test.ino)), **TFT-HelloWorld** ([download here](../../source/esp32/TFT-HelloWorld/TFT-HelloWorld.ino)) and **TFT-HowToUseFonts** ([download here](../../source/esp32/TFT-HowToUseFonts/TFT-HowToUseFonts.ino)).  
+And there are two examples for the Arduino IDE for using the touch functionality which could be downloaded: **TFT-TouchBtn** ([download here](../../source/esp32/TFT-TouchBtn/TFT-TouchBtn.ino)) and **TFT-TouchDraw** ([download here](../../source/esp32/TFT-TouchDraw/TFT-TouchDraw.ino)). 
