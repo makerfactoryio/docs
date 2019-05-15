@@ -1,9 +1,9 @@
 ## Overview
 
-Stepper driver for DRV8824/25 and A4988 breakout boards
+The component **MOTOR** is a stepper driver for DRV8824/25 and A4988 breakout boards
 
 !!! example
-    A sample project for the Arduino IDE is provided in **BasicStepperDriver.ino** which could be downloaded [here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino)
+    An example project for the Arduino IDE is provided in **BasicStepperDriver.ino** ([download here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino))
 
 ESP Board | motor
 --- | ---
@@ -110,4 +110,4 @@ void loop() {
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **BasicStepperDriver.ino** which could be downloaded [here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino)
+A sample project for the Arduino IDE is provided in **BasicStepperDriver.ino** ([download here](../../source/esp32/BasicStepperDriver/BasicStepperDriver.ino)).
