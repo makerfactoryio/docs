@@ -3,7 +3,7 @@
 The component **POTENTIOMETER** has two potentiomenters which could be used independently.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **ReadPot.ino** which could be downloaded [here](../../source/esp32/ReadPot/ReadPot.ino)
+    An example project for the Arduino IDE is provided in **ReadPot.ino** ([download here](../../source/esp32/ReadPot/ReadPot.ino))
 
 ESP Board | potentiometer
 --- | ---
@@ -37,5 +37,5 @@ int R302 = analogRead(36);
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **ReadPot.ino** which could be downloaded [here](../../source/esp32/ReadPot/ReadPot.ino)
+An example project for the Arduino IDE is provided in **ReadPot.ino** ([download here](../../source/esp32/ReadPot/ReadPot.ino)).
 
