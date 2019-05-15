@@ -1,8 +1,10 @@
 ## Overview
-The audio amplifier of the ESP board includes the MAX98357A, a digital 3W Class D Audio Amplifier. 
+The component **AUDIO AMPLIFIER** of the ESP board includes the MAX98357A, a digital 3W Class D Audio Amplifier. 
 This amplifier provides an digital pulse-code modulation (PCM) input supporting I2S data and delivers a 3.2W output power into 4Ω (4 Ohms) at 5V. 
-It accepts specified sample rates between 8kHz and 96kHz for all supported data formats. 
-Connect your 4Ω speaker at connector J300 at P and N.
+It accepts specified sample rates between 8kHz and 96kHz for all supported data formats.
+
+!!! example
+    An example project for the Arduino IDE can be found in the chapter for the microphone.
 
 ESP Board | Audio Amplifier
 --- | ---
@@ -19,7 +21,7 @@ The component has the dip switch *SW306* for activating the component.
 |DIN|SW306-4|22|**mikroBus**, SW404-5, SCL; **Camera**, SW400-6, SIOC/SCL
 
 ## Using the component
-
+Connect your 4Ω speaker at connector J300 at P and N.
 
 ## Sample project
 An example project for the Arduino IDE can be found in the chapter for the microphone.
