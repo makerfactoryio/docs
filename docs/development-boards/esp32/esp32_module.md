@@ -1,6 +1,6 @@
 ## Overview
 
-The component **ESP32 MODULE** contains the ESP32 microchip which will be programmed. The component has two placeholder which be used for the **ESP32-WROOM-32** or **ESP32-WROVER**.
+The component **ESP32 MODULE** contains the ESP32 microchip which will be programmed. The component has two placeholders that are used for the **ESP32-WROOM-32** or **ESP32-WROVER**.
 
 !!! Caution
     You could only use one ESP32 module at one time. It's not possible to place both modules on the same time on the EBB board.
@@ -8,7 +8,7 @@ The component **ESP32 MODULE** contains the ESP32 microchip which will be progra
 !!! example
     You find examples for each component in the component pages.
 
-ESP Board | ESP32-WROOM-32
+ESP Board | ESP-WROOM-32
 --- | ---
 <img src="/images/esp32/block_esp32_module.png"  width="30%"> | SW210
 
@@ -17,11 +17,11 @@ Active all four switches of *SW210*.
 
 ## Using the component
 
-It's necessary taht the switches of *SW210* are on and the switch on the power supply is on. That is necessary in order to establish the communication between the onboard USB programmer (component **USB PROGRAMMING**) and the esp32 module.
+It's necessary that all switches of *SW210* are on and the switch at component *POWER SUPPLY* is on. This is necessary in order to establish the communication between the onboard USB programmer (component *USB PROGRAMMING*) and the esp32 module.
 
 ## Sample project
 
-You find examples for each component in the component pages.
+Examples of each component can be found on the component pages.
 
 ## Datasheet
 
