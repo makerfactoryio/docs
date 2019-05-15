@@ -1,12 +1,17 @@
 # RGB LED strip
 
-The board has **four** WS2813 RGB LEDs. The LEDs are connected to each other and therefore they could be handled like an LED strip.
+The component **RGB LED** has **four** WS2813 RGB LEDs. The LEDs are connected to each other and therefore they could be handled like an LED strip.
 
+!!! example
+    An example project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
+    
 ESP Board | RGB LED
 --- | ---
 <img src="/images/esp32/block_rgb_led.png"  width="30%"> | SW312,SW313
 
-The four LEDs are labeled on the board. The first LED in the strip is the LED **D300** near by the switches.
+## USING THE COMPONENT
+
+The four LEDs are labeled on the board. The first LED in the strip is the LED **D300** nearby the switches.
 
 |Label on the board|LED number|
 |------------------|:----------:|
@@ -42,4 +47,4 @@ ESP Board | RGB LED
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
+An example project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
