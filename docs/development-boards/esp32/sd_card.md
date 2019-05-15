@@ -1,9 +1,9 @@
 ## Overview
 
-At component SD card you can read and write data to the card.
+At component **SD card** you can read and write data to a sd card inserted in the socket.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **SD_Dir.ino** which could be downloaded [here](../../source/esp32/SD_Dir/SD_Dir.ino)
+    An example project for the Arduino IDE is provided in **SD_Dir.ino** [download here](../../source/esp32/SD_Dir/SD_Dir.ino) and **SD-ReadWrite.ino** [download here](../../source/esp32/SD-ReadWrite/SD-ReadWrite.ino)
 
 ESP Board | sd card
 --- | ---
@@ -100,4 +100,4 @@ void printDirectory(File dir, int numTabs) {
 ```
 
 ## Sample project
-A sample project for the Arduino IDE is provided in **SD_Dir.ino** which could be downloaded [here](../../source/esp32/SD_Dir/SD_Dir.ino)
+An example project for the Arduino IDE is provided in **SD_Dir.ino** [download here](../../source/esp32/SD_Dir/SD_Dir.ino) and **SD-ReadWrite.ino** [download here](../../source/esp32/SD-ReadWrite/SD-ReadWrite.ino)
