@@ -3,7 +3,7 @@
 The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperature
 
 !!! example
-    An example project for the Arduino IDE is provided in **Temperature.ino** ([download here](../../source/esp32/Temperature/Temperature.ino)). In order to use the sample it is necessary to install the OneWire library which is described in the section [*Using the component*](../../#using-the-component)
+    An example project for the Arduino IDE is provided in **Temperature.ino** ([download here](../../source/esp32/Temperature/Temperature.ino)). In order to use the sample it is necessary to install the OneWire library which is described in the section [*Using the component*](../../esp32/temperature/#using-the-component)
 
 ESP Board | temperature
 --- | ---
