@@ -1,10 +1,10 @@
 ## Overview
-The microphone of the ESP board includes the ICS-43432 chip, a digital I2S output microphone. 
+The component **microphone** includes the ICS-43432 chip, a digital I2S output microphone. 
 It consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, decimation and anti-aliasing filters, power management, and an industry standard 24-bit I²S interface. 
 The ICS-43432 has a high SNR of 65 dBA and a wideband frequency response.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **I2S_Microphone_Speaker.ino** which could be downloaded [here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)
+    A sample project for the Arduino IDE is provided in **I2S_Microphone_Speaker.ino** [download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)
 
 
 ESP Board | microphone
@@ -30,4 +30,4 @@ The microphone can also be broken out of the board and can then be connected to 
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **I2S_Microphone_Speaker.ino** which could be downloaded [here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)
+A sample project for the Arduino IDE is provided in **I2S_Microphone_Speaker.ino** [download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)
