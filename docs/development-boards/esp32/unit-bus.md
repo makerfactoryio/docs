@@ -3,7 +3,7 @@
 This is the connector for the Unit Bus.
 
 !!! example
-    A sample project for the Arduino IDE is coming soon.
+    An example project for the Arduino IDE is coming soon.
 
 
 ESP Board | unit Bus
@@ -27,4 +27,4 @@ Function|SWITCH|Connector|IO port|Conflicts with|Remarks|
 
 ## Sample project
 
-A sample project for the Arduino IDE is coming soon.
+An example project for the Arduino IDE is coming soon.
