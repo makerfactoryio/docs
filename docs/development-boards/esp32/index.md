@@ -16,7 +16,7 @@ The following picture shows the ESP32 Evaluation Board in Version V1.3.
 The EBB for ESP32 comes with a bunch of peripheral components which could be used for own projects. The usage of these component is described in this document. The follwing table lists the components:
 
 !!! hint
-    The ESP32 module has a **limited** number of usable IO ports. It's **not possible** to use all components on the board to the same time. Therefore you have to decide which component on the evaluation board you want to use in your project. In order to use a component you have you switch the appropriate dip switches to on. Additionally you have to switch conflicting components to off. The components which are using the same IO are described in the component pages.
+    The ESP32 module has a **limited** number of usable IO ports. It's **not possible** to use all components on the board at the same time. Therefore you have to decide which component on the evaluation board you want to use in your project. In order to use a component you have to switch on the appropriate dip switches. Additionally you have to switch off conflicting components. The components which are using the same IO are described in the component pages.
 
 - [Audio Amplifier](./audio.md)
 - [Camera](./camera.md)
