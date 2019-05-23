@@ -6,7 +6,7 @@ After a successful [installation](../install) of the Arduino IDE it's necessary 
 2. Install the extension for ESP32
 
 !!! note
-    The communication between the host computer and the development board is done by USB. The used USB chipset is a *Silicon Labs CP210x*. It should be automatically recognized by the operation system. If there is no automatic recognition install the driver manually. The link to the driver page is https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+    The communication between the host computer and the development board is done by USB. The used USB chipset is a *Silicon Labs CP210x*. It should be automatically recognized by the operation system. If there is no automatic recognition install the driver manually. The link to the driver page is [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
 ## Register a new board manager
 
@@ -25,11 +25,11 @@ The Preferences window has to tabs:
 | --- | --- | 
 | ![Preferences window](../../images/esp32/arduino_ide/preferences_window.jpg) | select *Additional Boards Manager URLs* |
 
-It's not necessary to change setting inside the *Network* tab. But a change in the *Settings* tab is necessary. Add an entry to the *Additional Boards Manager URLs*:
+It's not necessary to change the settings inside the *Network* tab. But a change in the tab *Settings* is necessary. Add an entry to the *Additional Boards Manager URLs*:
 
 ![board_manager_urls](../../images/esp32/arduino_ide/board_manager_urls.jpg)
 
-You could directly paste the following url into the input field or open the seperate window:
+You could directly paste the following url into the input field or open a separate window:
 
 ```
 https://dl.espressif.com/dl/package_esp32_index.json
@@ -41,7 +41,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 ## Install the extension for ESP32
 
-Now you could install the development extension for the ESP32 into the Arduino IDE. Go to *Tools > Board > Boards Manager...*
+Now you can install the development extension for the ESP32 at the Arduino IDE. Go to *Tools > Board > Boards Manager...*
 
 | IDE | Boards Manager |
 | --- | --- | 
