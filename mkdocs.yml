@@ -41,6 +41,7 @@ nav:
     - Getting Started:
       - Installing the IDE: development-boards/esp32/install.md
       - Programming the board: development-boards/esp32/program.md
+      - Errata sheet: development-boards/esp32/errata_sheet.md
     - Components:
       - Audio Amplifier: development-boards/esp32/audio.md
       - Camera: development-boards/esp32/camera.md
