@@ -1,9 +1,9 @@
 ## Overview
 
-The component **LCD** supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered on the board, but there is a four pin connector of a OLED display. The right image shows the component with connected display.
+The component **LCD** supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered to the board, but there is a four pin connector for an OLED display. The right image shows the component with connected display.
 
 !!! example
-    There are a few example projects for the Arduino IDE which could be downloaded:
+    There are three example projects for the Arduino IDE which could be downloaded:
     **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)), 
     **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)) and
     **Flappy.zip** ([download here](../../source/esp32/Flappy/Flappy.zip)).
@@ -188,7 +188,7 @@ display.clearDisplay();
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)). The following image shows the oled display with results from the sample project:
+A sample project for the Arduino IDE is provided in **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)). The following image shows the OLED output of this sample project:
 
 | OLED_1.ino | example |
 | --- | --- | 
@@ -207,9 +207,11 @@ Edit "xbm" file with Notepad ++
 Change variable in third line to: "static unsigned char"  
 Save file as "images.h"  
 
-A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/OLED_1/Temp-OLED.zip)). The following image shows the oled display with results from the sample project:
-
+A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/OLED_1/Temp-OLED.zip)). The following image shows the OLED output of this sample project:
 
 | Temp-OLED.ino | example |
 | --- | --- | 
 | <img src="/images/esp32/oled_MF_logo.jpg"  width="25%"> | showing logo of MakerFactory |
+
+## Flappy Bird
+A funny project for the Arduino IDE is provided in **Flappy.zip** ([download here](../../source/esp32/Flappy/Flappy.zip)).
