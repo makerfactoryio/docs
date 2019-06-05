@@ -6,7 +6,7 @@ The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperatu
     An example project for the Arduino IDE is provided in **Temperature.ino** ([download here](../../source/esp32/Temperature/Temperature.ino)). In order to use the sample it is necessary to install the OneWire library which is described in the section [*Using the component*](../../esp32/temperature/#using-the-component)
 
 !!! example
-There are five more sample projects for the Arduino IDE which could be downloaded: **DS18B20.ino** ([download here](../../source/esp32/DS18B20/DS18B20.ino)), **DS18B20-Temperature-Control-Library-1.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-1/DS18B20-Temperature-Control-Library-1.ino)), **DS18B20-Temperature-Control-Library-2.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-2/DS18B20-Temperature-Control-Library-2.ino)), **Temp-Oled.ino** ([download here](../../source/esp32/Temp-Oled/Temp-Oled.ino)) and **Temp-TFT.ino** ([download here](../../source/esp32/Temp-TFT/Temp-TFT.ino)).
+    There are five more sample projects for the Arduino IDE which could be downloaded: **DS18B20.ino** ([download here](../../source/esp32/DS18B20/DS18B20.ino)), **DS18B20-Temperature-Control-Library-1.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-1/DS18B20-Temperature-Control-Library-1.ino)), **DS18B20-Temperature-Control-Library-2.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-2/DS18B20-Temperature-Control-Library-2.ino)), **Temp-Oled.ino** ([download here](../../source/esp32/Temp-Oled/Temp-Oled.ino)) and **Temp-TFT.ino** ([download here](../../source/esp32/Temp-TFT/Temp-TFT.ino)).
 
 ESP Board | temperature
 --- | ---
