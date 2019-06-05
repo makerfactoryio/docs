@@ -11,17 +11,15 @@ Description : Stepper driver for DRV8824/25 and A4988 breakout boards
 Connect a stepper motor on J301
 Motor connection from left to right:
 
-GND     -   external motor power supply
-VCC     -   external motor power supply
+GND     -   motor power supply
+VCC     -   motor power supply
 2B      -   motor coil 2
 2A      -   motor coil 2
 1A      -   motor coil 1
 1B      -   motor coil 1
 
-MOTOR   SW304 all ON  (direction and pulse)
-MOTOR   SW305 1 - 3 OFF (microstepping)
-        SW305 4     ON  (enable)
-
+MOTOR SW304 all ON  (direction and pulse)
+MOTOR SW305 all OFF (microstepping)
 
 License:
 Copyright (C)2015 Laurentiu Badea
