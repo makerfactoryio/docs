@@ -1,6 +1,6 @@
 ## Overview
 
-The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperature
+The component **TEMPERATURE** has a Dallas chip DS18B20+ for temperature measurement
 
 !!! example
     There are five sample projects for the Arduino IDE which could be downloaded: **DS18B20.ino** ([download here](../../source/esp32/DS18B20/DS18B20.ino)), **DS18B20-Temperature-Control-Library-1.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-1/DS18B20-Temperature-Control-Library-1.ino)), **DS18B20-Temperature-Control-Library-2.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-2/DS18B20-Temperature-Control-Library-2.ino)), **Temp-Oled.ino** ([download here](../../source/esp32/Temp-Oled/Temp-Oled.ino)) and **Temp-TFT.ino** ([download here](../../source/esp32/Temp-TFT/Temp-TFT.ino)).
