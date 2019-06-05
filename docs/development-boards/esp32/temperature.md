@@ -5,6 +5,8 @@ The component **TEMPERATURE** has an Dallas DS18B20+ for measuring the temperatu
 !!! example
     An example project for the Arduino IDE is provided in **Temperature.ino** ([download here](../../source/esp32/Temperature/Temperature.ino)). In order to use the sample it is necessary to install the OneWire library which is described in the section [*Using the component*](../../esp32/temperature/#using-the-component)
 
+Another example is provided in **DS18B20.ino** ([download here](../../source/esp32/DS18B20/DS18B20.ino)), in **DS18B20-Temperature-Control-Library-1.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-1/DS18B20-Temperature-Control-Library-1.ino)), in **DS18B20-Temperature-Control-Library-2.ino** ([download here](../../source/esp32/DS18B20-Temperature-Control-Library-2/DS18B20-Temperature-Control-Library-2.ino)), in **Temp-Oled.ino** ([download here](../../source/esp32/Temp-Oled/Temp-Oled.ino)) and in **Temp-TFT.ino** ([download here](../../source/esp32/Temp-TFT/Temp-TFT.ino)).
+
 ESP Board | temperature
 --- | ---
 <img src="/images/esp32/block_temperature.png"  width="30%"> | SW315
