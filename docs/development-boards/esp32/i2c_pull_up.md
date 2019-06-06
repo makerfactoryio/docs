@@ -3,7 +3,7 @@
 The component **I2C Pull-up** provides two 1k resistors for the usage as pull-up for the I2C bus. The resistors are independent.
 
 !!! example
-    An example project for the Arduino IDE is provided in **I2C-Scanner.ino** ([download here](../../source/esp32/I2C-Scanner/I2C-Scanner.ino)).
+    An example project for the Arduino IDE can be downloaded: **I2C-Scanner.ino** ([download here](../../source/esp32/I2C-Scanner/I2C-Scanner.ino)).
     
 ESP Board | I2C pull-up
 --- | ---
@@ -21,4 +21,4 @@ IO19 | IO4
 There is no special source code needed for this component. If you need an pull-up in your project you have to activate the appropriate pull-up.
 
 ## Sample project
-An example project for the Arduino IDE is provided in **I2C-Scanner.ino** ([download here](../../source/esp32/I2C-Scanner/I2C-Scanner.ino))
+An example project for the Arduino IDE can be downloaded: **I2C-Scanner.ino** ([download here](../../source/esp32/I2C-Scanner/I2C-Scanner.ino))
