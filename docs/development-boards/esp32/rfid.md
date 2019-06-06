@@ -3,7 +3,7 @@
 Read data from RFID RC522
 
 !!! example
-    A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
+    An example project for the Arduino IDE is provided in **RFID.ino** ([download here](../../source/esp32/RFID/RFID.ino))
 
 ESP Board | rfid
 --- | ---
@@ -66,4 +66,4 @@ mfrc522.PICC_DumpToSerial(&(mfrc522.uid));
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **RFID.ino** which could be downloaded [here](../../source/esp32/RFID/RFID.ino)
+An example project for the Arduino IDE is provided in **RFID.ino** ([download here](../../source/esp32/RFID/RFID.ino))
