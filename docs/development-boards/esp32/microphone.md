@@ -28,6 +28,11 @@ Switch 4 (LR) of SW301 is connected to GND.
 You need 6 jumpers to use the microphone connected to the board. 
 The microphone can also be broken out of the board and can then be connected to the board by 6 cables.
 
+!!! Info
+    **Required libraries**
+
+    In order to use the component you need the library "i2s.h". The latest version can be downloaded from the GitHub repository ([download here](https://github.com/espressif/esp-idf/blob/master/components/driver/include/driver/i2s.h)).
+    
 ## Sample project
 
 An example project for the Arduino IDE can be downloaded: **I2S_Microphone_Speaker.ino** ([download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)).
