@@ -11,7 +11,7 @@ All known errors are listed below.
 | POTENTIOMETER | VP and VN are reversed | SW300, SW302 |
 | IO | VP and VN are reversed | CN210 |
 | TFT | The labeling TFT is missing |
-|  | The labeling of the switch SW314<br/>is not completely correct. | Left side:<br/>IO34/T_DO &rarr; IO19/T_DO<br/>Back side:<br/>IO19/MISO &rarr; NC/MISO |
+|  | The labeling of the switch SW314<br/>is not completely correct. | Left side and back side:<br/>IO34/T_DO &rarr; IO19/T_DO<br/>IO19/MISO &rarr; NC/MISO |
 | UNIT Bus | The labeling of the switches are<br/>missing because there is not enough space. | Left switch: SW201<br/>Right side: SW200 |
 
 ## ESP32 Version 1.4
