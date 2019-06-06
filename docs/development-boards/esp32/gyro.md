@@ -3,7 +3,9 @@
 The component **Gyro Accelerometer Compass** provides a 9-axis Motion Processing Unit in form of a MPU9250. The component is controlled via I2C protocol.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **MPU9250.ino** ([download here](../../source/esp32/Gyro/MPU9250.ino)) and **MPU-LED.ino** ([download here](../../source/esp32/Gyro/MPU-LED.ino))
+    There are two example projects for the Arduino IDE which could be downloaded: 
+    **MPU9250.ino** ([download here](../../source/esp32/Gyro/MPU9250.ino)) and 
+    **MPU-LED.ino** ([download here](../../source/esp32/Gyro/MPU-LED.ino))
 
 ESP Board | Gyro
 --- | ---
@@ -115,4 +117,4 @@ int16_t mz = -(Mag[5]<<8 | Mag[4]);
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **MPU9250.ino** ([download here](../../source/esp32/Gyro/MPU9250.ino)) and **MPU-LED.ino** ([download here](../../source/esp32/Gyro/MPU-LED.ino)).
+There are two example projects for the Arduino IDE which could be downloaded: **MPU9250.ino** ([download here](../../source/esp32/Gyro/MPU9250.ino)) and **MPU-LED.ino** ([download here](../../source/esp32/Gyro/MPU-LED.ino)).
