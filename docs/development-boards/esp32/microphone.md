@@ -4,7 +4,10 @@ It consists of a MEMS sensor, signal conditioning, an analog-to-digital converte
 The ICS-43432 has a high SNR of 65 dBA and a wideband frequency response.
 
 !!! example
-    An example project for the Arduino IDE can be downloaded: **I2S_Microphone_Speaker.ino** ([download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino))
+    There are three example projects for the Arduino IDE which can be downloaded:
+    **I2S_Microphone_Speaker.ino** ([download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)), 
+    **I2S_to_SD_16bit.ino** ([download here](../../source/esp32/Microphone/I2S_to_SD_16bit.ino)) and
+    **I2S_to_SD_24bit.ino** ([download here](../../source/esp32/Microphone/I2S_to_SD_24bit.ino))
 
 
 ESP Board | microphone
@@ -35,4 +38,4 @@ The microphone can also be broken out of the board and can then be connected to 
     
 ## Sample project
 
-An example project for the Arduino IDE can be downloaded: **I2S_Microphone_Speaker.ino** ([download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)).
+There are three example projects for the Arduino IDE which can be downloaded: **I2S_Microphone_Speaker.ino** ([download here](../../source/esp32/Microphone/I2S_Microphone_Speaker.ino)), **I2S_to_SD_16bit.ino** ([download here](../../source/esp32/Microphone/I2S_to_SD_16bit.ino)) and **I2S_to_SD_24bit.ino** ([download here](../../source/esp32/Microphone/I2S_to_SD_24bit.ino))
