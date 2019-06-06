@@ -9,7 +9,7 @@ Author      : MF
 Description : Read the DS18B20/DS18S20
 
 Switches:
-TEMPERAUTURE SW315 ON
+TEMPERATURE SW315 ON
 
 The DallasTemperature library can do all this work for you!
 https://github.com/milesburton/Arduino-Temperature-Control-Library
