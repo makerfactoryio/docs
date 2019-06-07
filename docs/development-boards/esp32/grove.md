@@ -3,7 +3,7 @@
 The component **GROVE** provides eight connectors for the **Grove System** from Seeed Studio. These connectors are four digital connectors (named from *DIGITAL1* to *DIGITAL4*), two analog connectors (named from *ANALOG1* to *ANALOG2*), I2C and UART.
 
 !!! example
-    An example project for the Arduino IDE is coming soon.
+    An example project for the Arduino IDE can be downloaded: **SEEED_Grove-GSR_Sensor.ino** ([download here](../../source/esp32/SEEED_Grove-GSR_Sensor/SEEED_Grove-GSR_Sensor.ino))
 
 ESP Board | grove connector
 --- | ---
@@ -92,5 +92,4 @@ Function|SWITCH|IO port|Conflicts with|Remarks|
 
 
 ## Sample project
-An example project for the Arduino IDE is coming soon.
-
+An example project for the Arduino IDE can be downloaded: **SEEED_Grove-GSR_Sensor.ino** ([download here](../../source/esp32/SEEED_Grove-GSR_Sensor/SEEED_Grove-GSR_Sensor.ino))
