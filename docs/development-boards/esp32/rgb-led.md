@@ -3,7 +3,14 @@
 The component **RGB LED** has **four** WS2813 RGB LEDs. The LEDs are connected to each other and therefore they could be handled like an LED strip.
 
 !!! example
-    An example project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
+    There are six example projects for the Arduino IDE which can be downloaded:
+    **RGB-LED-HSV.ino** ([download here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)), 
+    **RGB-LED-WS2813.ino** ([download here](../../source/esp32/RGB-LED-WS2813/RGB-LED-WS2813.ino)), 
+    **RGB-LED-WS2813-ColorBridge.ino** ([download here](../../source/esp32/RGB-LED-WS2813-ColorBridge/RGB-LED-WS2813-ColorBridge.ino)), 
+    **RGB-LED-WS2813-POT-BR.ino** ([download here](../../source/esp32/RGB-LED-WS2813-POT-BR/RGB-LED-WS2813-POT-BR.ino)), 
+    **RGB-LED-WS2813-POT-COLOR.ino** ([download here](../../source/esp32/RGB-LED-WS2813-POT-COLOR/RGB-LED-WS2813-POT-COLOR.ino)), and 
+    **RGB-LED-WS2813-SmoothColors.ino** ([download here](../../source/esp32/RGB-LED-WS2813-SmoothColors/RGB-LED-WS2813-SmoothColors.ino))
+    
     
 ESP Board | RGB LED
 --- | ---
@@ -47,4 +54,10 @@ ESP Board | RGB LED
 
 ## Sample project
 
-An example project for the Arduino IDE is provided in **RGB-LED-HSV.ino** which could be downloaded [here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)
+There are six example projects for the Arduino IDE which can be downloaded:
+**RGB-LED-HSV.ino** ([download here](../../source/esp32/rgb-led-hsv/RGB-LED-HSV.ino)), 
+**RGB-LED-WS2813.ino** ([download here](../../source/esp32/RGB-LED-WS2813/RGB-LED-WS2813.ino)), 
+**RGB-LED-WS2813-ColorBridge.ino** ([download here](../../source/esp32/RGB-LED-WS2813-ColorBridge/RGB-LED-WS2813-ColorBridge.ino)), 
+**RGB-LED-WS2813-POT-BR.ino** ([download here](../../source/esp32/RGB-LED-WS2813-POT-BR/RGB-LED-WS2813-POT-BR.ino)), 
+**RGB-LED-WS2813-POT-COLOR.ino** ([download here](../../source/esp32/RGB-LED-WS2813-POT-COLOR/RGB-LED-WS2813-POT-COLOR.ino)), and 
+**RGB-LED-WS2813-SmoothColors.ino** ([download here](../../source/esp32/RGB-LED-WS2813-SmoothColors/RGB-LED-WS2813-SmoothColors.ino))
