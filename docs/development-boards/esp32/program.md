@@ -16,7 +16,7 @@ Start the Arduino IDE, open the Preferences window with *File > Preferences* in 
 | --- | --- | 
 | ![Open Preferences windows](../../images/esp32/arduino_ide/open_preferences.png) | select *preferences* |
 
-The Preferences window has to tabs:
+The Preferences window has two tabs:
 
 + *Settings*
 + *Network*
