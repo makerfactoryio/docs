@@ -1,9 +1,9 @@
 # Documentation for the Embedded Board Builder for ESP32
 
-This documentation describes the **ESP32 Evalulation board** as part of the Embedded Board Builder (EBB) familiy from Makerfactory. This board is an an devleopment board for the ESP32 module from [Expressif Systems](https://www.espressif.com/). With this development board you could develop projects for the **ESP32-WROOM-32** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)) or **ESP32-WROVER** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf)).
+This documentation describes the **ESP32 Evalulation board** as part of the Embedded Board Builder (EBB) family from Makerfactory. This board is an development board for the ESP32 module from [Expressif Systems](https://www.espressif.com/). With this development board you can develop projects for the **ESP32-WROOM-32** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)) or **ESP32-WROVER** (for more information check the [datasheet on the page of Expressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf)).
 
 !!! info
-    The screenshots are created with the english version of Windows 10. If screenshots completly differs from the Mac OS version it's mentioned in the text.
+    The screenshots are created with the english version of Windows 10. If screenshots completely differ from the Mac OS version it's mentioned in the text.
 
 ## Board
 
@@ -13,10 +13,10 @@ The following picture shows the ESP32 Evaluation Board in Version V1.3.
 
 ## Peripheral components
 
-The EBB for ESP32 comes with a bunch of peripheral components which could be used for own projects. The usage of these component is described in this document. The follwing table lists the components:
+The EBB for ESP32 comes with a bunch of peripheral components which could be used for own projects. The usage of these components is described in this document. The following table lists the components:
 
 !!! hint
-    The ESP32 module has a **limited** number of usable IO ports. It's **not possible** to use all components on the board at the same time. Therefore you have to decide which component on the evaluation board you want to use in your project. In order to use a component you have to switch on the appropriate dip switches. Additionally you have to switch off conflicting components. The components which are using the same IO are described in the component pages.
+    The ESP32 module has a **limited** number of usable IO ports. It is **not possible** to use all components on the board at the same time. Therefore you have to decide which component on the evaluation board you want to use in your project. In order to use a component you have to switch on the appropriate dip switches. Additionally you have to switch off conflicting components. The components which are using the same IO are described in the component pages.
 
 - [Audio Amplifier](./audio.md)
 - [Camera](./camera.md)
@@ -26,7 +26,7 @@ The EBB for ESP32 comes with a bunch of peripheral components which could be use
 - [I2C Pull-up](./i2c_pull_up.md)
 - [Menu](./menu.md)
 - [Microphone](./microphone.md)
-- [mirkoBUS](./mikro_bus.md)
+- [mikroBUS](./mikro_bus.md)
 - [Motor](./motor.md)
 - [OLED-LCD](./lcd.md)
 - [Potentiometer](./potentiometer.md)
