@@ -1,5 +1,5 @@
 ## Overview
-The board is programmed with USB. For that case, the board is providing a micro usb port. This port could be used to power the board, too.
+The board is programmed via USB. For this, the board is providing a micro usb port. This port could be used to power the board, too.
 
 ESP Board | usb programming
 --- | ---
