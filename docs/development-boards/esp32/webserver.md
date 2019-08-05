@@ -3,22 +3,19 @@ The EBB ESP32 board is ideal for creating a webserver. Here you can find a few s
 
 !!! example
     There is one example project for the camera:
-    **Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip)). 
+    **Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip)). <br>
     Insert your SSID and your Password. Enter IP of your EBB board and see the camera picture.
-
-!!! example
+    <br>
     There is one example project for an email client:
-    **EspEmail.ino** ([download here](../../source/esp32/Webserver/EspEmail.zip)). 
+    **EspEmail.ino** ([download here](../../source/esp32/Webserver/EspEmail.zip)). <br>
     When pressing the OK button the EBB board will send an email over smtp2go.
-
-!!! example
+    <br>
     There is one example project for an webserver:
-    **ESP32_Webserver.ino** ([download here](../../source/esp32/Webserver/ESP32_Webserver.ino)). 
+    **ESP32_Webserver.ino** ([download here](../../source/esp32/Webserver/ESP32_Webserver.ino)). <br>
     Show text from Webserver at OLED, switch RGB LEDs, and set background color of textboxes.
-
-!!! example
+    <br>
     There is one example project showing WiFi traffic:
-    **PacketMonitor32.ino** ([download here](../../source/esp32/Webserver/PacketMonitor32.ino)). 
+    **PacketMonitor32.ino** ([download here](../../source/esp32/Webserver/PacketMonitor32.ino)). <br>
     Shows the traffic of all nearby devices on the selected WiFi channel at OLED.
 
 
