@@ -12,4 +12,7 @@ Active all four switches of *SW210*.
 There is no special source code needed for using this component.
 
 ## Sample project
-One example project for the Arduino IDE can be downloaded: **Camera_Webserver.ino** ([download here](../../source/camera/Camera_Webserver.zip))
+There is one example project for the Camera:
+**Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip))
+Insert your SSID and your Password and enter IP of your EBB board.
+
