@@ -64,6 +64,7 @@ nav:
       - TFT: development-boards/esp32/tft.md
       - Unit-Bus: development-boards/esp32/unit-bus.md
       - USB Programming: development-boards/esp32/usb-programming.md
+      - Webserver: development-boards/esp32/webserver.md
   - M5STACK:
     - Products:
       - Overview: 'm5stack/overview.md'
