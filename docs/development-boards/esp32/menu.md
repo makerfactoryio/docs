@@ -3,7 +3,7 @@
 The component **MENU** has five switches which could be used for control tasks.
 
 !!! example
-    A sample project for the Arduino IDE is provided in **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino))
+    An example project for the Arduino IDE can be downloaded: **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino))
 
 ESP Board | menu
 --- | ---
@@ -64,4 +64,4 @@ void loop()
 
 ## Sample project
 
-A sample project for the Arduino IDE is provided in **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino)).
+An example project for the Arduino IDE can be downloaded: **Button.ino** ([download here](../../source/esp32/Buttons/Buttons.ino)).
