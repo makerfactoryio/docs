@@ -4,7 +4,8 @@ OV7670 is a camera module with FiFo supporting 640x480 VGA.
 The PIN description is listed at the backside of the board.
 
 !!! example
-    A sample project for the Arduino IDE is coming soon.
+    There is one example project for the Arduino IDE which can be downloaded: 
+    **Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip))
     
 ESP Board | camera connector
 --- | ---
@@ -36,4 +37,5 @@ The component has three dip switches for controlling the component: *SW400*, *SW
 
 
 ## Sample project
-A sample project for the Arduino IDE is coming soon.
+There is one example project for the Arduino IDE which can be downloaded: 
+    **Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip))
