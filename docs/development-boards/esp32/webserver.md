@@ -11,6 +11,10 @@ The EBB ESP32 board is ideal for creating a webserver. Here you can find a few s
     **EspEmail.ino** ([download here](../../source/esp32/Webserver/EspEmail.zip)). 
     When pressing the OK button the EBB board will send an email over smtp2go.
 
+!!! example
+    There is one example project for an webserver:
+    **ESP32_Webserver.ino** ([download here](../../source/esp32/Webserver/ESP32_Webserver.ino)). 
+    Show text from Webserver at OLED, switch RGB LEDs, and set background color of textboxes.
 
 ESP Board | ESP-WROOM-32
 --- | ---
@@ -23,5 +27,15 @@ Active all four switches of *SW210*.
 There is no special source code needed for using this component.
 
 ## Sample project
+There is one example project for the camera:
+**Camera_Webserver.ino** ([download here](../../source/esp32/Camera/Camera_Webserver.zip)). 
+Insert your SSID and your Password. Enter IP of your EBB board and see the camera picture.
 
+There is one example project for an email client:
+**EspEmail.ino** ([download here](../../source/esp32/Webserver/EspEmail.zip)). 
+When pressing the OK button the EBB board will send an email over smtp2go.
+
+There is one example project for an webserver:
+**ESP32_Webserver.ino** ([download here](../../source/esp32/Webserver/ESP32_Webserver.ino)). 
+Show text from Webserver at OLED, switch RGB LEDs, and set background color of textboxes.
 
