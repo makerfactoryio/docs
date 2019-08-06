@@ -5,7 +5,7 @@ The component **LCD** supports monochrome OLED displays with a resolution of 128
 !!! example
     There are four example projects for the Arduino IDE which could be downloaded: <br>
     **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)) for demonstration<br>
-    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)) showing the temperature <br>
+    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)) how to show a logo and the temperature <br>
     **Flappy Bird** ([download here](../../source/esp32/Flappy/Flappy.zip)) the game and <br>
     **Pong** ([download here](../../source/esp32/Pong/Pong.zip)) also a game.
     
@@ -13,7 +13,6 @@ The component **LCD** supports monochrome OLED displays with a resolution of 128
 | connector | OLED |
 | --- | --- | 
 | <img src="/images/esp32/block_lcd.png"> |  <img src="/images/esp32/block_lcd_with_oled.png"> |
-
 
 
 ## Activating the component
