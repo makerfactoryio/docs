@@ -3,11 +3,11 @@
 The component **LCD** supports monochrome OLED displays with a resolution of 128*64 pixel driven by a SSD1306 driver. The display is not soldered to the board, but there is a four pin connector for an OLED display. The right image shows the component with connected display.
 
 !!! example
-    There are four example projects for the Arduino IDE which could be downloaded: 
-    **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)), 
-    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)), the game 
-    **Flappy Bird** ([download here](../../source/esp32/Flappy/Flappy.zip)), and the game
-    **Pong** ([download here](../../source/esp32/Pong/Pong.zip)).
+    There are four example projects for the Arduino IDE which could be downloaded: <br>
+    **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)) for demonstration<br>
+    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)) showing the temperature <br>
+    **Flappy Bird** ([download here](../../source/esp32/Flappy/Flappy.zip)) the game and <br>
+    **Pong** ([download here](../../source/esp32/Pong/Pong.zip)) also a game.
     
 
 | connector | OLED |
