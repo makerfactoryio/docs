@@ -207,7 +207,7 @@ Edit "xbm" file with Notepad ++
 Change variable in third line to: "static unsigned char"  
 Save file as "images.h"  
 
-A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/OLED_1/Temp-OLED.zip)). The following image shows the OLED output of this sample project:
+A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)). The following image shows the OLED output of this sample project:
 
 | Temp-OLED.ino | example |
 | --- | --- | 
