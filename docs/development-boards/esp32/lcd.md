@@ -5,7 +5,7 @@ The component **LCD** supports monochrome OLED displays with a resolution of 128
 !!! example
     There are four example projects for the Arduino IDE which could be downloaded: <br>
     **OLED_1.ino** ([download here](../../source/esp32/OLED_1/OLED_1.ino)) for demonstration<br>
-    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)) how to show a logo and the temperature <br>
+    **Temp-OLED.ino** ([download here](../../source/esp32/Temp-Oled/Temp-OLED.zip)) how to show a logo and the temperature <br>
     **Flappy Bird** ([download here](../../source/esp32/Flappy/Flappy.zip)) the game and <br>
     **Pong** ([download here](../../source/esp32/Pong/Pong.zip)) also a game.
     
@@ -207,7 +207,7 @@ Edit "xbm" file with Notepad ++
 Change variable in third line to: "static unsigned char"  
 Save file as "images.h"  
 
-A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/Temp-OLED/Temp-OLED.zip)). The following image shows the OLED output of this sample project:
+A sample project for the Arduino IDE is provided in **Temp-OLED.ino** ([download here](../../source/esp32/Temp-Oled/Temp-OLED.zip)). The following image shows the OLED output of this sample project:
 
 | Temp-OLED.ino | example |
 | --- | --- | 
