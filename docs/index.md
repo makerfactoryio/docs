@@ -22,7 +22,7 @@
   </div>
 </div>
 
-## Robotics
+## Educational
 
 <div markdown="span" class="float-container text-center">
   <div markdown="span" class="pull-left" style="width: 33%">
