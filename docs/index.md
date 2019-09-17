@@ -24,13 +24,13 @@
 
 ## Educational
 
-<div markdown="span" class="float-container text-center">
-  <div markdown="span" class="pull-left" style="width: 33%">
+<div markdown="span" class="float-container">
+  <div markdown="span" class="slight-padding text-center bottom-aligned" style="width: 33%">
     [![RoboBug_ICON](../../images/robobug-hexapod/Abb_1.png)](/educational-robotics/robobug-hexapod/quick-start/)
     <br>
     [RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
   </div>
-  <div markdown="span" class="pull-left" style="width: 33%">
+  <div markdown="span" class="slight-padding text-center bottom-aligned" style="width: 33%">
     [![Raspberry_ICON](../../images/raspberry/learning-package-raspberry.jpg)](/educational/raspberry/overview/)
     <br>
     [Raspberry](/educational/raspberry/overview/)
