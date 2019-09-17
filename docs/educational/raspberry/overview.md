@@ -1,6 +1,7 @@
 # PROGRAMMING LEARNING-PACKAGE FOR RASPBERRY PI®
 
 This documentation describes the **learning package** from Makerfactory for learning Python.
+This is a hat for the Raspberry Pi for people who want to learn programming.
 
 ## Board
 
@@ -26,6 +27,8 @@ The learning package comes with a bunch of peripheral components which could be 
 - Push button 
 
 ## GPIO of Raspberry Pi
+
+The package learns how to program all the components of the board in python. All components are connected to the GPIOs of the Raspberry Pi.
 
 The following picture shows the GPIOs of the Raspberry Pi.
 ![GPIO](../../images/raspberry/GPIO.png)
