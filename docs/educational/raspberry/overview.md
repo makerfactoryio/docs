@@ -32,7 +32,10 @@ The following picture shows the GPIOs of the Raspberry Pi.
 
 ## Programming examples
 
-There are 88 files of explaining how to program the learning package.
+There are 88 files of explaining how to program the learning package. 
+Here the first one called "Ampel_1.pi":
+
+![Ampel_1](../../images/raspberry/Ampel_1.png)
 
 !!! example
     There is one example project for Python which can be downloaded: 
