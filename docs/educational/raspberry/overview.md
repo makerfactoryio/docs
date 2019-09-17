@@ -38,11 +38,9 @@ The following picture shows the GPIOs of the Raspberry Pi.
 There are total 88 files of explaining how to program all the components. 
 Here the first one for the traffic light called "Ampel_1.pi":
 
-![Ampel_1](../../images/raspberry/Ampel_1.png)
-
 Raspberry Pi | Ampel
 --- | ---
-<img src="/images/raspberry/Ampel_1.png"  width="30%"> | SW310
+<img src="/images/raspberry/Ampel_1.png"  width="30%"> | Python
 
 
 !!! example
