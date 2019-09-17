@@ -1,7 +1,7 @@
 # PROGRAMMING LEARNING-PACKAGE FOR RASPBERRY PI®
 
 This documentation describes the **learning programming package** from Makerfactory.
-This is a hat for the Raspberry Pi for people who want to learn programming.
+This is a HAT for the Raspberry Pi for people who want to learn programming.
 
 ## Board
 
