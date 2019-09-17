@@ -33,7 +33,7 @@
   <div markdown="span" class="slight-padding text-center bottom-aligned" style="width: 33%">
     [![Raspberry_ICON](../../images/raspberry/learning-package-raspberry.jpg)](/educational/raspberry/overview/)
     <br>
-    [Raspberry](/educational/raspberry/overview/)
+    [Raspberry Learning Package](/educational/raspberry/overview/)
   </div>
 </div>
 
