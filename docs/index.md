@@ -30,6 +30,11 @@
     <br>
     [RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
   </div>
+  <div markdown="span" class="pull-left" style="width: 33%">
+    [![Raspberry_ICON](../../images/raspberry/learning-package-raspberry.jpg)](/educational/raspberry/overview/)
+    <br>
+    [Raspberry](/educational/raspberry/overview/)
+  </div>
 </div>
 
 ## Kits
