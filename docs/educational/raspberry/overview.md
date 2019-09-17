@@ -5,7 +5,7 @@ This documentation describes the **learning package** from Makerfactory for lear
 ## Board
 
 The following picture shows the hat for the Raspberry Pi.
-![Board](../../images/education/raspberry/learning-package-raspberry.jpg)
+![Board](../../images/raspberry/learning-package-raspberry.jpg)
 
 ## Peripheral components
 
