@@ -144,7 +144,9 @@ nav:
   #       - User button: 'development-boards/sensorio/button.md'
   #       - Multiplexers: 'development-boards/sensorio/multiplexers.md'
 
-- Educational Robotics:
+
+# - Educational Robotics:
+- Robotics:
   - Hexapod Robobug Platform:
     - Manual:
       - Introduction: 'educational-robotics/robobug-hexapod/introduction.md'
