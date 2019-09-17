@@ -147,7 +147,7 @@ nav:
 
 # - Educational Robotics:
 - Educational:
-  - Hexapod Robobug:
+  - Robobug Hexapod:
     - Manual:
       - Introduction: 'educational-robotics/robobug-hexapod/introduction.md'
       - Explanation of symbols: 'educational-robotics/robobug-hexapod/explanation_of_symbols.md'
