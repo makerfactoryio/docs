@@ -9,7 +9,7 @@ The following picture shows the hat for the Raspberry Pi.
 
 ## Peripheral components
 
-The learning package comes with a bunch of peripheral components which could be used for own projects. The usage of these components is described in this document. The following table lists the components:
+The learning package comes with a bunch of peripheral components which could be used for own projects. The usage of these components is described in the manual. The following table lists the components:
 
 - Board 
 - Spacers 
@@ -24,5 +24,10 @@ The learning package comes with a bunch of peripheral components which could be 
 - Piezo speaker 
 - Switch 
 - Push button 
+
+## GPIO of Raspberry Pi
+
+The following picture shows the GPIOs of the Raspberry Pi.
+![GPIO](../../images/education/raspberry/GPIO.png)
 
 
