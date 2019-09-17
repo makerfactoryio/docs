@@ -36,7 +36,7 @@ There are 88 files of explaining how to program the learning package.
 
 !!! example
     There is one example project for Python which can be downloaded: 
-    **Ampel_1.py** ([download here](../../source/education/raspberry/Ampel_1.py))
+    **Ampel_1.py** ([download here](../../source/educational/raspberry/Ampel_1.py))
 
 ## Manual
 
@@ -44,5 +44,5 @@ There is an extract of the manual available here. The complete manual is deliver
 
 !!! example
     There is one extract of the manual which can be downloaded: 
-    **Manual** ([download here](../../source/education/raspberry/1893842_V1_0219_01_VTP_m_de_Leseprobe.pdf))
+    **Manual** ([download here](../../source/educational/raspberry/1893842_V1_0219_01_VTP_m_de_Leseprobe.pdf))
 
