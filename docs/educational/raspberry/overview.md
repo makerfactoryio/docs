@@ -7,7 +7,7 @@ This is a hat for the Raspberry Pi for people who want to learn programming.
 
 The product is a board for the Raspberry Pi, which is placed on top of it: these boards for the Raspberry Pi are called "HAT".
 All components are connected to the 40-pin header. This allows to use any Raspberry Pi which has this 40-pin connector.
-This HAT serves as the basis for various programming examples and is intended for teenagers or adults to playfully learn to program with simple LEDs.
+This HAT serves as the basis for various programming examples and is intended for teenagers or adults to playfully learn programming.  
 The functioning of the product is explained in detail in the operating instructions by means of numerous examples. Python 3 is used for programming which is already preinstalled at Raspbian.
 
 The following picture shows the hat for the Raspberry Pi.  
@@ -15,7 +15,7 @@ The following picture shows the hat for the Raspberry Pi.
 
 ## Peripheral components
 
-The learning package comes with a bunch of peripheral components which could be used for own projects. The usage of these components is described in the manual. The following table lists the components:
+The learning package comes with a bunch of peripheral components. The usage of all of these components is described in detail in the manual. The following table lists the components which could be used for own projects, too:
 
 - Board 
 - Spacers 
@@ -40,8 +40,9 @@ The following picture shows the GPIOs of the Raspberry Pi.
 
 ## Programming examples
 
-There are total 88 files of explaining how to program all the components. 
-Here the first one for the traffic light called "Ampel_1.pi":
+There are 88 files in total of explaining how to program all the components. 
+Here the first example for the traffic light called "Ampel_1.pi" 
+where all declarations are explained before starting:
 
 Raspberry Pi | Python
 --- | ---
