@@ -28,7 +28,7 @@ The learning package comes with a bunch of peripheral components which could be 
 ## GPIO of Raspberry Pi
 
 The following picture shows the GPIOs of the Raspberry Pi.
-![GPIO](../../images/education/raspberry/GPIO.png)
+![GPIO](../../images/raspberry/GPIO.png)
 
 ## Programming examples
 
