@@ -5,7 +5,7 @@ This documentation describes the **learning package** from Makerfactory for lear
 ## Board
 
 The following picture shows the hat for the Raspberry Pi.
-![Board](../../images/education/raspberry/learning package raspberry.jpg)
+![Board](../../images/education/raspberry/learning-package-raspberry.jpg)
 
 ## Peripheral components
 
@@ -30,4 +30,19 @@ The learning package comes with a bunch of peripheral components which could be 
 The following picture shows the GPIOs of the Raspberry Pi.
 ![GPIO](../../images/education/raspberry/GPIO.png)
 
+## Programming examples
+
+There are 88 files of explaining how to program the learning package.
+
+!!! example
+    There is one example project for Python which can be downloaded: 
+    **Ampel_1.py** ([download here](../../source/education/raspberry/Ampel_1.py))
+
+## Manual
+
+There is an extract of the manual available here. The complete manual is delivered when buying the project.
+
+!!! example
+    There is one extract of the manual which can be downloaded: 
+    **Manual** ([download here](../../source/education/raspberry/1893842_V1_0219_01_VTP_m_de_Leseprobe.pdf))
 
