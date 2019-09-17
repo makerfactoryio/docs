@@ -28,7 +28,7 @@
   <div markdown="span" class="pull-left" style="width: 33%">
     [![RoboBug_ICON](../../images/robobug-hexapod/Abb_1.png)](/educational-robotics/robobug-hexapod/quick-start/)
     <br>
-    [RoboBug Hexapod](/educational-robotics/robobug-hexapod/quick-start/)
+    [Hexapod RoboBug](/educational-robotics/robobug-hexapod/quick-start/)
   </div>
 </div>
 
