@@ -1,0 +1,15 @@
+.md-footer-nav {
+  background-color: #005064;
+}
+
+.md-footer-nav a {
+  color: #fff;
+}
+
+.md-footer-meta {
+  background-color: #003c4a;
+}
+
+.md-footer-copyright__highlight {
+  line-height: 4rem;
+}

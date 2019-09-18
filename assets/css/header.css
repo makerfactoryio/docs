@@ -1,0 +1,59 @@
+.md-header,
+.md-tabs,
+html .md-nav--primary .md-nav__title--site {
+  background-color: #fff;
+  color: #333;
+}
+
+.md-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.md-logo img {
+  width: auto;
+  height: 7rem;
+}
+
+.md-header-nav__title {
+  line-height: 7.5rem;
+}
+
+.md-header {
+  height: 7rem;
+}
+
+.md-header .dropdown {
+  margin-top: 1rem;
+}
+
+.md-header + .md-container {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  .md-header-nav__button.md-logo {
+    display: block;
+  }
+
+  .md-logo img {
+    height: 5rem;
+    margin-left: 1rem;
+  }
+
+  .md-header .dropdown {
+    margin-top: -0.25rem;
+  }
+
+  .md-header-nav__title {
+    display: none;
+  }
+
+  .md-header {
+    height: 5rem;
+  }
+
+  .md-nav__button img {
+    width: auto;
+  }
+}

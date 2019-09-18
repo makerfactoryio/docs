@@ -1,0 +1,617 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Sensors - Makerfactory Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/font.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/links.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/header.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/search.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/sidebars.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/footer.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/dropdown.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/float.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/layout.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/images.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#onboard-sensors" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="__drawer"></label>
+      </div>
+
+      <!-- Link to home -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.."
+            title="Makerfactory Documentation"
+            class="md-header-nav__button md-logo">
+          <img src="../../../images/logo.png" />
+        </a>
+      </div>
+
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="dropdown">
+            <div class="selected-item">
+              
+                
+              
+                
+              
+                
+              
+                
+              
+
+              <i class="md-icon">keyboard_arrow_down</i>
+            </div>
+            <ul>
+              
+                <li>
+                  
+                  
+                    <a href="../../..">
+                      
+                        Overview
+                      
+                    </a>
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../esp32/" class="mute">
+                      Development
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../esp32/">
+                        
+                          ESP32
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../m5stack/overview/">
+                        
+                          M5STACK
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../.." class="mute">
+                      Educational
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational-robotics/robobug-hexapod/introduction/">
+                        
+                          Robobug Hexapod
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational/raspberry/overview/">
+                        
+                          Raspberry Learning Package
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../../tec-egg/overview/" class="mute">
+                      Kits
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../tec-egg/overview/">
+                        
+                          Tec-Egg
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <!-- Header title -->
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title"
+            data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Makerfactory Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Sensors
+              </span>
+            
+          
+        </div>
+      </div>
+
+      <!-- Button to open search dialogue -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button"
+                for="__search"></label>
+
+            <!-- Search interface -->
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+
+      <!-- Repository containing source -->
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Makerfactory Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../../images/logo.png">
+      
+    </a>
+
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bosch-sensortec-bme680" title="Bosch Sensortec BME680" class="md-nav__link">
+    Bosch Sensortec BME680
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bosch-sensortec-bma253" title="Bosch Sensortec BMA253" class="md-nav__link">
+    Bosch Sensortec BMA253
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liteon-ltr-303als" title="LiteOn LTR-303ALS" class="md-nav__link">
+    LiteOn LTR-303ALS
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="onboard-sensors">Onboard Sensors<a class="headerlink" href="#onboard-sensors" title="Permanent link">&para;</a></h1>
+<p>SensorIO integrates 3 sensor modules which can be used to measure 6 different physical variables:</p>
+<h2 id="bosch-sensortec-bme680">Bosch Sensortec BME680<a class="headerlink" href="#bosch-sensortec-bme680" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001-00.pdf">BME680</a> is a digital 4-in-1 low power gas, pressure, temperature &amp; humidity sensor module based on proven sensing principles.
+ It's is housed in an extremely compact metal-lid LGA package with a footprint of 3.0 × 3.0 mm2 with a maximum height of 1.00 mm. </p>
+<p><img src="/images/sensorio/BME680-render.png" class="img-center" width="30%"></p>
+<p>The gas sensor within the BME680 can detect a broad range of gases to measure indoor air quality for personal well being. Gases that can be detected by the BME680 include: Volatile Organic Compounds (VOC) from paints (such as formaldehyde), lacquers, paint strippers, cleaning supplies, furnishings, office equipment, glues, adhesives and alcohol.</p>
+<p><img src="/images/sensorio/BME680.png" class="img-center" width="80%"></p>
+<p>The module can be interfaced by SPI or I2C buses. In this case, the module is configured to use the I2C bus with the slave address <strong>0x76</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Temperature readings</p>
+<p>Please note that, while the temperature sensor integrated on the BME680 has been optimized for very low noise and high resolution, it's primarily used for temperature compensation of the gas. Therefore, the measured temperature reflects the internal module temperature, which is higher than the ambient temperature since the module uses a very small heater for the gas measurement operation. Ambient temperature can be estimated with certain accuracy with the proper compensation and calibration.</p>
+</div>
+<h2 id="bosch-sensortec-bma253">Bosch Sensortec BMA253<a class="headerlink" href="#bosch-sensortec-bma253" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA253-DS000-01.pdf">BMA253</a> is a triaxial, low-g acceleration sensor with digital output for consumer applications. It allows measurements of acceleration in three perpendicular axes. An evaluation circuitry (ASIC) converts the output of a micromechanical acceleration-sensing structure (MEMS) that works according to the differential capacitance principle.</p>
+<p><img src="/images/sensorio/BMA253.png" class="img-center" width="75%"></p>
+<p>The sensor is interfaced via the I2C bus, and its slave address is <strong>0x18</strong>. The two interrupt lines (ACCEL_INT1 and ACCEL_INT2) can be configured independently for various motion triggers and asynchronous data readout.</p>
+<h2 id="liteon-ltr-303als">LiteOn LTR-303ALS<a class="headerlink" href="#liteon-ltr-303als" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://www.mouser.com/ds/2/239/Lite-On_LTR-303ALS-01_DS_ver%201.1-1175269.pdf">LTR-303ALS</a> is a light sensor with a spectral response close to the human eye, which makes it useful for indoor luminosity control applications. This sensor converts light intensity to a digital output signal and it provides a linear response over a wide dynamic range from 0.01 lux to 64k lux and is well suited to applications under high ambient brightness. To increase the usable dynamic range, is has six configurable gain settings (1X, 2X, 4X, 8X, 48X and 96X).</p>
+<p><img src="/images/sensorio/LTR303.png" class="img-center" width="65%"></p>
+<p>The sensor is also interfaced through the I2C bus and its slave address is <strong>0x29</strong>. </p>
+<p>The sensor integrates two photodiodes (CH0 and CH1) which responses are combined to calculate the final luminosity value. This process is performed by the driver on the MCU.</p>
+<p>The image below shows the normalized response of both channels:
+<img src="/images/sensorio/LTR303-spectralResponse.png" class="img-center" width="65%"></p>
+<div class="admonition tip">
+<p class="admonition-title">IRQ</p>
+<p>The sensor supports an interrupt feature that removes the need to poll the sensor for a reading which improves system efficiency. </p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      
+      <div class="md-footer-copyright">
+        <div class="md-footer-copyright__highlight">
+          &copy; Makerfactory 2019 &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/impressum.html">Imprint</a> &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/datenschutz.html">Privacy</a> &middot;
+          <a href="/license">License</a>
+        </div>
+      </div>
+      
+
+      
+        
+        
+        
+
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://makerfactory.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/makerfactoryio/docs" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/js/header.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

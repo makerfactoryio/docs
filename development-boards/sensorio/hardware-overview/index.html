@@ -1,0 +1,701 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Hardware overview - Makerfactory Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/font.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/links.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/header.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/search.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/sidebars.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/footer.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/dropdown.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/float.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/layout.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/images.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#hardware-description" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="__drawer"></label>
+      </div>
+
+      <!-- Link to home -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.."
+            title="Makerfactory Documentation"
+            class="md-header-nav__button md-logo">
+          <img src="../../../images/logo.png" />
+        </a>
+      </div>
+
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="dropdown">
+            <div class="selected-item">
+              
+                
+              
+                
+              
+                
+              
+                
+              
+
+              <i class="md-icon">keyboard_arrow_down</i>
+            </div>
+            <ul>
+              
+                <li>
+                  
+                  
+                    <a href="../../..">
+                      
+                        Overview
+                      
+                    </a>
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../esp32/" class="mute">
+                      Development
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../esp32/">
+                        
+                          ESP32
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../m5stack/overview/">
+                        
+                          M5STACK
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../.." class="mute">
+                      Educational
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational-robotics/robobug-hexapod/introduction/">
+                        
+                          Robobug Hexapod
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational/raspberry/overview/">
+                        
+                          Raspberry Learning Package
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../../tec-egg/overview/" class="mute">
+                      Kits
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../tec-egg/overview/">
+                        
+                          Tec-Egg
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <!-- Header title -->
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title"
+            data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Makerfactory Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Hardware overview
+              </span>
+            
+          
+        </div>
+      </div>
+
+      <!-- Button to open search dialogue -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button"
+                for="__search"></label>
+
+            <!-- Search interface -->
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+
+      <!-- Repository containing source -->
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Makerfactory Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../../images/logo.png">
+      
+    </a>
+
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-description" title="Hardware description" class="md-nav__link">
+    Hardware description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-diagram" title="Block Diagram" class="md-nav__link">
+    Block Diagram
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#st-link-debugger" title="ST-Link Debugger" class="md-nav__link">
+    ST-Link Debugger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi" title="WiFi" class="md-nav__link">
+    WiFi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expansion-interfaces" title="Expansion interfaces" class="md-nav__link">
+    Expansion interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction" title="User interaction" class="md-nav__link">
+    User interaction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Hardware overview</h1>
+                
+                <h2 id="hardware-description">Hardware description<a class="headerlink" href="#hardware-description" title="Permanent link">&para;</a></h2>
+<p>In order to maximize the flexibility of use for different applications, all the expansion interfaces have software-configurable support for 3.3V and 5V boards, providing compatibility for more than 500+ different expansion boards available from various manufacturers.</p>
+<p>The core of the SensorIO board is the <em>ST-Micro</em> <a href="https://www.st.com/en/microcontrollers/stm32f413zh.html"><em>STM32F413ZH</em></a>, a powerful <em>ARM Cortex&reg;-M4</em> MCU with a very rich set of peripherals presented into a 144-balls 10x10mm BGA chip.</p>
+<p><img alt="Features Front" src="../../../images/sensorio/SensorIO-features-front.png" />
+<img src="/images/sensorio/SensorIO-features-back.png"  width="85%"> </p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>This is an overview of the main components and features:</p>
+<ul>
+<li><strong>STM32F413ZH</strong> MCU, <em>ARM Cortex&trade;-M4</em>, 1.5 Mbytes of Flash memory, 320 Kbytes of RAM, FPU unit w/ DSP instructions, 125 DMIPS @ 100 MHz.</li>
+<li>WiFi: <strong>CC3120R</strong> <em>SimpleLink®</em>  Wi-Fi 802.11b/g/n </li>
+<li>128x32 0.91’’ OLED display </li>
+<li><em>LiteOn LTR303-ALS</em> ambient light sensor</li>
+<li><em>Bosch Sensortec BMA253</em>: 3-axis accelerometer with motion triggered interrups</li>
+<li><em>Bosch Sensortec BME680</em>: Environmental sensor (temperature, humidity, barometric pressure, VOC air quality) </li>
+<li>2x opto-relay outputs (<em>Toshiba TLP241A</em>, 2A/24Vac)</li>
+<li>2x <em>MikroBUS&trade;</em> expansion sockets</li>
+<li><em>Arduino&trade; R3</em> socket with 3.3V &amp; 5V support on I/Os and Analog Inputs</li>
+<li>2x <em>Grove&trade;</em> connectors <ul>
+<li>Software programable individual 3.3V / 5V switches</li>
+<li>Each connector provides software configurable UART, I2C, PWM, GPIO and Analog interfacing</li>
+</ul>
+</li>
+<li>Onboard <strong>ST-Link&trade;/V2-1</strong> debugger - <em>mbed&trade;</em> compatible</li>
+<li>Micro SD/MMC flash memory socket (for datalogging, storing credentials, etc.)</li>
+<li>User &amp; reset buttons, RGB color LED</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Total peripherals exposed on the expansion connectors:</p>
+<ul>
+<li>8 x UART interfaces</li>
+<li>3 x I2C buses</li>
+<li>2 x SPI buses</li>
+<li>2 x I2S interfaces</li>
+<li>3 x CAN buses</li>
+<li>19 x PWM capable outputs</li>
+<li>15 x Analog input channels</li>
+<li>2 x Isolated, high-power outputs (solid state relays)</li>
+<li>47 x Total exposed GPIOs!</li>
+</ul>
+</div>
+<h2 id="block-diagram">Block Diagram<a class="headerlink" href="#block-diagram" title="Permanent link">&para;</a></h2>
+<p><img alt="Block Diagram" src="../../../images/sensorio/SensorIO-block-diagrBETA.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">USB functions:</p>
+<ul>
+<li>Power input <strong>(1)</strong></li>
+<li>Debugging port (GDB compatible)</li>
+<li>Virtual Serial COMM</li>
+<li>Mass storage programming (simply drag &amp; drop to flash)</li>
+</ul>
+</div>
+<p><strong>(1)</strong> The board can be powered through the on-board USB Micro B connector or directly by the +5V pins of the MikroBUS connectors. Please check the <a href="../datasheet"><em>Technical specifications</em></a> and the <a href="../schematics"><em>circuit Schematics</em></a> for more details.</p>
+<div class="admonition tip">
+<p class="admonition-title">Full 5V support in all the I/Os</p>
+<p>The board supports 5V input logic levels in all of the I/Os. The analog inputs of the Arduino and Grove interfaces also provide 5V-support through level conditioning stages. Check the <a href="../interfaces/#level-conditioning">expansion interfaces</a> section for more information.</p>
+</div>
+<h3 id="st-link-debugger">ST-Link Debugger<a class="headerlink" href="#st-link-debugger" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">The target MCU can be programmed in 3 different ways:</p>
+<ul>
+<li>Using the flashing and debugging functionalities of the <em>ST-Link</em> interface (check the <a href="../getting-started">Getting Started</a> and <a href="../tools">Tools</a> for more information)</li>
+<li>Using the Cortex-M&trade; 10-pin connector present in the front (SWD). Debug probes like Segger's <a href="https://www.segger.com/products/debug-probes/j-link/">J-Link&reg;</a> can be attached to this connector if preferred</li>
+<li>Just <em>drag and drop</em> the compiled binary file into the Mass Storage Device created in the host PC when the board is plugged into the USB</li>
+</ul>
+</div>
+<p>The <em>ST-Link</em> interface also exposes a virtual serial port in addition to the SWD debugging interface, which can be used to print debug and logging information during the application development.</p>
+<h3 id="wifi">WiFi<a class="headerlink" href="#wifi" title="Permanent link">&para;</a></h3>
+<p><em>SensorIO</em> integrates the Industrial-grade <em>CC3120R</em> SoC from <em>Texas Instruments</em>, a <em>Wi-Fi&reg;</em> Network Processor designed for Internet of Things applications. A dedicated ARM® Cortex®-M3 Microcontroller Unit (MCU) completely offloads Wi-Fi and Internet protocols from the application MCU. </p>
+<p>This subsystem includes an 802.11b/g/n radio, baseband, and MAC with a powerful crypto engine for fast, secure Internet connections with 256-bit encryption. The device also supports WPA2 personal and enterprise security. It uses an external SPI flash to store the <em>Wi-Fi&reg;</em> and security stacks.</p>
+<h3 id="expansion-interfaces">Expansion interfaces<a class="headerlink" href="#expansion-interfaces" title="Permanent link">&para;</a></h3>
+<p>The board takes advantage of the main MCU's 20+ communication interfaces available through its 114 I/O ports to provide an unmached set of options to extend its functionalities through the <a href="../interfaces/#level-conditioning">expansion interfaces</a> (Grove, MikroBUS and ArduinoR3 sockets).</p>
+<div class="admonition tip">
+<p class="admonition-title">Maximum flexibility with peripherals multiplexing</p>
+<p>Most of the Grove interfaces on other ​Grove-compatible​ boards include multiple connectors since they have one fixed bus hard-wired per connector. This means that, in order to support the 4 interfaces types, they need to provide several connectors. SensorIO supports all the interface types in each connector, thus achieving maximum flexibility.</p>
+</div>
+<h3 id="user-interaction">User interaction<a class="headerlink" href="#user-interaction" title="Permanent link">&para;</a></h3>
+<p>In order to quickly evaluate the board and prototype a serie of use-cases, the device integrates a set of <a href="../sensors">sensors</a>, two opto-isolated solid state relays for controlling power outputs, an RGB LED, a push-button and a small 128x32 pixels OLED monocrome display useful to show real-time information. </p>
+<p>Please refer to the <a href="../schematics"><em>Schematics</em></a> section to learn how to control these peripherals. Most of the peripherals are showcased on the <a href="../demo-app">out-of-the-box application</a>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      
+      <div class="md-footer-copyright">
+        <div class="md-footer-copyright__highlight">
+          &copy; Makerfactory 2019 &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/impressum.html">Imprint</a> &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/datenschutz.html">Privacy</a> &middot;
+          <a href="/license">License</a>
+        </div>
+      </div>
+      
+
+      
+        
+        
+        
+
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://makerfactory.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/makerfactoryio/docs" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/js/header.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

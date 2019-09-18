@@ -1,0 +1,95 @@
+.dropdown {
+  width: 24.5rem;
+  font-size: 2rem;
+
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.2s;
+
+  cursor: default;
+  background-color: transparent;
+}
+
+.dropdown:hover,
+.dropdown:focus {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.dropdown .selected-item {
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.dropdown .selected-item u {
+  display: inline-block;
+  margin-right: 0.5rem;
+
+  text-decoration: none;
+  border-bottom: 2px solid #005064;
+  cursor: pointer;
+}
+
+.dropdown .selected-item .md-icon {
+  display: inline-block;
+  position: absolute;
+  top: 1.9rem;
+}
+
+.dropdown ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  overflow: hidden;
+  height: 0px;
+  transition-property: height;
+  transition-duration: 0.2s;
+}
+
+.dropdown:hover ul {
+  overflow-y: auto;
+  height: 40rem;
+}
+
+.dropdown ul li {
+  display: block;
+  margin: 0;
+  padding: 1rem 0rem;
+}
+
+.dropdown ul li + li {
+  border-top: 1px dashed rgba(0, 80, 100, 0.1);
+}
+
+.dropdown ul li a,
+.dropdown ul li div {
+  position: relative;
+  display: block;
+  padding: 0.5rem 2rem;
+}
+
+.dropdown ul li .mute {
+  opacity: 0.75;
+}
+
+.dropdown ul li a .selected {
+  font-weight: 600;
+}
+
+.dropdown ul li div ~ a {
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  .dropdown {
+    font-size: 1.23rem;
+    width: 17rem;
+    padding-top: 0.5rem;
+  }
+
+  .dropdown:hover ul {
+    height: 30rem;
+  }
+}

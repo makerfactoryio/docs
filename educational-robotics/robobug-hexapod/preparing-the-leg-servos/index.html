@@ -1,0 +1,1145 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Preparing the leg servos - Makerfactory Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/font.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/links.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/header.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/search.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/sidebars.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/footer.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/dropdown.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/float.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/layout.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/images.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#preparing-the-leg-servos" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="__drawer"></label>
+      </div>
+
+      <!-- Link to home -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.."
+            title="Makerfactory Documentation"
+            class="md-header-nav__button md-logo">
+          <img src="../../../images/logo.png" />
+        </a>
+      </div>
+
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="dropdown">
+            <div class="selected-item">
+              
+                
+              
+                
+              
+                
+                  <u>Educational</u>
+                
+              
+                
+              
+
+              <i class="md-icon">keyboard_arrow_down</i>
+            </div>
+            <ul>
+              
+                <li>
+                  
+                  
+                    <a href="../../..">
+                      
+                        Overview
+                      
+                    </a>
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../../development-boards/esp32/" class="mute">
+                      Development
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../development-boards/esp32/">
+                        
+                          ESP32
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../m5stack/overview/">
+                        
+                          M5STACK
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../.." class="mute">
+                      Educational
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../introduction/">
+                        
+                          <span class="selected">
+                              Robobug Hexapod
+                          </span>
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational/raspberry/overview/">
+                        
+                          Raspberry Learning Package
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../../tec-egg/overview/" class="mute">
+                      Kits
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../tec-egg/overview/">
+                        
+                          Tec-Egg
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <!-- Header title -->
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title"
+            data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Makerfactory Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Preparing the leg servos
+              </span>
+            
+          
+        </div>
+      </div>
+
+      <!-- Button to open search dialogue -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button"
+                for="__search"></label>
+
+            <!-- Search interface -->
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+
+      <!-- Repository containing source -->
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Makerfactory Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../../images/logo.png">
+      
+    </a>
+
+    
+      
+    
+      
+    
+      
+        Chapters
+      
+    
+      
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Robobug Hexapod
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3-1">
+        Robobug Hexapod
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1" type="checkbox" id="nav-3-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1-1">
+      Manual
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1-1">
+        Manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../explanation_of_symbols/" title="Explanation of symbols" class="md-nav__link">
+      Explanation of symbols
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../intended_use/" title="Intended Use" class="md-nav__link">
+      Intended Use
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../construction_video/" title="Construction Video" class="md-nav__link">
+      Construction Video
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../package_contents/" title="Package Contents" class="md-nav__link">
+      Package Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quick-start/" title="Quick start" class="md-nav__link">
+      Quick start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../safety_instructions/" title="Safety Instructions" class="md-nav__link">
+      Safety Instructions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../required_accessories/" title="Required accessories" class="md-nav__link">
+      Required accessories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../general_notes/" title="General notes" class="md-nav__link">
+      General notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../preparatory-work/" title="Preparatory work" class="md-nav__link">
+      Preparatory work
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../test-firmware-installation/" title="Test firmware installation" class="md-nav__link">
+      Test firmware installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Preparing the leg servos" class="md-nav__link md-nav__link--active">
+      Preparing the leg servos
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../assembling-the-mechanical-parts/" title="Assembling the mechanical parts" class="md-nav__link">
+      Assembling the mechanical parts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../transferring-the-firmware/" title="Transferring the firmware" class="md-nav__link">
+      Transferring the firmware
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../controlling-with-the-gamepad/" title="Controlling with the Gamepad" class="md-nav__link">
+      Controlling with the Gamepad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../calibrate-legs/" title="Calibrate legs" class="md-nav__link">
+      Calibrate legs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../using_user_boards/" title="Using user boards" class="md-nav__link">
+      Using user boards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../demo_programs/" title="Demo programs" class="md-nav__link">
+      Demo programs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Overview_of_the_connections_and_components/" title="Overview of the connections and components" class="md-nav__link">
+      Overview of the connections and components
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../schematic_system_overview/" title="Schematic system overview" class="md-nav__link">
+      Schematic system overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pan_tilt_unit/" title="Pan & Tilt Unit" class="md-nav__link">
+      Pan & Tilt Unit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pin_assignment_of_the_user_board/" title="Pin assignment of the user board" class="md-nav__link">
+      Pin assignment of the user board
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cleaning/" title="Cleaning" class="md-nav__link">
+      Cleaning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../declaration_of_conformity/" title="Declaration of Conformity (DOC)" class="md-nav__link">
+      Declaration of Conformity (DOC)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../technical_data/" title="Technical Data" class="md-nav__link">
+      Technical Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
+    
+    <label class="md-nav__link" for="nav-3-1-2">
+      Example projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1-2">
+        Example projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project_us_demo/" title="Avoid obstacles with an ultrasonic sensor" class="md-nav__link">
+      Avoid obstacles with an ultrasonic sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project_us_follow/" title="Follow objects with an ultrasonic sensor" class="md-nav__link">
+      Follow objects with an ultrasonic sensor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Raspberry Learning Package
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3-2">
+        Raspberry Learning Package
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../educational/raspberry/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      
+    
+      
+
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="preparing-the-leg-servos">Preparing the leg servos<a class="headerlink" href="#preparing-the-leg-servos" title="Permanent link">&para;</a></h1>
+<p>Before you install the leg servos, you must move them to the centre position. This means moving the servos to the mechanical middle position using the Hexapod Robot Board and the "ServoCenter" program. This is the starting position for assembly. First unpack all 18 servos; then straighten all connecting cables. Pin assignment:   </p>
+<table>
+<thead>
+<tr>
+<th align="left">Labelling in Figure 15</th>
+<th align="left">Function</th>
+<th align="left">Imprints on PCB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">P</td>
+<td align="left">Control pulse</td>
+<td align="left">SIG</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">Positive pole/+</td>
+<td align="left">BAT</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">Negative pole/-</td>
+<td align="left">GND</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Figure 15" src="../../../images/robobug-hexapod/Abb_15.png" title="Figure 15" /> <br />
+<strong>Figure 15</strong></p>
+<p>To set the leg servos, transfer the "ServoCenter" programme (located in the "Locomotion" directory) to the Hexapod Robot Board. The programme automatically moves the servos from "S0" to "S17" to the middle position. Connect the servos to the pin headers as shown in the figure (pay attention to the polarity!). All servo connections (S0 to S17) of the robot board are controlled with a pulse width of 1500 μs. At this point you do not have to connect all 18 servos to the Hexapod Robot Board at the same time. In practice, it has proven to be much easier and faster to use only one connection (e.g., S0) and then move one servo after the other to the middle position. The brown wire of the servo cable points to the edge of the board. The board is also labelled SIG (pulse), BAT+ (+), GND (-). </p>
+<p>&rarr; The battery must be connected for this procedure!</p>
+<p><img alt="Figure 16" src="../../../images/robobug-hexapod/Abb_16.png" title="Figure 16" /> <br />
+<strong>Figure 16</strong></p>
+<p><img alt="Figure 17" src="../../../images/robobug-hexapod/Abb_17.png" title="Figure 17" /> <br />
+<strong>Figure 17</strong></p>
+<p>Figure 17 shows the pin headers to which the servos are connected.</p>
+<p>&rarr; The pin strips labelled SA0 to SA5 do not carry a control signal. This connection remains unassigned and can later be used for proper extensions such as leg contact sensors.</p>
+<p>The joint details are given anatomically in Latin and have the following meaning:   </p>
+<ul>
+<li>Coxa = hip   </li>
+<li>Femur = thigh    </li>
+<li>Tiba = leg   </li>
+</ul>
+<p>The connections are also indicated in Figure 17 with the leg name as an abbreviation:   </p>
+<ul>
+<li>RR = Right rear leg ("Right Rear")   </li>
+<li>RM = Right Middle leg ("Right Middle")   </li>
+<li>RF = Right front leg ("Right Front")   </li>
+<li>LR = Left rear leg ("Left Rear")   </li>
+<li>LM = Left middle leg ("Left Middle")   </li>
+<li>LF = Left front leg ("Left Front")   </li>
+</ul>
+<p>&rarr; Leave the programme on the Hexapod Robot Board until the robot is completely assembled. If you accidentally twist a servo mechanically during assembly, you can plug it in again and align it. If the servo is turned from the middle position during installation, this has a negative effect on the running characteristics. This can also damage the servo and the mechanics. Disconnect the robot board from the power supply in case you won't be using it for a long time to avoid accidental short circuits</p>
+<p><strong>Functional description of a servo</strong> <br />
+Servos have electronics, a motor and a potentiometer. The potentiometer picks up the mechanical position of the servo and forwards it to the servo electronics. The electronics in the servo compares the given position (nominal value, in our case the pulse width given by the locomotion controller) with the pulse width of the servo electronics (set via the potentiometer, actual value). If there is a difference between the two pulse widths, the servo electronics regulates the motor to the target position. The graphic illustrates the pulse/pause ratio required to control a servo. In this case, the pulse has a length of 1.5 ms = 1500 μs, which corresponds to the centre position of the servo. A servo receives as control signal a positive pulse with a pulse width between 500 μs (0.5 ms) and 2500 μs (2.5 ms). The total period duration of the control signal is 20 ms. When the servo is in the middle position, the pulse width is 1500 μs (1.5 ms). If the pulse width is less than 1.5 ms, the servo rotates in one direction. If the pulse width is greater than 1.5 ms, it rotates in the other direction. The angle of rotation is proportional to the pulse width, i.e. the longer or shorter the pulse, the more or less the servo rotates in the corresponding direction. </p>
+<p><img alt="Figure 18" src="../../../images/robobug-hexapod/Abb_18.png" title="Figure 18" /> <br />
+<strong>Figure 18</strong></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="../test-firmware-installation/"
+              title="Test firmware installation"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+
+                  
+                  
+
+                  
+                    in Educational
+                  
+                </span>
+                Test firmware installation
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a href="../assembling-the-mechanical-parts/"
+              title="Assembling the mechanical parts"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+
+                  
+                  
+
+                  
+                    in Educational
+                  
+                </span>
+                Assembling the mechanical parts
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      
+      <div class="md-footer-copyright">
+        <div class="md-footer-copyright__highlight">
+          &copy; Makerfactory 2019 &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/impressum.html">Imprint</a> &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/datenschutz.html">Privacy</a> &middot;
+          <a href="/license">License</a>
+        </div>
+      </div>
+      
+
+      
+        
+        
+        
+
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://makerfactory.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/makerfactoryio/docs" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/js/header.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

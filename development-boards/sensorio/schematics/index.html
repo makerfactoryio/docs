@@ -1,0 +1,883 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Schematics - Makerfactory Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/font.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/links.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/header.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/search.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/sidebars.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/footer.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/dropdown.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/float.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/layout.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/images.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#circuit-schematics" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="__drawer"></label>
+      </div>
+
+      <!-- Link to home -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.."
+            title="Makerfactory Documentation"
+            class="md-header-nav__button md-logo">
+          <img src="../../../images/logo.png" />
+        </a>
+      </div>
+
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="dropdown">
+            <div class="selected-item">
+              
+                
+              
+                
+              
+                
+              
+                
+              
+
+              <i class="md-icon">keyboard_arrow_down</i>
+            </div>
+            <ul>
+              
+                <li>
+                  
+                  
+                    <a href="../../..">
+                      
+                        Overview
+                      
+                    </a>
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../esp32/" class="mute">
+                      Development
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../esp32/">
+                        
+                          ESP32
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../m5stack/overview/">
+                        
+                          M5STACK
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../.." class="mute">
+                      Educational
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                            
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational-robotics/robobug-hexapod/introduction/">
+                        
+                          Robobug Hexapod
+                        
+                      </a>
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../educational/raspberry/overview/">
+                        
+                          Raspberry Learning Package
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+                <li>
+                  
+                  
+                    
+                      
+                    
+
+                    <div href="../../../tec-egg/overview/" class="mute">
+                      Kits
+                    </div>
+                    
+                    
+                    
+                      
+                      
+
+                      
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                          
+
+                          
+                        
+                      
+
+                      <a href="../../../tec-egg/overview/">
+                        
+                          Tec-Egg
+                        
+                      </a>
+                    
+                  
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <!-- Header title -->
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title"
+            data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Makerfactory Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Schematics
+              </span>
+            
+          
+        </div>
+      </div>
+
+      <!-- Button to open search dialogue -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button"
+                for="__search"></label>
+
+            <!-- Search interface -->
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+
+      <!-- Repository containing source -->
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Makerfactory Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../../images/logo.png">
+      
+    </a>
+
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+      
+
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply" title="Power supply" class="md-nav__link">
+    Power supply
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st-link" title="ST-Link" class="md-nav__link">
+    ST-Link
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-mcu" title="Main MCU" class="md-nav__link">
+    Main MCU
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clocks" title="Clocks" class="md-nav__link">
+    Clocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analog-vref" title="Analog VREF" class="md-nav__link">
+    Analog VREF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-led" title="RGB LED" class="md-nav__link">
+    RGB LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-buttons" title="Push-buttons" class="md-nav__link">
+    Push-buttons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wi-fi" title="Wi-Fi" class="md-nav__link">
+    Wi-Fi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcu-interface" title="MCU interface" class="md-nav__link">
+    MCU interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flash-programming-interface" title="Flash programming interface" class="md-nav__link">
+    Flash programming interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-section" title="RF section" class="md-nav__link">
+    RF section
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solid-state-relays" title="Solid State Relays" class="md-nav__link">
+    Solid State Relays
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" title="Display" class="md-nav__link">
+    Display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-card-interface" title="Memory card interface" class="md-nav__link">
+    Memory card interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swd-debug-connector" title="SWD debug connector" class="md-nav__link">
+    SWD debug connector
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="circuit-schematics">Circuit Schematics<a class="headerlink" href="#circuit-schematics" title="Permanent link">&para;</a></h1>
+<p>The full <em>SensorIO</em> design Schematics can be found <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">here</a>, and as a quick reference, some of the relevant sections are detailed below:</p>
+<h2 id="power-supply">Power supply<a class="headerlink" href="#power-supply" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Power input</p>
+<p>The primary power source during development is the USB Micro B connector.</p>
+</div>
+<p>The figure below shows the connections for USB connector (P1) and ESD protection diodes (D1). The ferrite L2 helps to reduce noise coming from the USB shielding. The USB data lines are routed to the STM32F103 <a href="#st-link">(ST-Link probe)</a>.</p>
+<p><img src="/images/sensorio/USB-connector.png" class="img-center" width="85%" > </p>
+<p>The VBUS rail is connected through the <a href="https://www.diodes.com/assets/Datasheets/AP22802.pdf">AP22802A</a> load switch, which provides an over-load current protection: when the current reaches 2A, limits the current to 1A until the short-circuit state is resolved:
+<img src="/images/sensorio/USB-power-distribution.png" class="img-center" width="75%" > </p>
+<div class="admonition tip">
+<p class="admonition-title">Alternative 5V input</p>
+<p>If the device needs to be installed in a permanent setup, it is also possible to provide 5V power through any of the MikroBUS sockets' +5V pins.</p>
+</div>
+<div class="admonition warning">
+<p>Please note that, in case these pins are used to power the board, the AP22802A protection will be bypassed, therefore care must be taken to avoid damages caused by short circuits.</p>
+</div>
+<p><img src="/images/sensorio/MikroBUS-5V-input.png" class="img-center" width="50%" > </p>
+<p>To convert the 5V from to the 3.3V that most of the sub-circuits need, the board uses the <a href="http://www.onsemi.com/pub/Collateral/NCP6324-D.PDF">NCP6324B</a> from <em>On-Semiconductor</em> (U2).
+The NCP6324B is a 3MHz, 2A synchronous buck-converter with high efficiency and low ripple.</p>
+<p>The feedback resistors R2 and R3 set the output voltage close to 3.3V. 
+<img alt="Buck-converter" src="../../../images/sensorio/Buck-converter.png" />
+The red LED (LD3) is turned on when the VCC_3V3 power bus is active.</p>
+<h2 id="st-link">ST-Link<a class="headerlink" href="#st-link" title="Permanent link">&para;</a></h2>
+<p>The board integrates the <em>ST-Link/V2-1</em> from <em>STMicroelectronics</em>. This debugger probe is based on the <em>STM32F103 Cortex&reg;-M3</em> MCU, running at 72 MHz.</p>
+<p>This MCU interfaces directly to the USB connector. It uses a ST-Micro proprietary protocol to transfer the SWD/JTAG protocol data, control the Reset/Run/Stop states of the target MCU and converts a Virtual Comm Port into the physical UART connected to the target MCU (STLK_TX and STLK_RX lines) which can be used by the application to print logging data or receive commands from the host PC.</p>
+<p>The NPN transistor (Q1) is used to push the USB_DP line to force a USB re-enumeration after a firmware update.</p>
+<p><img alt="st-link-debugger" src="../../../images/sensorio/st-link-debugger.png" /></p>
+<p>The bi-color LED (LD1) indicates the state of the ST-Link interface:</p>
+<div class="admonition note">
+<p class="admonition-title">LD1 status indication:</p>
+<ul>
+<li><strong>Blinking RED</strong>: the first USB enumeration with the PC is taking place</li>
+<li><strong>RED</strong>: communication between the PC and ST-LINK/V2 is established (end of
+enumeration)</li>
+<li><strong>Blinking GREEN / RED</strong>: data being exchanged between the target and the PC</li>
+<li><strong>GREEN</strong>: the last communication has been successful</li>
+<li><strong>ORANGE</strong>: ST-LINK/V2 communication with the target has failed.</li>
+</ul>
+</div>
+<p>Please check the <a href="../tools"><em>tools</em></a> section for more information on how to flash a binary and connect to a GDB client.</p>
+<h2 id="main-mcu">Main MCU<a class="headerlink" href="#main-mcu" title="Permanent link">&para;</a></h2>
+<p>The target MCU uses the <a href="https://www.st.com/en/microcontrollers/stm32f413zh.html">STM32F413Z<strong>HJ6</strong></a> version (UFBGA144 packaging version, 1.5MB Flash, 320KB RAM).
+Please check the <a href="../pinouts">board pinouts</a> section and the  <a href="../assets/SensorIO-revBETA-Schematics.pdf" target="_blank">SensorIO schematics</a> for a full reference of the exposed I/Os.</p>
+<h3 id="clocks">Clocks<a class="headerlink" href="#clocks" title="Permanent link">&para;</a></h3>
+<p>The MCU uses 2 external crystals for the reference oscillators:</p>
+<ul>
+<li>
+<p>Y4 (16 MHz): used as a precise main clock source (the MCU has a less-precise internal RC-oscillator):
+<img src="/images/sensorio/16mhz-oscillator.png" class="img-center" width="50%"></p>
+</li>
+<li>
+<p>Y3 (32.768 kHz) which can be used to mantain a real-time clock or power management:
+<img src="/images/sensorio/32khz-oscillator.png" class="img-center" width="80%"></p>
+</li>
+</ul>
+<h3 id="analog-vref">Analog VREF<a class="headerlink" href="#analog-vref" title="Permanent link">&para;</a></h3>
+<p>The image below shows the connections for the Analog supply and VREF pins used by the internal 12-bit ADC:
+<img src="/images/sensorio/mcu-VREF.png" class="img-center" width="60%">
+The LC filter (L10 and C86) attenuates the "digital" noise that can be present in the VCC power rail. VREF+ is wired to the AnalogVCC and decoupled by C87 and C88. With this configuration, the input range for the ADC converter will be [0-3.3V]. </p>
+<p>Please refer to the <a href="../interfaces">expansion interfaces</a> section for more information on using the analog inputs.</p>
+<h2 id="rgb-led">RGB LED<a class="headerlink" href="#rgb-led" title="Permanent link">&para;</a></h2>
+<p>The User Status (LD2) is a RGB LED (a red, a blue and a green LEDs packaged together). Each LED is controlled separately. </p>
+<p>The 3 control pins are wired to the timer TIM5 CH[1:3] so the brightness can be regulated using PWM (pulse-width modulation). </p>
+<p><img src="/images/sensorio/RGB-LED-sch.png" class="img-center" width="50%" ></p>
+<p>The snippet below shows how to use PWM to controll the brightness of the blue LED:</p>
+<details class="example"><summary>mbed example: dimming the blue LED</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">PwmOut</span>  <span class="nf">blueLed</span><span class="p">(</span><span class="n">PF_5</span><span class="p">);</span>  <span class="c1">//Port F bit #5</span>
+<span class="n">blueLed</span><span class="p">.</span><span class="n">period</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mf">100f</span><span class="p">);</span> <span class="c1">//Set PWM frequency to 100Hz (1/100 seconds)</span>
+<span class="n">blueLed</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mf">0.2f</span><span class="p">);</span>    <span class="c1">//Set Duty Cycle to 20%</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<h2 id="push-buttons">Push-buttons<a class="headerlink" href="#push-buttons" title="Permanent link">&para;</a></h2>
+<p>The board has 2 push-buttons:</p>
+<ul>
+<li>The MCU <strong>Reset</strong> (located next to the OLED display):</li>
+</ul>
+<p><img src="/images/sensorio/reset-button.png" class="img-center" width="55%" ></p>
+<ul>
+<li>A user-programmable button <strong>(S1)</strong>, wired to PC_13:
+<img src="/images/sensorio/user-button.png" class="img-center" width="35%" ></li>
+</ul>
+<p>The snippet below shows how configure the button to trigger an interrupt on press:</p>
+<details class="example"><summary>mbed example: button interrupt</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">InterruptIn</span> <span class="nf">button</span><span class="p">(</span><span class="n">PC_13</span><span class="p">);</span>
+<span class="n">DigitalOut</span> <span class="nf">greenLed</span><span class="p">(</span><span class="n">PF_4</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="nf">pinInt</span><span class="p">(){</span>
+    <span class="n">greenLed</span> <span class="o">=</span> <span class="o">!</span><span class="n">greenLed</span><span class="p">;</span>   <span class="c1">//flip the green LED on each button press</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">button</span><span class="p">.</span><span class="n">fall</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pinInt</span><span class="p">);</span>  <span class="c1">// attach the pinInt() function to the falling edge</span>
+    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>              <span class="c1">// wait around, interrupts will interrupt this!</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">);</span>
+        <span class="n">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Tip: debouncing</p>
+<p>To detect a button press, remember that the mechanical action usually indroduces some signal bouncing. It's reasonable to add a delay of at least 20ms before taking any action (software debouncing). </p>
+</div>
+<h2 id="wi-fi">Wi-Fi<a class="headerlink" href="#wi-fi" title="Permanent link">&para;</a></h2>
+<p>The capture below shows the TI CC3210 Network Processor SoC and it's associated power supply and oscillator components:
+<img src="/images/sensorio/CC3120.png" class="img-center" width="100%" ></p>
+<p>The CC3120 is powered by the main 3.3V rail, and integrates 3 internal DC/DC converters to generate the voltages needed for the operation of each SoC section. 
+The main oscillator uses an external 40 MHz crystal (Y2) and a 32.768 kHz crystal (Y1) is used for power management and real-time bookkeping.
+An external SPI flash memory (MX25R1635FM1IL0, 16Mbit) is used to store the network stack and credentials.</p>
+<h3 id="mcu-interface">MCU interface<a class="headerlink" href="#mcu-interface" title="Permanent link">&para;</a></h3>
+<p>The interfacing with the target MCU is done through the SPI bus (signals shown below). This interface contains also a "factory restore" pin, which can be used by the target application to restore the factory image.
+<img src="/images/sensorio/CC-MCU-interface.png" class="img-center" width="40%" ></p>
+<div class="admonition tip">
+<p class="admonition-title">Factory restore</p>
+<p>In order to restore the original flash image, the CC_FACTORY_RESTORE line should to be hold in low state for minimum 8 seconds after the CC_nRESET is released.</p>
+</div>
+<h3 id="flash-programming-interface">Flash programming interface<a class="headerlink" href="#flash-programming-interface" title="Permanent link">&para;</a></h3>
+<p>The CC3210 exposes an extra UART which can be used to (re)program the external flash memory. These signals (along with the nHIB line) are exposed on testpoints on the back of the board. For more information on how to use this interface, refer to the <a href="http://www.ti.com/lit/ug/swru469c/swru469c.pdf">SRU469C</a> application note from TI.
+<img src="/images/sensorio/CC-extUART.png" class="img-center" width="30%" ></p>
+<h3 id="rf-section">RF section<a class="headerlink" href="#rf-section" title="Permanent link">&para;</a></h3>
+<p>The capture below shows the CC3120 RF 50Ω interface.
+A bandpass filter centered on 2.45 GHz helps to remove unwanted noise entering the SoC. </p>
+<p><img src="/images/sensorio/WiFi-RF-section.png" ></p>
+<p>The LC-network formed by L4 and C11 performs the impedance matching from the PCB antenna to the 50 Ω characteristic impedance required by the SoC. The capture below shows the return loss seen by the CC3210 RF pin. The VSWR is approximately 1.16:1 (-22 dB at the center of the WiFi band).
+<img src="/images/sensorio/CC-RF-returnLoss.png" class="img-center" width="60%"></p>
+<p>In case that the board will be installed in a metallic box, or the WiFi range needs to be increased with a directional antenna, the circuit provides the option to use an external antenna connected to the u-Fl connector.</p>
+<div class="admonition tip">
+<p class="admonition-title">Using an external antenna</p>
+<p>In order to route the RF signal to the u-Fl connector instead of the PCB antenna, the 0 Ω resistor R5 needs to be unsoldered and installed in the R4 location.</p>
+</div>
+<p>The small J1 connector is used for testing purposes, the matching test probe MXHQ87WA3000 from <em>Murata Electronics</em> can be used for such purposes. When the probe is connected, the connector switches off the output side.</p>
+<h2 id="solid-state-relays">Solid State Relays<a class="headerlink" href="#solid-state-relays" title="Permanent link">&para;</a></h2>
+<p>The outputs <em>OUT1</em> and <em>OUT2</em>, are driven by the opto-isolated "solid-state relay" <a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=14237&amp;prodName=TLP241A">TLP241A</a> from <em>Toshiba Semiconductor</em>. These devices consist of a  MOSFET transistor optically coupled (electrically isolated) to an infrared light emitting diode. They are housed in a 4-pin DIP package. </p>
+<div class="admonition info">
+<p class="admonition-title">TLP241A output characteristics:</p>
+<ul>
+<li>ON-state current: 2 A max. continuous, 6 A pulsed (t=100 mseg, duty=10%)</li>
+<li>ON-state resistance: 150 mΩ (continuous)</li>
+<li>Isolation voltage: 5,000 Vrms</li>
+<li>Maximum DC voltage: 26 V (limited by the varistor)</li>
+<li>Maximum AC voltage: 20 Vrms (limited by the varistor)</li>
+</ul>
+</div>
+<p>The outputs are mapped to PG_2 (OUT1) and PG_3 (OUT2). The varistors R63 and R69 protect the relays from over-voltage peaks, limiting the nominal operation voltage to 26 Vdc or 20 Vrms for AC signals. The outputs schematic is shown below:</p>
+<p><img src="/images/sensorio/opto-relays.png" class="img-center" width="60%"></p>
+<div class="admonition tip">
+<p class="admonition-title">Using the outputs</p>
+<p>These outputs can be used to control small DC motors (as a small water pump for your plants), AC/DC solenoid valves, or resistive loads (i.e. a termoelectric peltier element). If these outputs want to be used to control high power loads (i.e. a pump or a HVAC system) they can be used to drive contactors with 12V DC or AC coils (as the <em>Schneider Electric</em> <a href="https://www.schneider-electric.com/en/product/LC1D12JL/tesys-d-contactor---3p%283-no%29---ac-3---%3C%3D-440-v-12-a---12-v-dc-coil">LC1D12JL</a> for example).</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Warning!!!</p>
+<p>The outputs' maximum voltage is 26 Vdc, DO NOT CONNECT DIRECTLY TO MAINS under any circumstance!    </p>
+</div>
+<p>Here is a snippet showing how to control the ouputs:</p>
+<details class="example"><summary>mbed example: switching outputs</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">DigitalOut</span> <span class="nf">relay1</span><span class="p">(</span><span class="n">PG_2</span><span class="p">);</span>
+
+<span class="n">relay1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//enable output1</span>
+<span class="n">wait</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">relay1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//disable output1</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<h2 id="display">Display<a class="headerlink" href="#display" title="Permanent link">&para;</a></h2>
+<p>The display is a <em>Vishay</em> <a href="https://www.vishay.com/docs/37895/oled128o032dspp3n00000.pdf">OLED-128O032D-SPP3N00000</a>, a monochrome 0.9 inches graphic display OLED  with a resolution of 128x32 pixels. The display is interfaced to the MCU through the SPI4 bus plus a <em>Data/#command</em> and <em>reset</em> control lines.</p>
+<p><img src="/images/sensorio/OLED_display.png" class="img-center" width="60%"></p>
+<h2 id="memory-card-interface">Memory card interface<a class="headerlink" href="#memory-card-interface" title="Permanent link">&para;</a></h2>
+<p>The Micro MMC/SD card socket is interfaced to the MCU through the SDIO bus. The interface is configured to use the 4-bit mode. The schematic is shown below:</p>
+<p><img src="/images/sensorio/micro-sd.png" class="img-center" width="60%"></p>
+<h2 id="swd-debug-connector">SWD debug connector<a class="headerlink" href="#swd-debug-connector" title="Permanent link">&para;</a></h2>
+<p>As an option to using the ST-Link interface to debug and program the target MCU, the <em>Cortex-M™</em> 10-pin connector present in the front (SWD) can be used. Debug probes like <em>Segger's J-Link®</em> can be attached to this connector if preferred.
+The D8 diode array protects the MCU from ESD. </p>
+<p><img src="/images/sensorio/SWD-connector.png" class="img-center" width="55%"></p>
+<div class="admonition info">
+<p class="admonition-title">Using the SWD connector</p>
+<p>Please note that, as the SWD lines are directly shared with the ST-Link interface, if the external debugger is used, the ST-Link application shouldn't be initialized or both debuggers will compete for the SWD lines. In general, it's sufficient to not initialize the ST-Link software on the host side (OpenOCD or ST-Util). In case this situation arises, just re-connect the USB cable to fix it.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      
+      <div class="md-footer-copyright">
+        <div class="md-footer-copyright__highlight">
+          &copy; Makerfactory 2019 &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/impressum.html">Imprint</a> &middot;
+          <a href="https://www.conrad.de/de/ueber-conrad/rechtliches/datenschutz.html">Privacy</a> &middot;
+          <a href="/license">License</a>
+        </div>
+      </div>
+      
+
+      
+        
+        
+        
+
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://makerfactory.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/makerfactoryio/docs" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../assets/js/header.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
